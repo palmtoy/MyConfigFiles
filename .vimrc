@@ -22,6 +22,8 @@ set tabstop=2
 set shiftwidth=2
 
 colorscheme evening
+" colorscheme pablo
+
 " set background=dark
 " colorscheme solarized
 " syntax enable
