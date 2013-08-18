@@ -100,6 +100,11 @@ alias ztar='tar -zvcf'
 alias uztar='tar -zvxf'
 alias man='man -a'
 alias vi='vim'
+alias gs='git status'
+alias gc='git checkout'
+alias gd='git diff'
+alias gp='git push'
+alias gcmt='git commit -am'
 
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
