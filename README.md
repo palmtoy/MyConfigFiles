@@ -1,4 +1,3 @@
 MyConfigFiles
 =============
 
-MyConfigFiles
