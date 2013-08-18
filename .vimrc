@@ -21,10 +21,10 @@ set nu
 set tabstop=2
 set shiftwidth=2
 
-colorscheme evening
-" syntax enable
-" set background=dark
-" colorscheme solarized
+" colorscheme evening
+set background=dark
+colorscheme solarized
+syntax enable
 
 set guifont=Courier_New:h12
 set gcr=a:blinkon0
