@@ -1,34 +1,21 @@
-" An example for a vimrc file.
-"
-" Maintainer:	Bram Moolenaar <Bram@vim.org>
-" Last change:	2008 Dec 17
-"
-" To use it, copy it to
-"     for Unix and OS/2:  ~/.vimrc
-"	      for Amiga:  s:.vimrc
-"  for MS-DOS and Win32:  $VIM\_vimrc
-"	    for OpenVMS:  sys$login:.vimrc
-
-" When started as "evim", evim.vim will already have done these settings.
-if v:progname =~? "evim"
-  finish
-endif
-
 " Use Vim settings, rather than Vi settings (much better!).
 " This must be first, because it changes other options as a side effect.
 set nocompatible
 set nu
 set tabstop=2
+set expandtab
 set shiftwidth=2
 
-colorscheme evening
-" colorscheme pablo
+if has('gui_running')
+    syntax enable
+    set background=dark
+    colorscheme solarized
+else
+    set background=light
+    colorscheme pablo
+endif
 
-" set background=dark
-" colorscheme solarized
-" syntax enable
-
-set guifont=Courier_New:h12
+set guifont=Courier_New:h15
 set gcr=a:blinkon0
 set smartindent
 set autoindent
@@ -37,11 +24,8 @@ set statusline=%<%f\ %h%m%r%=%k[%{(&fenc==\"\")?&enc:&fenc}%{(&bomb?\",BOM\":\"\
 set autoread
 set paste
 
-execute pathogen#infect()
-
 let mapleader = ","
-map <silent> <leader>nn :NERDTreeToggle<cr>
-
+map <leader>nn :NERDTreeToggle<cr>
 map <C-s> :w<CR>
 map <CR> o<ESC>
 map <S-CR> O<ESC>
@@ -131,5 +115,4 @@ if !exists(":DiffOrig")
   command DiffOrig vert new | set bt=nofile | r # | 0d_ | diffthis
 		  \ | wincmd p | diffthis
 endif
-
 
