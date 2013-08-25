@@ -1,3 +1,6 @@
+[user]
+  name = palmtoy
+  email = zgli@corp.netease.com
 [color]
   diff = auto
   branch = auto
