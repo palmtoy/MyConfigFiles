@@ -6,3 +6,5 @@
   branch = auto
   status = auto
   ui = auto
+[http]
+	proxy = 192.168.1.103:808
