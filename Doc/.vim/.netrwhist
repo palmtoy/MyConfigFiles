@@ -1,5 +1,5 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =7
+let g:netrw_dirhist_cnt =8
 let g:netrw_dirhist_1='/private/var/folders/7x/pp90vq196z7ch59qfps3j1hc0000gn'
 let g:netrw_dirhist_2='/Users/will/Workspace/GitHub/hello4lord/.idea'
 let g:netrw_dirhist_3='/Users/will/Workspace/GitHub/hello4lord/app/data'
@@ -7,3 +7,4 @@ let g:netrw_dirhist_4='/Users/will/Workspace/GitHub/hello4lord/app'
 let g:netrw_dirhist_5='/Users/will/Workspace/GitHub/hello/app/config/prod'
 let g:netrw_dirhist_6='/Users/will/Workspace/LabOfGit/Nssh4PushSvr'
 let g:netrw_dirhist_7='/Users/will/Workspace/LabOfGit/nsshutil/.git'
+let g:netrw_dirhist_8='/home/will/GitHub/MyConfigFiles/UbuntuSourceList'
