@@ -6,3 +6,7 @@
   branch = auto
   status = auto
   ui = auto
+[http]
+	proxy = 192.168.1.103:808
+[core]
+	excludesfile = /home/will/GitHub/gitignore/Node.gitignore
