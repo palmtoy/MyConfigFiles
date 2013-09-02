@@ -1,12 +1,10 @@
 [user]
-  name = palmtoy
-  email = zgli@corp.netease.com
+	name = palmtoy
+	email = zgli@corp.netease.com
 [color]
-  diff = auto
-  branch = auto
-  status = auto
-  ui = auto
-[http]
-	proxy = 192.168.1.103:808
+	diff = auto
+	branch = auto
+	status = auto
+	ui = auto
 [core]
-	excludesfile = /home/will/GitHub/gitignore/Node.gitignore
+  excludesfile = /Users/will/Workspace/GitHub/gitignore/Node.gitignore
