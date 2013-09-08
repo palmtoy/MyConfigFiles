@@ -33,6 +33,7 @@ alias cd-="cd -"
 alias ll="ls -la"
 alias lm='ll | more'
 alias df='df -h'
+alias du='du -h --max-depth=1'
 alias cp='cp -i'
 
 alias cpd='cp -R'
