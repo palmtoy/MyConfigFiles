@@ -2,8 +2,9 @@ export PS1="\u@mac:\w $ "
 export CLICOLOR=1
 export LSCOLORS="gxfxcxdxbxegedabagacad"
 export PATH=~/Library/Bin:/usr/local/mysql/bin:/usr/local/redis-2.6.14/src:$PATH
-export PREFIX=~/.nvm/v0.8.22
-export NODE_PATH=$PREFIX/lib/node_modules
+
+# export PREFIX=~/.nvm/v0.10.13
+# export NODE_PATH=$PREFIX/lib/node_modules
 
 # aliases
 alias sshm="ssh ubuntu@54.253.75.158"
