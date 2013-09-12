@@ -8,3 +8,4 @@
 	ui = auto
 [core]
   excludesfile = /Users/will/Workspace/GitHub/gitignore/Node.gitignore
+	quotepath = false
