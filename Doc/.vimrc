@@ -23,6 +23,7 @@ set statusline=%<%f\ %h%m%r%=%k[%{(&fenc==\"\")?&enc:&fenc}%{(&bomb?\",BOM\":\"\
 "Set to auto read when a file is changed from the outside
 set autoread
 set paste
+set autowriteall
 
 let mapleader = ","
 map <leader>nn :NERDTreeToggle<cr>
