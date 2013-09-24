@@ -80,6 +80,7 @@ endif
 " Only do this part when compiled with support for autocommands.
 if has("autocmd")
 
+filetype plugin on
   " Enable file type detection.
   " Use the default filetype settings, so that mail gets 'tw' set to 72,
   " 'cindent' is on in C files, etc.
@@ -118,4 +119,7 @@ if !exists(":DiffOrig")
   command DiffOrig vert new | set bt=nofile | r # | 0d_ | diffthis
 		  \ | wincmd p | diffthis
 endif
+
+execute pathogen#infect()
+autocmd User Node if &filetype == "javascript" | setlocal expandtab | endif
 
