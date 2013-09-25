@@ -25,7 +25,7 @@ alias ll="ls -la"
 alias lm='ll | more'
 alias df='df -h'
 alias du='du -h -d1'
-alias cp='cp -i'
+alias cp='cp -iR'
 
 alias cpd='cp -R'
 alias mv='mv -i'
