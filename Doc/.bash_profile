@@ -7,7 +7,8 @@ export LSCOLORS="gxfxcxdxbxegedabagacad"
 export PATH=~/Library/Bin:/usr/local/mysql/bin:/usr/local/redis-2.6.14/src:$PATH
 
 # Set Titlebar and Prompt
-# export TITLEBAR='\e]0;\h: ${PWD/$HOME/~}\a'
+# export PROMPT_COMMAND='echo -ne "\033]0;${USER}@${HOSTNAME%%.*}: ${PWD/#$HOME/~}\007"'
+export PROMPT_COMMAND='echo -ne "\033]0;${PWD/#$HOME/~}\007"'
 export PS1="${BLUE}\u@mac:${YELLOW}\w${GREEN}\$(__git_ps1)${NORMAL}$ "
 
 # aliases
