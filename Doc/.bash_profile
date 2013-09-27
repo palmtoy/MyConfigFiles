@@ -1,4 +1,6 @@
-export PS1="\u@mac:\w $ "
+source /Users/will/Workspace/GitHub/MyConfigFiles/Doc/.git-prompt.sh
+
+export PS1="\u@mac:\w\$(__git_ps1)$ "
 export CLICOLOR=1
 export LSCOLORS="gxfxcxdxbxegedabagacad"
 export PATH=~/Library/Bin:/usr/local/mysql/bin:/usr/local/redis-2.6.14/src:$PATH
