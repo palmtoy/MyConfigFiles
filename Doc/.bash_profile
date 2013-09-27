@@ -1,12 +1,32 @@
 source /Users/will/Workspace/GitHub/MyConfigFiles/Doc/.git-prompt.sh
 
-export PS1="\u@mac:\w\$(__git_ps1)$ "
 export CLICOLOR=1
 export LSCOLORS="gxfxcxdxbxegedabagacad"
 export PATH=~/Library/Bin:/usr/local/mysql/bin:/usr/local/redis-2.6.14/src:$PATH
 
 # export PREFIX=~/.nvm/v0.10.13
 # export NODE_PATH=$PREFIX/lib/node_modules
+
+# color for PS1
+BLACK=$(tput setaf 0)
+RED=$(tput setaf 1)
+GREEN=$(tput setaf 2)
+YELLOW=$(tput setaf 3)
+LIME_YELLOW=$(tput setaf 190)
+POWDER_BLUE=$(tput setaf 153)
+BLUE=$(tput setaf 4)
+MAGENTA=$(tput setaf 5)
+CYAN=$(tput setaf 6)
+WHITE=$(tput setaf 7)
+BRIGHT=$(tput bold)
+NORMAL=$(tput sgr0)
+BLINK=$(tput blink)
+REVERSE=$(tput smso)
+UNDERLINE=$(tput smul)
+
+# Set Titlebar and Prompt
+# export TITLEBAR='\e]0;\h: ${PWD/$HOME/~}\a'
+export PS1="${BLUE}\u@mac:${YELLOW}\w${GREEN}\$(__git_ps1)${NORMAL}$ "
 
 # aliases
 alias sshp3="ssh zgli@pomelo3.server.163.org -p 1046"
