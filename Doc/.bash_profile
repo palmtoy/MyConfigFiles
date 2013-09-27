@@ -1,3 +1,4 @@
+source /Users/will/Workspace/GitHub/MyConfigFiles/Doc/git-completion.bash
 source /Users/will/Workspace/GitHub/MyConfigFiles/Doc/.git-prompt.sh
 source /Users/will/Workspace/GitHub/MyConfigFiles/Doc/.color-ps1.sh
 
@@ -10,6 +11,7 @@ export PATH=~/Library/Bin:/usr/local/mysql/bin:/usr/local/redis-2.6.14/src:$PATH
 export PS1="${BLUE}\u@mac:${YELLOW}\w${GREEN}\$(__git_ps1)${NORMAL}$ "
 
 # aliases
+alias reload="source ~/.bash_profile"
 alias sshp3="ssh zgli@pomelo3.server.163.org -p 1046"
 alias pc="pomelo-cli -h pomelo3.server.163.org"
 alias db="mysql -uxy -pdev Pomelo"
@@ -23,6 +25,7 @@ alias cddl="cd ~/Downloads/Lord"
 
 alias cd..="cd .."
 alias cd...="cd ../.."
+alias cd....="cd ../../.."
 alias cd-="cd -"
 alias ll="ls -la"
 alias lm='ll | more'
