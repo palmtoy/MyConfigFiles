@@ -17,8 +17,10 @@ hi User9 guifg=#ffffff  guibg=#810085
 hi User0 guifg=#ffffff  guibg=#094afe
 
 set statusline=
-set statusline+=%7*\[%n]                                  "buffernr
-set statusline+=%1*\ %<%F\                                "File+path
+" set statusline+=%7*\[%n]                                  "buffernr
+set statusline+=%0*\[%n]                                  "buffernr
+" set statusline+=%1*\ %<%F\                                "File+path
+set statusline+=%0*\ %<%F\                                "File+path
 set statusline+=%2*\ %y\                                  "FileType
 set statusline+=%3*\ %{''.(&fenc!=''?&fenc:&enc).''}      "Encoding
 set statusline+=%3*\ %{(&bomb?\",BOM\":\"\")}\            "Encoding2

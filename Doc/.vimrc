@@ -78,4 +78,3 @@ else
   source $MY_DIR/.vimrc_statusline_iterm2
 endif
 
-
