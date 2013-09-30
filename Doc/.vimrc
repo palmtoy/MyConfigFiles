@@ -72,6 +72,20 @@ endif
 execute pathogen#infect()
 autocmd User Node if &filetype == "javascript" | setlocal expandtab | endif
 
+
+call pathogen#infect()
+syntax on
+
+filetype plugin indent on
+
+syntax enable
+
+" Solarized stuff
+let g:solarized_termtrans = 1
+set background=dark
+colorscheme solarized
+
+
 if has('gui_running')
   source $MY_DIR/.vimrc_statusline
 else
