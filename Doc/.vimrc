@@ -7,13 +7,20 @@ set expandtab
 set shiftwidth=2
 
 call pathogen#infect()
+filetype plugin indent on
+
 syntax on
 syntax enable
-filetype plugin indent on
 " Solarized stuff
 let g:solarized_termtrans = 1
 set background=dark
 colorscheme solarized
+
+if has('gui_running')
+  source $MY_DIR/.vimrc_statusline
+else
+  source $MY_DIR/.vimrc_statusline_iterm2
+endif
 
 set guifont=Courier_New:h15
 set gcr=a:blinkon0
@@ -64,10 +71,4 @@ if has('mouse')
 endif
 
 autocmd User Node if &filetype == "javascript" | setlocal expandtab | endif
-
-if has('gui_running')
-  source $MY_DIR/.vimrc_statusline
-else
-  source $MY_DIR/.vimrc_statusline_iterm2
-endif
 
