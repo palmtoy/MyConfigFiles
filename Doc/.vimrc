@@ -12,6 +12,8 @@ filetype plugin indent on
 syntax on
 syntax enable
 
+set laststatus=2
+
 " Solarized options 
 let g:solarized_termtrans = 1
 " let g:solarized_termcolors = 256
@@ -20,10 +22,13 @@ let g:solarized_contrast = "high"
 set background=dark
 colorscheme solarized
 
+let g:Powerline_symbols = 'fancy'
+set fillchars+=stl:\ ,stlnc:\
+
 if has('gui_running')
-  source $MY_DIR/.vimrc_statusline
+  " source $MY_DIR/.vimrc_statusline
 else
-  source $MY_DIR/.vimrc_statusline_iterm2
+  " source $MY_DIR/.vimrc_statusline_iterm2
 endif
 
 set guifont=Courier_New:h15
