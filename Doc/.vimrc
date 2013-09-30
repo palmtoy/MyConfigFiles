@@ -1,3 +1,5 @@
+let $MY_DIR = $HOME."/Workspace/GitHub/MyConfigFiles/Doc"
+
 set nocompatible
 set nu
 set tabstop=2
@@ -40,8 +42,13 @@ set backspace=indent,eol,start
 set nobackup  " do not keep a backup file, use versions instead
 set history=50  " keep 50 lines of command line history
 set ruler " show the cursor position all the time
+set cursorline " highlight the current line
 set showcmd " display incomplete commands
 set incsearch " do incremental searching
+" autoload .vimrc
+autocmd! bufwritepost .vimrc source $MY_DIR/.vimrc
+set wildmenu  " cmd auto completion
+set ignorecase
 
 " Don't use Ex mode, use Q for formatting
 map Q gq
@@ -65,6 +72,5 @@ endif
 execute pathogen#infect()
 autocmd User Node if &filetype == "javascript" | setlocal expandtab | endif
 
-let $MY_DIR = $HOME."/Workspace/GitHub/MyConfigFiles/Doc"
 source $MY_DIR/.vimrc_statusline
 
