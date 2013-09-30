@@ -6,14 +6,14 @@ set tabstop=2
 set expandtab
 set shiftwidth=2
 
-if has('gui_running')
-  syntax enable
-  set background=dark
-  colorscheme solarized
-else
-  set background=light
-  colorscheme pablo
-endif
+call pathogen#infect()
+syntax on
+syntax enable
+filetype plugin indent on
+" Solarized stuff
+let g:solarized_termtrans = 1
+set background=dark
+colorscheme solarized
 
 set guifont=Courier_New:h15
 set gcr=a:blinkon0
@@ -49,6 +49,7 @@ set incsearch " do incremental searching
 autocmd! bufwritepost .vimrc source $MY_DIR/.vimrc
 set wildmenu  " cmd auto completion
 set ignorecase
+set hlsearch
 
 " Don't use Ex mode, use Q for formatting
 map Q gq
@@ -62,29 +63,7 @@ if has('mouse')
   set mouse=a
 endif
 
-" Switch syntax highlighting on, when the terminal has colors
-" Also switch on highlighting the last used search pattern.
-if &t_Co > 2 || has("gui_running")
-  syntax on
-  set hlsearch
-endif
-
-execute pathogen#infect()
 autocmd User Node if &filetype == "javascript" | setlocal expandtab | endif
-
-
-call pathogen#infect()
-syntax on
-
-filetype plugin indent on
-
-syntax enable
-
-" Solarized stuff
-let g:solarized_termtrans = 1
-set background=dark
-colorscheme solarized
-
 
 if has('gui_running')
   source $MY_DIR/.vimrc_statusline
