@@ -72,5 +72,10 @@ endif
 execute pathogen#infect()
 autocmd User Node if &filetype == "javascript" | setlocal expandtab | endif
 
-source $MY_DIR/.vimrc_statusline
+if has('gui_running')
+  source $MY_DIR/.vimrc_statusline
+else
+  source $MY_DIR/.vimrc_statusline_iterm2
+endif
+
 
