@@ -64,7 +64,7 @@ set incsearch " do incremental searching
 " autoload .vimrc
 autocmd! bufwritepost .vimrc source $MY_DIR/.vimrc
 set wildmenu  " cmd auto completion
-set ignorecase
+" set ignorecase
 set hlsearch
 
 " Don't use Ex mode, use Q for formatting
