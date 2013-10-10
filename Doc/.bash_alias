@@ -1,5 +1,5 @@
 # aliases
-alias reload="source ~/.bash_profile"
+alias reload="source ~/.zshrc"
 alias sshp3="ssh zgli@pomelo3.server.163.org -p 1046"
 alias pc="pomelo-cli -h pomelo3.server.163.org"
 alias db="mysql -uxy -pdev Pomelo"
@@ -17,7 +17,8 @@ alias cd...="cd ../.."
 alias cd....="cd ../../.."
 alias cd-="cd -"
 alias l="ls"
-alias ll="ls -la"
+alias la="ls -la"
+alias ll="la"
 alias lm='ll | more'
 alias df='df -h'
 alias du='du -h -d1'
@@ -44,4 +45,8 @@ alias gd='git diff'
 alias gp='git push'
 alias gcmt='git commit -am'
 alias gb='git branch'
+
+# Example aliases
+# alias zshconfig="mate ~/.zshrc"
+# alias ohmyzsh="mate ~/.oh-my-zsh"
 

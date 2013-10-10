@@ -1,4 +1,4 @@
-MY_DIR=/Users/will/Workspace/GitHub/MyConfigFiles/Doc
+MY_DIR=~/MyConfigFiles
 
 . $MY_DIR/git-completion.bash
 . $MY_DIR/.git-prompt.sh
