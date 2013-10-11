@@ -50,3 +50,13 @@ export PATH=$PATH:~/Library/Bin:/usr/local/bin:/usr/local/mysql/bin:/usr/local/r
 
 . $MY_DIR/.bash_alias
 
+# black   30
+# red     31
+# green   32
+# yellow  33
+# blue    34
+# purple  35
+# cyan    36
+# white   37
+export GREP_OPTIONS='--color=auto' GREP_COLOR='1;31;40'
+
