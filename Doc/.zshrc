@@ -43,10 +43,10 @@ plugins=(git osx node npm nvm brew github)
 
 source $ZSH/oh-my-zsh.sh
 
+source $HOME/.nvm/nvm.sh # This loads NVM
+
 # Customize to your needs...
-export PATH=~/.nvm/v0.8.22/bin:~/Library/Bin:/usr/local/bin:/usr/local/mysql/bin:/usr/local/redis-2.6.14/src:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:$PATH
+export PATH=$PATH:~/Library/Bin:/usr/local/bin:/usr/local/mysql/bin:/usr/local/redis-2.6.14/src:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin
 
 . $MY_DIR/.bash_alias
-
-[[ -s /Users/will/.nvm/nvm.sh ]] && . /Users/will/.nvm/nvm.sh # This loads NVM
 
