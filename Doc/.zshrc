@@ -44,7 +44,7 @@ plugins=(git osx node npm nvm brew github)
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
-export PATH=$PATH:~/.nvm/v0.8.22/bin:~/Library/Bin:/usr/local/mysql/bin:/usr/local/redis-2.6.14/src:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin
+export PATH=~/.nvm/v0.8.22/bin:~/Library/Bin:/usr/local/bin:/usr/local/mysql/bin:/usr/local/redis-2.6.14/src:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:$PATH
 
 . $MY_DIR/.bash_alias
 
