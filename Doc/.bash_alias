@@ -36,12 +36,6 @@ alias man='man -a'
 alias vi='vim'
 alias mvi='mvim'
 alias pgr='ps aux | grep'
-alias gc='git checkout '
-alias gs='git status'
-alias gd='git diff'
-alias gp='git push'
-alias gcmt='git commit -am'
-alias gb='git branch'
 
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
