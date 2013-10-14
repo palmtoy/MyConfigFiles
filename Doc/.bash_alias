@@ -36,6 +36,7 @@ alias man='man -a'
 alias vi='vim'
 alias mvi='mvim'
 alias pgr='ps aux | grep'
+alias pms='pomelo start'
 
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
