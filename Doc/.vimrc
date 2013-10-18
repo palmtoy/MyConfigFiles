@@ -65,6 +65,7 @@ nmap j gj
 nmap k gk
 
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
+let g:vim_markdown_folding_disabled=1
 
 " Allow backspacing over everything in insert mode
 set backspace=indent,eol,start
