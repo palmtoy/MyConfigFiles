@@ -9,3 +9,6 @@
 [core]
   excludesfile = /Users/will/Workspace/GitHub/gitignore/Node.gitignore
 	quotepath = false
+[http]
+  proxy = 123.58.180.183:4152
+
