@@ -2,9 +2,9 @@ PROMPT='%{$fg_no_bold[blue]%}%n%{$fg_no_bold[magenta]%}♬%{$fg_no_bold[cyan]%}%
 RPROMPT='[%*]'
 
 # git theming
-ZSH_THEME_GIT_PROMPT_PREFIX="%{$fg_no_bold[blue]%}("
+ZSH_THEME_GIT_PROMPT_PREFIX="%{$fg_no_bold[blue]%}(%{$fg_no_bold[green]%}"
 ZSH_THEME_GIT_PROMPT_SUFFIX=""
-ZSH_THEME_GIT_PROMPT_CLEAN="%{$fg_no_bold[green]%}✔"
+ZSH_THEME_GIT_PROMPT_CLEAN="✔"
 ZSH_THEME_GIT_PROMPT_DIRTY="%{$fg_no_bold[yellow]%}"
 ZSH_THEME_GIT_PROMPT_BEHIND_REMOTE="%{$fg_no_bold[magenta]%}↓"
 ZSH_THEME_GIT_PROMPT_AHEAD_REMOTE="%{$fg_no_bold[magenta]%}↑"
