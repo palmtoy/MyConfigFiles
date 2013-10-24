@@ -1,10 +1,10 @@
-PROMPT='%{$fg_no_bold[blue]%}%n%{$fg_no_bold[magenta]%}♬%{$fg_no_bold[cyan]%}%5~%{$fg_no_bold[blue]%}<$(git_prompt_info)$(git_remote_status)%{$fg_no_bold[blue]%}>%{$reset_color%}» '
+PROMPT='%{$fg_no_bold[blue]%}%n%{$fg_no_bold[magenta]%}♬%{$fg_no_bold[cyan]%}%5~%{$fg_no_bold[blue]%}<$(git_prompt_info)$(git_remote_status)%{$fg_no_bold[blue]%}>%{$reset_color%}» '
 RPROMPT='[%*]'
 
 # git theming
 ZSH_THEME_GIT_PROMPT_PREFIX="%{$fg_no_bold[green]%}"
 ZSH_THEME_GIT_PROMPT_CLEAN="✔"
-ZSH_THEME_GIT_PROMPT_DIRTY="%{$fg_no_bold[yellow]%}"
+ZSH_THEME_GIT_PROMPT_DIRTY="%{$fg_no_bold[yellow]%}⚡"
 ZSH_THEME_GIT_PROMPT_SUFFIX=""
 ZSH_THEME_GIT_PROMPT_AHEAD_REMOTE="%{$fg_no_bold[red]%}↑"
 ZSH_THEME_GIT_PROMPT_BEHIND_REMOTE="%{$fg_no_bold[red]%}↓"
