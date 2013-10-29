@@ -11,4 +11,5 @@
 	quotepath = false
 [http]
   proxy = 123.58.180.183:4152
-
+[push]
+  default = simple
