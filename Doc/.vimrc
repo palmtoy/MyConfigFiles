@@ -18,11 +18,14 @@ set laststatus=2
 
 " Solarized options 
 let g:solarized_termtrans = 1
-" let g:solarized_termcolors = 256
 let g:solarized_visibility = "high"
 let g:solarized_contrast = "high"
-set background=dark
-colorscheme solarized
+" colorscheme solarized
+" Molokai options 
+let g:molokai_original = 1
+let g:rehash256 = 1
+colorscheme molokai
+" set background=dark
 
 let g:Powerline_symbols = 'fancy'
 set fillchars+=stl:\ ,stlnc:\
