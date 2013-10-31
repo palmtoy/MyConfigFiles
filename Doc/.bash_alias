@@ -7,10 +7,6 @@ alias dbr="mysql -hpomelo3.server.163.org -uxy -pdev Pomelo"
 alias cdg="cd ~/GitHub/lordofpomelo/game-server"
 alias cdw="cd ~/GitHub/lordofpomelo/web-server"
 alias cdp="cd ~/GitHub/pomelo"
-alias cdh="cd ~/GitHub/hello4lord"
-alias cdns="cd ~/Workspace/LabOfGit/nsshutil"
-alias cddl="cd ~/Downloads/Lord"
-alias cdpk="cd ~/GitHub/Wiki/pomelo.wiki"
 
 alias ....="cd ../../.."
 alias .....="cd ../../../.."
@@ -23,7 +19,6 @@ alias df='df -h'
 alias du='du -h -d1'
 alias cp='cp -iR'
 
-alias cpd='cp -R'
 alias mv='mv -i'
 alias rm='rm -i'
 alias md='mkdir -p'
