@@ -45,8 +45,10 @@ source $ZSH/oh-my-zsh.sh
 
 source $HOME/.nvm/nvm.sh # This loads NVM
 
+export ZOOKEEPER_BIN=~/Downloads/Software/Programming/zookeeper-3.4.5/bin
+
 # Customize to your needs...
-export PATH=~/Library/Bin:/usr/local/bin:/usr/local/mysql/bin:/usr/local/redis-2.6.14/src:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:$PATH
+export PATH=~/Library/Bin:/usr/local/bin:/usr/local/mysql/bin:/usr/local/redis-2.6.14/src:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:$ZOOKEEPER_BIN:$PATH
 
 . $CONF_DIR/.bash_alias
 
