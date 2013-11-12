@@ -32,6 +32,8 @@ alias mvi='mvim'
 alias pgr='ps aux | grep'
 alias pms='pomelo start'
 
+alias gitk='/usr/local/git/bin/gitk'
+
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
