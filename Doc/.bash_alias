@@ -1,5 +1,5 @@
 # aliases
-alias reloadzsh="source ~/.zshrc && exec zsh"
+alias reloadzsh="exec zsh && source ~/.zshrc"
 alias sshp3="ssh zgli@pomelo3.server.163.org -p 1046"
 alias pc="pomelo-cli -h pomelo3.server.163.org"
 alias db="mysql -uxy -pdev Pomelo"
