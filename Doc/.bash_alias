@@ -1,7 +1,6 @@
 # aliases
 alias reloadzsh="exec zsh && source ~/.zshrc"
 alias sshp3="ssh zgli@pomelo3.server.163.org -p 1046"
-alias sshp66="ssh qatest@app-66.photo.163.org -p 1046"
 alias pc="pomelo-cli -h pomelo3.server.163.org"
 alias db="mysql -uxy -pdev Pomelo"
 alias dbr="mysql -hpomelo3.server.163.org -uxy -pdev Pomelo"
