@@ -51,7 +51,7 @@ export MONGODB_BIN=~/Downloads/Software/Programming/MongoDB/mongodb-osx-x86_64-2
 # Customize to your needs...
 export PATH=~/Library/Bin:/usr/local/bin:/usr/local/mysql/bin:/usr/local/redis-2.6.14/src:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:$ZOOKEEPER_BIN:$MONGODB_BIN:$PATH
 
-. $CONF_DIR/.bash_alias
+. $CONF_DIR/Doc/.bash_alias
 
 # red: 31, green: 32, yellow: 33, blue: 34, purple: 35, cyan: 36
 export GREP_OPTIONS='--color=auto' GREP_COLOR='1;31;40'
