@@ -1,5 +1,8 @@
 let $MY_DIR = $HOME."/Workspace/GitHub/MyConfigFiles/Doc"
 
+set encoding=utf-8
+set fileencodings=utf-8
+
 set nocompatible
 set nu
 set tabstop=2
