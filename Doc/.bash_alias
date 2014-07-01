@@ -1,12 +1,9 @@
 # aliases
 alias reloadzsh="exec zsh && source ~/.zshrc"
-alias pc="pomelo-cli -h pomelo3.server.163.org"
-alias db="mysql -uxy -pdev Pomelo"
-alias dbr="mysql -hpomelo3.server.163.org -uxy -pdev Pomelo"
-alias cdg="cd ~/GitHub/lordofpomelo/game-server"
-alias cdw="cd ~/GitHub/lordofpomelo/web-server"
-alias cdp="cd ~/GitHub/pomelo"
-alias cdc="cd ~/GitHub/cityofpomelo"
+
+alias psn="ps aux | grep node -w"
+alias tl="tail -f /var/log/sparx/api.log"
+alias ssvr="sudo ./scripts/local.sh"
 
 alias ....="cd ../../.."
 alias .....="cd ../../../.."
