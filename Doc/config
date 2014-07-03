@@ -4,6 +4,6 @@ Host github.com
 User git
 Hostname github.com
 Port 22
-ProxyCommand /usr/local/bin/corkscrew 123.58.180.183 4152 %h %p
+# ProxyCommand /usr/local/bin/corkscrew 123.58.180.183 4152 %h %p
 IdentityFile ~/.ssh/id_rsa
 
