@@ -5,6 +5,8 @@ alias psn="ps aux | grep node -w"
 alias tl="tail -f /var/log/sparx/api.log"
 alias ssvr="sudo ./scripts/local.sh"
 
+alias cdl="cd /var/log/sparx"
+
 alias ....="cd ../../.."
 alias .....="cd ../../../.."
 alias cd-="cd -"
