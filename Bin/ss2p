@@ -1,0 +1,3 @@
+#!/bin/sh
+
+cat ~/MyConfigFiles/.password | sudo kill -s USR1 $@
