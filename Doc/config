@@ -1,9 +1,21 @@
 # cp or (ln -s) this file to ~/.ssh/
 
-Host github.com
+Host github.com-zgli
 User git
 Hostname github.com
 Port 22
 # ProxyCommand /usr/local/bin/corkscrew 123.58.180.183 4152 %h %p
-IdentityFile ~/.ssh/id_rsa
+IdentityFile ~/.ssh/zgli_id_rsa
+
+Host github.com-palmtoy
+User git
+Hostname github.com
+Port 22
+IdentityFile ~/.ssh/palmtoy_id_rsa
+
+Host github.com-Maxim
+User git
+Hostname github.com
+Port 22
+IdentityFile ~/.ssh/Maxim_id_rsa
 
