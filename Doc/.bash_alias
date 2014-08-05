@@ -8,6 +8,7 @@ alias mtl="multitail /var/log/sparx/admin.log /var/log/sparx/api.log /var/log/sp
 # alias ksvr="cat $CONF_DIR/.password | xargs sudo -S pkill node"
 alias ssvr="cat $CONF_DIR/.password | sudo -S ./scripts/local.sh"
 alias ksvr="cat $CONF_DIR/.password | sudo -S pkill node"
+alias ota="/opt/node/current/bin/http-server -p 9090 &"
 
 alias cdg="cd ~/Workspace/Projects/sparx-gam"
 alias cdl="cd /var/log/sparx"
