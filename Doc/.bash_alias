@@ -10,10 +10,10 @@ alias ssvr="cat $CONF_DIR/.password | sudo -S ./scripts/local.sh"
 alias ksvr="cat $CONF_DIR/.password | sudo -S pkill node"
 alias ota="/opt/node/current/bin/http-server -p 9090 &"
 
-alias cdg="cd ~/Workspace/Projects/sparx-gam"
+alias cdg="cd ~/Workspace/Projects/gam/sparx_gam"
 alias cdl="cd /var/log/sparx"
-alias cds="cd ~/Workspace/Projects/sparx-gam/sparx/scripts"
-alias ts="~/Workspace/Projects/sparx-gam/sparx/scripts/test.sh"
+alias cds="cd ~/Workspace/Projects/gam/sparx_gam/sparx/scripts"
+alias ts="~/Workspace/Projects/gam/sparx_gam/sparx/scripts/test.sh"
 
 alias ....="cd ../../.."
 alias .....="cd ../../../.."

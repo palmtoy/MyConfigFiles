@@ -1,4 +1,10 @@
-# cp or (ln -s) this file to ~/.ssh/
+# cp or (ln -s) me to ~/.ssh/
+
+Host github.com
+User git
+Hostname github.com
+Port 22
+IdentityFile ~/.ssh/id_rsa
 
 Host github.com-zgli
 User git
@@ -12,10 +18,4 @@ User git
 Hostname github.com
 Port 22
 IdentityFile ~/.ssh/palmtoy_id_rsa
-
-Host github.com-Maxim
-User git
-Hostname github.com
-Port 22
-IdentityFile ~/.ssh/Maxim_id_rsa
 
