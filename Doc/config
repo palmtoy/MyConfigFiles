@@ -1,5 +1,11 @@
 # cp or (ln -s) me to ~/.ssh/
 
+Host gitlab
+User git
+Hostname 10.80.0.204
+Port 22
+IdentityFile ~/.ssh/id_rsa
+
 Host github.com
 User git
 Hostname github.com
