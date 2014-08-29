@@ -3,11 +3,12 @@ alias reloadzsh="exec zsh && source ~/.zshrc"
 
 alias psn="ps aux | grep node -w"
 alias mtl="multitail /var/log/sparx/admin.log /var/log/sparx/api.log /var/log/sparx/timerd.log"
+alias ta="tail -f /var/log/sparx/api.log"
 
-alias cdg="cd $GAM_DIR/sparx_gam"
+alias cdg="cd $GAM/sparx_gam"
 alias cdl="cd /var/log/sparx"
-alias cds="cd $GAM_DIR/sparx_gam/sparx/scripts"
-alias ut="$GAM_DIR/sparx_gam/sparx/scripts/test.sh"
+alias cds="cd $GAM/sparx_gam/sparx/scripts"
+alias ut="$GAM/sparx_gam/sparx/scripts/test.sh"
 
 alias ssvr="cdg && cat $CONF_DIR/.password | sudo -S ./scripts/local.sh && ota"
 alias ksvr="cat $CONF_DIR/.password | sudo -S pkill node"
