@@ -4,16 +4,13 @@ alias reloadzsh="exec zsh && source ~/.zshrc"
 alias psn="ps aux | grep node -w"
 alias mtl="multitail /var/log/sparx/admin.log /var/log/sparx/api.log /var/log/sparx/timerd.log"
 
-# alias ssvr="cat $CONF_DIR/.password | xargs sudo -S ./scripts/local.sh"
-# alias ksvr="cat $CONF_DIR/.password | xargs sudo -S pkill node"
-alias ssvr="cat $CONF_DIR/.password | sudo -S ./scripts/local.sh"
-alias ksvr="cat $CONF_DIR/.password | sudo -S pkill node"
-alias ota="/opt/node/current/bin/http-server -p 9090 &"
-
-alias cdg="cd ~/Workspace/Projects/gam/sparx_gam"
+alias cdg="cd $GAM_DIR/sparx_gam"
 alias cdl="cd /var/log/sparx"
-alias cds="cd ~/Workspace/Projects/gam/sparx_gam/sparx/scripts"
-alias ut="~/Workspace/Projects/gam/sparx_gam/sparx/scripts/test.sh"
+alias cds="cd $GAM_DIR/sparx_gam/sparx/scripts"
+alias ut="$GAM_DIR/sparx_gam/sparx/scripts/test.sh"
+
+alias ssvr="cdg && cat $CONF_DIR/.password | sudo -S ./scripts/local.sh && ota"
+alias ksvr="cat $CONF_DIR/.password | sudo -S pkill node"
 
 alias ....="cd ../../.."
 alias .....="cd ../../../.."
