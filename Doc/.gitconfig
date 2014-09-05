@@ -17,4 +17,5 @@
 	clean = git-media-clean %f
 	smudge = git-media-smudge %f
 [commit]
-	template = /Users/zgli/Workspace/Projects/gam/client_gam/Tools/GitTool/gitmessage.txt
+	template = /Users/zgli/MyConfigFiles/GitCommitMsg.txt
+
