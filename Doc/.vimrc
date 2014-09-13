@@ -85,6 +85,11 @@ set wildmenu  " cmd auto completion
 " set ignorecase
 set hlsearch
 
+" paste text with origin indentation
+nnoremap <F2> :set invpaste paste?<CR>
+set pastetoggle=<F2>
+set showmode
+
 " Don't use Ex mode, use Q for formatting
 map Q gq
 
