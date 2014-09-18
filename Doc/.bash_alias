@@ -4,14 +4,16 @@ alias reloadzsh="exec zsh && source ~/.zshrc"
 alias psn="ps aux | grep node -w"
 alias mtl="multitail /var/log/sparx/admin.log /var/log/sparx/api.log /var/log/sparx/timerd.log"
 alias ta="tail -f /var/log/sparx/api.log"
+alias tt="tail -f /var/log/sparx/timerd.log"
 
 alias cdg="cd $GAM/sparx_gam"
 alias cdl="cd /var/log/sparx"
 alias cds="cd $GAM/sparx_gam/sparx/scripts"
 alias ut="$GAM/sparx_gam/sparx/scripts/test.sh"
 
+alias ni='node-inspector&'
 alias ssvr="cdg && cat $CONF_DIR/.password | sudo -S ./scripts/local.sh && ota"
-# alias ssvr="cdg && cat $CONF_DIR/.password | sudo -S ./scripts/local.sh && ota && node-inspector&"
+# alias ssvr="cdg && cat $CONF_DIR/.password | sudo -S ./scripts/local.sh && ota && ni"
 alias ksvr="cat $CONF_DIR/.password | sudo -S pkill node"
 
 alias sshbj="cdg && ssh czyu@10.80.130.217"
@@ -44,7 +46,6 @@ alias gitk='/usr/local/git/bin/gitk'
 alias ga='git add --ignore-removal'
 alias gsu='git submodule update'
 
-alias ni='node-inspector&'
 
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
