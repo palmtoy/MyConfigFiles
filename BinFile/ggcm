@@ -1,0 +1,3 @@
+#!/bin/sh
+
+cat ~/MyConfigFiles/GitCommitMsg.txt | pbcopy && pbpaste
