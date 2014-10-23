@@ -7,6 +7,7 @@ alias ta="tail -f /var/log/sparx/api.log"
 alias tt="tail -f /var/log/sparx/timerd.log"
 
 alias cdg="cd $GAM/sparx_gam"
+alias cdc="cd $GAM/client_gam"
 alias cdl="cd /var/log/sparx"
 alias cds="cd $GAM/sparx_gam/sparx/scripts"
 alias ut="$GAM/sparx_gam/sparx/scripts/test.sh"
@@ -44,6 +45,7 @@ alias pms='pomelo start'
 alias gitk='/usr/local/git/bin/gitk'
 alias ga='git add --ignore-removal'
 alias gsu='git submodule update'
+alias gcf='cdc && git clean -qfd && cdg'
 
 
 # Example aliases
