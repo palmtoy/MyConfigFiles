@@ -12,7 +12,8 @@ alias cdl="cd /var/log/sparx"
 alias cds="cd $GAM/sparx_gam/sparx/scripts"
 alias ut="$GAM/sparx_gam/sparx/scripts/test.sh"
 
-alias ssvr="cdg && cat $CONF_DIR/.password | sudo -S ./scripts/local.sh && ota"
+# alias ssvr="cdg && cat $CONF_DIR/.password | sudo -S ./scripts/local.sh && ota"
+alias ssvr="cdg && cat $CONF_DIR/.password | sudo -S ./scripts/startlocal.sh"
 alias ksvr="cat $CONF_DIR/.password | sudo -S pkill node"
 alias ssig="ni & cat $CONF_DIR/.password | sudo -S kill -usr1 $1"
 
@@ -45,8 +46,8 @@ alias pms='pomelo start'
 alias gitk='/usr/local/git/bin/gitk'
 alias ga='git add --ignore-removal'
 alias gsu='git submodule update'
-alias gcf='cdc && git clean -qfd && cdg'
-alias gcoc='cdc && git checkout ./ && cdg'
+alias gcf='pushd $GAM/client_gam && git clean -qfd && popd'
+alias gcoc='pushd $GAM/client_gam && git checkout ./ && popd'
 
 
 # Example aliases
