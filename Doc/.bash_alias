@@ -13,8 +13,8 @@ alias cds="cd $GAM/sparx_gam/sparx/scripts"
 alias ut="$GAM/sparx_gam/sparx/scripts/test.sh"
 
 # alias ssvr="cdg && cat $CONF_DIR/.password | sudo -S ./scripts/local.sh && ota"
-alias ssvr="cdg && cat $CONF_DIR/.password | sudo -S ./scripts/startlocal.sh"
-alias ksvr="cat $CONF_DIR/.password | sudo -S pkill node"
+alias ssvr="cdg && cat $CONF_DIR/.password | sudo -S ./scripts/startlocal.sh; sleep 1.5s; psn"
+alias ksvr="cat $CONF_DIR/.password | sudo -S pkill node; sleep 1.5s; psn"
 alias ssig="ni & cat $CONF_DIR/.password | sudo -S kill -usr1 $1"
 
 alias sshbj="cdg && ssh czyu@10.80.130.217"
