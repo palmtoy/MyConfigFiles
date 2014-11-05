@@ -1,16 +1,19 @@
 #!/bin/bash
 
 NODE_PROCESS_NUM=0
+TURN_NUM=0
+MAX_TURN=16
 MY_PWD=`cat ~/MyConfigFiles/.password`
 
-cd $GAM/sparx_gam
 
+cd $GAM/sparx_gam
 echo $MY_PWD | sudo -S ./scripts/startlocal.sh
 
-until ((NODE_PROCESS_NUM>10))
+until ((NODE_PROCESS_NUM>10||TURN_NUM>MAX_TURN))
 do
   sleep 0.2s
   NODE_PROCESS_NUM=`ps aux | grep node -w | wc -l`
+  let ++TURN_NUM
 done
 
 echo ""
