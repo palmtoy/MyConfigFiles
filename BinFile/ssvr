@@ -3,13 +3,16 @@
 NODE_PROCESS_NUM=0
 MY_PWD=`cat ~/MyConfigFiles/.password`
 
-echo $MY_PWD | sudo -S pkill node
+cd $GAM/sparx_gam
 
-until ((NODE_PROCESS_NUM==1))
+echo $MY_PWD | sudo -S ./scripts/startlocal.sh
+
+until ((NODE_PROCESS_NUM>10))
 do
   sleep 0.2s
   NODE_PROCESS_NUM=`ps aux | grep node -w | wc -l`
 done
 
+echo ""
 ps aux | grep node -w
 
