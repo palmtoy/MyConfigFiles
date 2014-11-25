@@ -45,6 +45,7 @@ DISABLE_CORRECTION="true"
 plugins=(git github osx node npm nvm brew colored-man colorize command-not-found copydir copyfile cp dircycle)
 
 source $ZSH/oh-my-zsh.sh
+unsetopt share_history # setopt no_share_history
 
 source $HOME/.nvm/nvm.sh # This loads NVM
 
