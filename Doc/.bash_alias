@@ -12,11 +12,7 @@ alias cdl="cd /var/log/sparx"
 alias cds="cd $GAM/sparx_gam/sparx/scripts"
 alias ut="$GAM/sparx_gam/sparx/scripts/test.sh"
 
-# alias ssvr="cdg && cat $CONF_DIR/.password | sudo -S ./scripts/local.sh && ota"
-# alias ssvr="cdg && cat $CONF_DIR/.password | sudo -S ./scripts/startlocal.sh; sleep 1.5s; psn"
-# alias ksvr="cat $CONF_DIR/.password | sudo -S pkill node; sleep 1.5s; psn"
 alias ssig="ni & cat $CONF_DIR/.password | sudo -S kill -usr1 $1"
-
 alias sshbj="cdg && ssh czyu@10.80.130.217"
 
 alias ....="cd ../../.."
@@ -40,8 +36,6 @@ alias ttar='tar -tvf'
 alias man='man -a'
 alias vi='vim'
 alias mvi='mvim'
-alias pgr='ps aux | grep'
-alias pms='pomelo start'
 
 alias gitk='/usr/local/git/bin/gitk'
 alias ga='git add --ignore-removal'
