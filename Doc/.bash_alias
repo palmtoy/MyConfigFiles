@@ -40,8 +40,6 @@ alias mvi='mvim'
 alias gitk='/usr/local/git/bin/gitk'
 alias ga='git add --ignore-removal'
 alias gsu='git submodule update'
-alias gcf='pushd $GAM/client_gam && git clean -qfd && popd'
-alias gcoc='pushd $GAM/client_gam && git checkout ./ && popd'
 
 
 # Example aliases
