@@ -12,7 +12,7 @@ alias cdl="cd /var/log/sparx"
 alias cds="cd $GAM/sparx_gam/sparx/scripts"
 alias ut="$GAM/sparx_gam/sparx/scripts/test.sh"
 
-alias ssig="ni & cat $CONF_DIR/.password | sudo -S kill -usr1 $1"
+# alias ssig="ni & cat $CONF_DIR/.password | sudo -S kill -usr1 $1"
 alias sshbj="cdg && ssh czyu@10.80.130.217"
 
 alias ....="cd ../../.."
