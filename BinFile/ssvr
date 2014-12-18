@@ -3,7 +3,7 @@
 NODE_PROCESS_NUM=0
 TURN_NUM=0
 MAX_TURN=16
-MY_PWD=`cat ~/MyConfigFiles/.password`
+MY_PWD=`cat ~/MyConfigFiles/.password | base64 --decode`
 
 
 cd $GAM/sparx_gam

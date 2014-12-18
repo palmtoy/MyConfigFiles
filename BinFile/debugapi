@@ -19,7 +19,7 @@ then
   # launch node-inspector
   node-inspector &
 
-  MY_PWD=`cat ~/MyConfigFiles/.password`
+  MY_PWD=`cat ~/MyConfigFiles/.password | base64 --decode`
   echo $MY_PWD | sudo -S kill -usr1 $API2_PID
 
 else
