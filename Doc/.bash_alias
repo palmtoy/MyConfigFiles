@@ -47,4 +47,5 @@ alias gsu='git submodule update'
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 alias mongod='mongod --dbpath ~/Downloads/Software/Programming/MongoDB/mongodb-osx-x86_64-2.6.1/data/db'
+alias rc='redis-cli'
 
