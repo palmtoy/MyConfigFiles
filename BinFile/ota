@@ -1,6 +1,0 @@
-#!/bin/sh
-
-pushd ~/Sites
-# /opt/node/current/bin/http-server -p 9090 > /dev/null &
-/opt/node/current/bin/http-server -p 9090 > /var/log/sparx/ota.log &
-popd
