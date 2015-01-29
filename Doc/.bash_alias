@@ -14,6 +14,7 @@ alias ut="$GAM/sparx_gam/sparx/scripts/test.sh"
 
 # alias ssig="ni & cat $CONF_DIR/.password | sudo -S kill -usr1 $1"
 alias sshbj="cdg && ssh czyu@10.80.130.217"
+alias sshjc="cdg && ssh jianchun@10.80.30.34"
 
 alias ....="cd ../../.."
 alias .....="cd ../../../.."
