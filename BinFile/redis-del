@@ -1,0 +1,3 @@
+#!/bin/sh
+
+redis-cli KEYS $1 | awk '{print $1}' | xargs redis-cli DEL {} \;
