@@ -1,3 +1,4 @@
+DISABLE_AUTO_UPDATE="true" # for oh-my-zsh config
 # Path to your oh-my-zsh configuration.
 ZSH=$HOME/.oh-my-zsh
 
