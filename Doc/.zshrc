@@ -1,4 +1,3 @@
-DISABLE_AUTO_UPDATE="true" # for oh-my-zsh config
 # Path to your oh-my-zsh configuration.
 ZSH=$HOME/.oh-my-zsh
 
@@ -45,6 +44,7 @@ DISABLE_CORRECTION="true"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 plugins=(git github osx node npm nvm brew colored-man colorize command-not-found copydir copyfile cp dircycle)
 
+DISABLE_AUTO_UPDATE="true" # for oh-my-zsh config
 source $ZSH/oh-my-zsh.sh
 unsetopt share_history # setopt no_share_history
 
