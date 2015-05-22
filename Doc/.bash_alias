@@ -10,9 +10,11 @@ alias cdg="cd $GAM/sparx_gam"
 alias cdc="cd $GAM/client_gam"
 alias cdl="cd /var/log/sparx"
 alias cds="cd $GAM/sparx_gam/sparx/scripts"
+alias cdwin="/Volumes/WinShareFolder"
 alias ut="$GAM/sparx_gam/sparx/scripts/test.sh"
 
 alias sshios="cdg && ssh jenkins@10.80.232.15"
+alias sshworker="ssh Will@BEI-BXIA01-MAC.corp.kabam.com"
 
 alias ....="cd ../../.."
 alias .....="cd ../../../.."
