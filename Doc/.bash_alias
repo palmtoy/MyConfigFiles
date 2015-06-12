@@ -12,8 +12,10 @@ alias cdl="cd /var/log/sparx"
 alias cds="cd $GAM/sparx_gam/sparx/scripts"
 alias cdwin="/Volumes/WinShareFolder"
 alias ut="$GAM/sparx_gam/sparx/scripts/test.sh"
+alias rud="$GAM/stress_test/reset_mongo_user_data.sh"
 
 alias sshios="cdg && ssh jenkins@10.80.232.15"
+alias sshandroid="cdg && ssh jenkins@10.80.232.16"
 alias sshworker="ssh Will@BEI-BXIA01-MAC.corp.kabam.com"
 
 alias ....="cd ../../.."
