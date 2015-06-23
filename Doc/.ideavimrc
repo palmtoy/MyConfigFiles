@@ -77,8 +77,8 @@ set ruler " show the cursor position all the time
 set cursorline " highlight the current line
 set showcmd " display incomplete commands
 set incsearch " do incremental searching
-" autoload .vimrc
-autocmd! bufwritepost .vimrc source $MY_DIR/.vimrc
+" autoload .ideavimrc
+autocmd! bufwritepost .ideavimrc source $MY_DIR/.ideavimrc
 set wildmenu  " cmd auto completion
 " set ignorecase
 set hlsearch
