@@ -2,6 +2,7 @@
 ZSH=$HOME/.oh-my-zsh
 
 CONF_DIR=~/MyConfigFiles
+MY_CONF_DIR=$CONF_DIR
 
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
