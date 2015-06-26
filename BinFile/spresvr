@@ -1,0 +1,22 @@
+#!/bin/bash
+
+NODE_PROCESS_NUM=0
+TURN_NUM=0
+MAX_TURN=16
+MY_PWD=`cat ~/MyConfigFiles/.password | base64 --decode`
+
+
+cd /Users/zgli/Workspace/Projects/preview4gam/sparx_gam
+echo $MY_PWD | sudo -S ./scripts/startlocal.sh
+sleep 1s
+
+until ((NODE_PROCESS_NUM>10||TURN_NUM>MAX_TURN))
+do
+  sleep 0.2s
+  NODE_PROCESS_NUM=`ps aux | grep -v "grep" | grep "node" -w | wc -l`
+  let ++TURN_NUM
+done
+
+echo ""
+ps aux | grep -v "grep" | grep "node" -w
+
