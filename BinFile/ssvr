@@ -18,5 +18,6 @@ do
 done
 
 echo ""
+sleep 1s
 ps aux | grep -v "grep" | grep "node" -w
 
