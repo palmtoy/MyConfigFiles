@@ -25,3 +25,7 @@ Hostname github.com
 Port 22
 IdentityFile ~/.ssh/palmtoy_id_rsa
 
+
+ServerAliveInterval 30
+ServerAliveCountMax 120
+

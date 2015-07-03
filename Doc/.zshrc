@@ -52,7 +52,8 @@ unsetopt share_history # setopt no_share_history
 source $HOME/.nvm/nvm.sh # This loads NVM
 
 export ZOOKEEPER_BIN=~/Repository/Software/Programming/zookeeper-3.4.5/bin
-export MONGODB_BIN=~/Repository/Software/Programming/MongoDB/mongodb-osx-x86_64-2.6.1/bin
+# export MONGODB_BIN=~/Repository/Software/Programming/MongoDB/mongodb-osx-x86_64-2.6.1/bin
+export MONGODB_BIN=/opt/mongo/current/bin
 
 export GAM=~/Workspace/Projects/gam
 
