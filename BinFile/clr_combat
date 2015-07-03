@@ -1,11 +1,16 @@
 #!/bin/bash
 
-/opt/mongo/current/bin/mongo gam_local <<\EOF
-db.user_combat.remove({})
-db.user_id_cambatid.remove({})
-EOF
+MONGO='/opt/mongo/current/bin/mongo'
 
-/opt/mongo/current/bin/mongo gam_timers_local <<\EOF
-db.timerqueue.remove({})
-EOF
+$MONGO gam_local --eval "db.user_combat.remove({}); db.user_id_cambatid.remove({});"
 
+if [ "$1" == "1" ]
+then
+	echo
+	echo "*** user_campaign is reserved ***"
+	echo
+else
+$MONGO gam_local --eval "db.user_campaign.remove({});"
+fi  #ifend
+
+$MONGO gam_timers_local --eval "db.timerqueue.remove({});"
