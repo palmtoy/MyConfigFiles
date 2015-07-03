@@ -1,0 +1,11 @@
+#!/bin/bash
+
+/opt/mongo/current/bin/mongo gam_local <<\EOF
+db.user_combat.remove({})
+db.user_id_cambatid.remove({})
+EOF
+
+/opt/mongo/current/bin/mongo gam_timers_local <<\EOF
+db.timerqueue.remove({})
+EOF
+
