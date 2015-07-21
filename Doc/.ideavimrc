@@ -1,0 +1,6 @@
+map <CR> o<ESC>i
+map <S-CR> O<ESC>i
+map <C-n> :noh<CR>
+
+set hlsearch
+
