@@ -28,6 +28,7 @@ alias lm='ll | more'
 alias df='df -h'
 alias du='du -h -d1'
 alias cp='cp -iR'
+alias cat='cat -n'
 
 alias mv='mv -i'
 alias rm='rm -ivr'
