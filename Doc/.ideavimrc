@@ -1,5 +1,5 @@
-map <CR> o<ESC>i
-map <S-CR> O<ESC>i
+map <CR> o<ESC>
+map <S-CR> O<ESC>
 map <C-n> :noh<CR>
 
 set hlsearch
