@@ -16,6 +16,7 @@ alias rud="$GAM/stress_test/reset_mongo_user_data.sh"
 
 alias sshios="cdg && ssh jenkins@10.80.232.15"
 alias sshandroid="cdg && ssh jenkins@10.80.232.16"
+alias sshstable="cdg && ssh jenkins@10.80.200.102"
 alias sshworker="ssh Will@BEI-BXIA01-MAC.corp.kabam.com"
 
 alias ....="cd ../../.."
@@ -25,6 +26,7 @@ alias l="ls"
 alias la="ls -lah"
 alias ll="la"
 alias lm='ll | more'
+alias lsd='ls -d *(/)'
 alias df='df -h'
 alias du='du -h -d1'
 alias cp='cp -iR'
