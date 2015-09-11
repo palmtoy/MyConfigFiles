@@ -15,4 +15,7 @@ fi  #ifend
 
 $MONGO gam_timers_local --eval "db.timerqueue.remove({});" > /dev/null
 
+# del all push msg
+redis-cli KEYS "push_msg*" | awk '{print $1}' | xargs redis-cli DEL {} \;
+
 echo 'Done'

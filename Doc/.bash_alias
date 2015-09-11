@@ -18,6 +18,8 @@ alias rud="$GAM/stress_test/reset_mongo_user_data.sh"
 alias sshios="cdg && ssh jenkins@10.80.232.15"
 alias sshandroid="cdg && ssh jenkins@10.80.232.16"
 alias sshstable="cdg && ssh jenkins@10.80.200.102"
+alias sshawsstable="cdg && ssh zgli@54.149.104.204"
+alias sshawsdev="cdg && ssh zgli@54.69.253.148"
 alias sshworker="ssh Will@BEI-BXIA01-MAC.corp.kabam.com"
 
 alias ....="cd ../../.."
