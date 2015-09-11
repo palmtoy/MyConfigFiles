@@ -11,11 +11,13 @@ then
 	echo
 else
 $MONGO gam_local --eval "db.user_campaign.remove({});" > /dev/null
+$MONGO gam_local --eval "db.user_playstate.remove({});" > /dev/null
 fi  #ifend
 
 $MONGO gam_timers_local --eval "db.timerqueue.remove({});" > /dev/null
 
 # del all push msg
-redis-cli KEYS "push_msg*" | awk '{print $1}' | xargs redis-cli DEL {} \;
+redis-cli KEYS "push_msg*" | awk '{print $1}' | xargs redis-cli DEL {} \ > /dev/null
 
 echo 'Done'
+
