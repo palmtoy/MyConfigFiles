@@ -1,0 +1,69 @@
+#!/bin/bash
+
+GITLIB_SOURCE="/Users/zgli/Workspace/Projects/gam/sparx_gam"
+GITHUB_TARGET="/Users/zgli/Workspace/GitHub/GAM/sparx_gam"
+
+
+shopt -s dotglob nullglob
+
+
+cd $GITLIB_SOURCE
+echo "pwd =" $(pwd)
+mkdir -p ./Backup
+mv ./.[!.]* ./Backup/
+mv ./node_modules ./Backup/
+mv ./sparx ./Backup/
+mv ./Backup ../
+
+
+cd $GITHUB_TARGET
+echo "pwd =" $(pwd)
+git checkout -f
+git reset HEAD
+git checkout lastest_gitlab
+git pull
+
+mkdir -p ./Backup
+mv ./.[!.]* ./Backup/
+mv ./node_modules ./Backup/
+mv ./sparx ./Backup/
+mv ./Backup ../
+rm -rf ./*
+
+
+cp -rf $GITLIB_SOURCE/* ./
+
+
+cd $GITLIB_SOURCE
+echo "pwd =" $(pwd)
+mv ../Backup ./
+cd ./Backup
+echo "pwd =" $(pwd)
+mv ./* ../
+
+cd $GITHUB_TARGET
+echo "pwd =" $(pwd)
+mv ../Backup ./
+cd ./Backup
+echo "pwd =" $(pwd)
+mv ./* ../
+cd ../sparx
+echo "pwd =" $(pwd)
+git checkout -f
+git reset HEAD
+git checkout gam_sparx_v3.0.0
+git pull
+cd ..
+echo "pwd =" $(pwd)
+
+if [ -n "$(git status --porcelain)" ]; then 
+	echo
+  echo "There are changes to commit ..."; 
+	git add --all
+	git commit -m "sync server code from gitlab to github"
+	git push
+else 
+	echo
+  echo "There are NO changes to commit ...";
+fi
+
