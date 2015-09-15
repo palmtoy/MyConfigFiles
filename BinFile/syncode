@@ -61,8 +61,10 @@ echo "pwd =" $(pwd)
 if [ -n "$(git status --porcelain)" ]; then 
 	echo
   echo "There are changes to commit ..."; 
+
+	COMMIT_MSG="Sync sparx_gam(server code) from GitLab to GitHub [$(date +'%T %Y-%m-%d')]"
 	git add --all
-	git commit -m "sync server code from gitlab to github"
+	git commit -m "$COMMIT_MSG"
 	git push
 else 
 	echo
