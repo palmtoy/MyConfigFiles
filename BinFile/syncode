@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# sync sparx_gam(server code) from gitlab to github
+
 GITLIB_SOURCE="/Users/zgli/Workspace/Projects/gam/sparx_gam"
 GITHUB_TARGET="/Users/zgli/Workspace/GitHub/GAM/sparx_gam"
 
