@@ -1,0 +1,30 @@
+#!/bin/sh
+
+TIMERD_PID=$(ps aux | grep node -w | grep 'run.js push' | awk '{print $2}')
+
+if [[ -n "$TIMERD_PID" ]]
+
+then
+
+  NI_STR="/bin/node-inspector"
+
+  NI_INFO=$(ps aux | grep $NI_STR | grep -v "grep")
+
+  if [[ $NI_INFO == *$NI_STR* ]]
+  then
+    NI_PID=$(echo $NI_INFO | awk '{print $2}')
+    kill $NI_PID
+  fi #ifend
+
+  # launch node-inspector
+  node-inspector &
+
+  MY_PWD=`cat ~/MyConfigFiles/.password | base64 --decode`
+  echo $MY_PWD | sudo -S kill -usr1 $TIMERD_PID
+
+else
+
+  echo "admin svr is NOT running ..."
+
+fi #ifend
+
