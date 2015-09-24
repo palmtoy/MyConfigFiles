@@ -4,9 +4,10 @@ NODE_PROCESS_NUM=0
 TURN_NUM=0
 MAX_TURN=16
 MY_PWD=`cat ~/MyConfigFiles/.password | base64 --decode`
-
+NGINX_PID=`cat /var/log/nginx/nginx.pid`
 
 echo $MY_PWD | sudo -S pkill node
+echo $MY_PWD | sudo -S kill $NGINX_PID
 
 until ((NODE_PROCESS_NUM==1||TURN_NUM>MAX_TURN))
 do

@@ -13,6 +13,7 @@ alias cds="cd $GAM/sparx_gam/sparx/scripts"
 alias cdwin="/Volumes/WinShareFolder"
 alias cdjm="/Users/zgli/Repository/Software/Programming/apache-jmeter-2.13"
 alias cdpu="/Users/zgli/Workspace/GitHub/GAM/AWSWatcherSvr/pull_code_update_server"
+alias cdnx="/usr/local/etc/nginx"
 alias ut="$GAM/sparx_gam/sparx/scripts/test.sh"
 alias rud="$GAM/stress_test/reset_mongo_user_data.sh"
 
