@@ -7,7 +7,7 @@ MY_PWD=`cat ~/MyConfigFiles/.password | base64 --decode`
 
 
 cd $GAM/sparx_gam
-echo $MY_PWD | sudo -S ./scripts/startlocal.sh
+echo $MY_PWD | sudo -S ./scripts/local.sh
 sleep 1s
 
 until ((NODE_PROCESS_NUM>10||TURN_NUM>MAX_TURN))
