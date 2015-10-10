@@ -6,7 +6,7 @@ MAX_TURN=16
 MY_PWD=`cat ~/MyConfigFiles/.password | base64 --decode`
 NGINX_PID_FILE='/var/log/nginx/nginx.pid'
 
-echo $MY_PWD | sudo -S pkill node
+echo $MY_PWD | sudo -S killall node
 
 if [[ -f $NGINX_PID_FILE ]]
 then
