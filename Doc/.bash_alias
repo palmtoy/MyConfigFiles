@@ -17,6 +17,7 @@ alias cdnx="/usr/local/etc/nginx"
 alias ut="$GAM/sparx_gam/sparx/scripts/test.sh"
 alias rud="$GAM/stress_test/reset_mongo_user_data.sh"
 
+alias sshvm="ssh will@UbuntuVM"
 alias sshandroid="ssh jenkins@10.80.232.16"
 alias sshdev="ssh jenkins@10.80.232.15"
 alias sshstable="ssh jenkins@10.80.200.102"
