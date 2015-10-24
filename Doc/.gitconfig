@@ -11,8 +11,6 @@
 	quotepath = false
 # [http]
 #   proxy = 123.58.180.183:4152
-[push]
-  default = simple
 [filter "media"]
 	clean = git-media-clean %f
 	smudge = git-media-smudge %f
