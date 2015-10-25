@@ -22,6 +22,7 @@ cd $GITHUB_TARGET
 echo "pwd =" $(pwd)
 git checkout -f
 git reset HEAD
+git submodule update
 git checkout feature/dev
 git pull
 
