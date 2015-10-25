@@ -22,7 +22,7 @@ cd $GITHUB_TARGET
 echo "pwd =" $(pwd)
 git checkout -f
 git reset HEAD
-git checkout lastest_gitlab
+git checkout feature/dev
 git pull
 
 mkdir -p ./Backup
@@ -49,11 +49,15 @@ mv ../Backup ./
 cd ./Backup
 echo "pwd =" $(pwd)
 mv ./* ../
-cd ../sparx
+cd ..
+echo "pwd =" $(pwd)
+git submodule update --init
+
+cd ./sparx
 echo "pwd =" $(pwd)
 git checkout -f
 git reset HEAD
-git checkout gam_sparx_v3.0.0
+git checkout gam_sparx_v3.1
 git pull
 cd ..
 echo "pwd =" $(pwd)
