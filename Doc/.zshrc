@@ -73,6 +73,8 @@ export JAVA_HOME=/Library/Java/Home
 
 setopt HIST_IGNORE_ALL_DUPS
 
+eval "$(grunt --completion=zsh)"
+
 # npm
 . <(npm completion)
 
