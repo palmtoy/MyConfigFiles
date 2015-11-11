@@ -6,7 +6,7 @@ MAX_TURN=16
 MY_PWD=`cat ~/MyConfigFiles/.password | base64 --decode`
 
 
-cd $GAM/sparx_gam
+cd $CASSIE_SERVER/game
 echo $MY_PWD | sudo -S ./scripts/local.sh
 sleep 1s
 

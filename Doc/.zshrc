@@ -55,7 +55,7 @@ export ZOOKEEPER_BIN=~/Repository/Software/Programming/zookeeper-3.4.5/bin
 # export MONGODB_BIN=~/Repository/Software/Programming/MongoDB/mongodb-osx-x86_64-2.6.1/bin
 export MONGODB_BIN=/opt/mongo/current/bin
 
-export GAM=~/Workspace/Projects/gam
+export CASSIE_SERVER=~/Workspace/OSChina/CassieServer
 
 # Customize to your needs...
 export PATH=~/Library/Bin:/usr/local/bin:/usr/local/mysql/bin:/opt/redis/current/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:$ZOOKEEPER_BIN:$MONGODB_BIN:$PATH

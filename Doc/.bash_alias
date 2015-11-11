@@ -6,26 +6,12 @@ alias mtl="multitail /var/log/sparx/admin.log /var/log/sparx/api.log /var/log/sp
 alias ta="tail -f /var/log/sparx/api.log"
 alias tt="tail -f /var/log/sparx/timerd.log"
 
-alias cdg="cd $GAM/sparx_gam"
-alias cdc="cd $GAM/client_gam"
+alias cdg="cd $CASSIE_SERVER/game"
 alias cdl="cd /var/log/sparx"
-alias cds="cd $HOME/Workspace/Projects/SparxProjects/sparx-MaximGarber-GAM"
-alias cdpre="cd $HOME/Workspace/Projects/preview4gam"
-alias cdwin="/Volumes/WinShareFolder"
-alias cdjm="cd $HOME/Repository/Software/Programming/apache-jmeter-2.13"
-alias cdpu="cd $HOME/Workspace/GitHub/GAM/AWSWatcherSvr/pull_code_update_server"
 alias cdnx="/usr/local/etc/nginx"
-alias ut="$GAM/sparx_gam/sparx/scripts/test.sh"
-alias rud="$GAM/stress_test/reset_mongo_user_data.sh"
+alias rud="$CASSIE_SERVER/stress_test/reset_mongo_user_data.sh"
 
 alias sshvm="ssh will@UbuntuVM"
-alias sshandroid="ssh jenkins@10.80.232.16"
-alias sshdev="ssh jenkins@10.80.232.15"
-alias sshstable="ssh jenkins@10.80.200.102"
-alias sshawsdev="ssh zgli@54.69.253.148"
-alias sshawsstable="ssh zgli@54.149.104.204"
-alias sshawsdemo="ssh zgli@52.26.139.76"
-alias sshworker="ssh Will@BEI-BXIA01-MAC.corp.kabam.com"
 
 alias ....="cd ../../.."
 alias .....="cd ../../../.."
@@ -61,7 +47,6 @@ alias gsu='git submodule update'
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-alias mongod='mongod --dbpath ~/Downloads/Software/Programming/MongoDB/mongodb-osx-x86_64-2.6.1/data/db'
 alias rc='redis-cli'
 
 alias myip='ifconfig | grep inet\ '
