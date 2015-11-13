@@ -2,9 +2,10 @@
 alias reloadzsh="exec zsh && source ~/.zshrc"
 
 alias psn="ps aux | grep node -w"
-alias mtl="multitail /var/log/sparx/admin.log /var/log/sparx/api.log /var/log/sparx/timerd.log"
+alias mtl="multitail /var/log/sparx/admin.log /var/log/sparx/api.log /var/log/sparx/push.log"
 alias ta="tail -f /var/log/sparx/api.log"
 alias tt="tail -f /var/log/sparx/timerd.log"
+alias resvr="curl http://localhost:12000/restart?hard=1"
 
 alias cdg="cd $CASSIE_SERVER/game"
 alias cdl="cd /var/log/sparx"
