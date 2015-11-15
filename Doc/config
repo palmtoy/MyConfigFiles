@@ -6,6 +6,13 @@ Host vm
 	User will
 
 
+
+Host uhome
+	HostName 192.168.1.117
+	Port 22
+	User will
+
+
 Host worker
 	HostName BEI-BXIA01-MAC.corp.kabam.com
 	Port 22
