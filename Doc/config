@@ -1,26 +1,12 @@
 # cp or (ln -s) me to ~/.ssh/
 
-Host vm
-	HostName UbuntuVM
-	Port 22
-	User will
-
-
-
 Host uhome
 	HostName 192.168.1.117
 	Port 22
 	User will
 
-
-Host worker
-	HostName BEI-BXIA01-MAC.corp.kabam.com
+Host uthink
+	HostName 192.168.1.113
 	Port 22
-	User Will
-
-
-Host dev
-	HostName 10.80.232.15
-	Port 22
-	User jenkins
+	User will
 
