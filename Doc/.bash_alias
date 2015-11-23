@@ -2,6 +2,8 @@
 alias reloadzsh="exec zsh && source ~/.zshrc"
 
 alias psn="ps aux | grep node -w"
+alias psm="ps aux | grep mongo -w"
+alias psr="ps aux | grep redis -w"
 alias mtl="multitail /var/log/sparx/admin.log /var/log/sparx/api.log /var/log/sparx/timerd.log"
 alias tadm="tail -f /var/log/sparx/admin.log"
 alias ta="tail -f /var/log/sparx/api.log"
