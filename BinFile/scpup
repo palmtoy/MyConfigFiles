@@ -1,1 +1,1 @@
-scp -P22 "$1" will@UbuntuVM:~/Downloads/FileFromMac/
+scp -P22 "$1" will@UbuntuVM:~/Desktop/FileFromMac/
