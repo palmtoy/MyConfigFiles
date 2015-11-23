@@ -23,7 +23,7 @@ echo "pwd =" $(pwd)
 git checkout -f
 git reset HEAD
 git submodule update
-git checkout feature/dev
+git checkout dev_backend
 git pull
 
 mkdir -p ./Backup
@@ -58,7 +58,7 @@ cd ./sparx
 echo "pwd =" $(pwd)
 git checkout -f
 git reset HEAD
-git checkout gam_sparx_v3.1
+git checkout gam_sparx_v4.1
 git pull
 cd ..
 echo "pwd =" $(pwd)
