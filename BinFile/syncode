@@ -23,7 +23,7 @@ echo "pwd =" $(pwd)
 git checkout -f
 git reset HEAD
 git submodule update
-git checkout dev_backend
+git checkout lastest_gitlab
 git pull
 
 mkdir -p ./Backup
