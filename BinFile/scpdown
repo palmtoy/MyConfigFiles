@@ -1,0 +1,1 @@
+scp -P22 will@UbuntuVM:"$1" ~/Desktop/FileFromUbuntuVM/
