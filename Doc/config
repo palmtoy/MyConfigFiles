@@ -1,12 +1,7 @@
 # cp or (ln -s) me to ~/.ssh/
 
 Host uhome
-	HostName 192.168.1.117
-	Port 22
-	User will
-
-Host uthink
-	HostName 192.168.1.113
+	HostName 192.168.1.119
 	Port 22
 	User will
 
