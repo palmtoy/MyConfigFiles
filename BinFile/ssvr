@@ -7,7 +7,7 @@ MAX_TURN=16
 MY_PWD=`cat ~/MyConfigFiles/.password | base64 --decode`
 
 
-cd $CASSIE_SERVER/game
+cd $CASSIE_SERVER
 echo $MY_PWD | sudo -S ./scripts/local.sh
 sleep 1s
 
