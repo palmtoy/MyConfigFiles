@@ -1,7 +1,0 @@
-# cp or (ln -s) me to ~/.ssh/
-
-Host uhome
-	HostName 192.168.1.119
-	Port 22
-	User will
-
