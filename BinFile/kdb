@@ -1,0 +1,21 @@
+#!/bin/bash
+
+MONGO_PROCESS_NUM=0
+TURN_NUM=0
+MAX_TURN=16
+
+MY_PWD=`cat ~/MyConfigFiles/.password | base64 --decode`
+
+echo $MY_PWD | sudo -S pkill mongo
+echo $MY_PWD | sudo -S pkill redis
+
+until ((MONGO_PROCESS_NUM==1||TURN_NUM>MAX_TURN))
+do
+  sleep 0.2s
+  MONGO_PROCESS_NUM=`ps aux | grep mongo -w | wc -l`
+  let ++TURN_NUM
+done
+
+ps aux | grep mongo -w
+ps aux | grep redis -w
+

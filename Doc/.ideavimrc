@@ -2,5 +2,7 @@ map <CR> o<ESC>
 map <S-CR> O<ESC>
 map <C-n> :noh<CR>
 
+map <C-h> <C-W>h
+
 set hlsearch
 

@@ -1,0 +1,6 @@
+#!/bin/bash
+
+pushd ~/Sites
+http-server -p 9090 > /dev/null &
+popd
+

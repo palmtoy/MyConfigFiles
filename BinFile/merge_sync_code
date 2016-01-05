@@ -1,0 +1,113 @@
+#!/bin/bash
+
+# sync sparx_gam(server code) from gitlab to github
+
+GITLIB_SOURCE="/Users/will/Workspace/Projects/preview4gam/sparx_gam"
+GITHUB_TARGET="/Users/will/Workspace/GitHub/GAM/sparx_gam-AWS"
+
+echo "GITLIB_SOURCE =>" $GITLIB_SOURCE
+echo "GITHUB_TARGET =>" $GITHUB_TARGET
+
+# GITLIB_SOURCE: merge $MERGE_FROM_BRANCH into $MERGE_TO_BRANCH
+MERGE_FROM_BRANCH="feature/m12_stable"
+MERGE_TO_BRANCH="feature/env_dev_m12"
+
+echo "MERGE_FROM_BRANCH =>" $MERGE_FROM_BRANCH
+echo "MERGE_TO_BRANCH =>" $MERGE_TO_BRANCH
+
+cd $GITLIB_SOURCE
+echo "pwd =" $(pwd)
+git checkout -f
+git reset HEAD
+git submodule update
+git checkout $MERGE_FROM_BRANCH
+git pull
+
+git checkout $MERGE_TO_BRANCH
+git pull
+
+git merge $MERGE_FROM_BRANCH --no-commit --no-ff
+
+if [ -n "$(git status --porcelain)" ]; then
+	echo
+	echo "MergeCode: There are changes to commit ...";
+	MERGE_COMMIT_MSG="Merge code from $MERGE_FROM_BRANCH to $MERGE_TO_BRANCH [$(date +'%T %Y-%m-%d')]"
+	git add --all
+	git commit -m "$MERGE_COMMIT_MSG"
+	# git push
+else
+	echo
+	echo "MergeCode: There are NO changes to commit ...";
+fi
+
+######################################################################
+
+shopt -s dotglob nullglob
+
+cd $GITLIB_SOURCE
+echo "pwd =" $(pwd)
+mkdir -p ./Backup
+mv ./.[!.]* ./Backup/
+mv ./node_modules ./Backup/
+mv ./sparx ./Backup/
+mv ./Backup ../
+
+
+cd $GITHUB_TARGET
+echo "pwd =" $(pwd)
+git checkout -f
+git reset HEAD
+git submodule update
+git checkout feature/env_dev_m12
+git pull
+
+mkdir -p ./Backup
+mv ./.[!.]* ./Backup/
+mv ./node_modules ./Backup/
+mv ./sparx ./Backup/
+mv ./Backup ../
+rm -rf ./*
+
+
+cp -rf $GITLIB_SOURCE/* ./
+
+
+cd $GITLIB_SOURCE
+echo "pwd =" $(pwd)
+mv ../Backup ./
+cd ./Backup
+echo "pwd =" $(pwd)
+mv ./* ../
+
+cd $GITHUB_TARGET
+echo "pwd =" $(pwd)
+mv ../Backup ./
+cd ./Backup
+echo "pwd =" $(pwd)
+mv ./* ../
+cd ..
+echo "pwd =" $(pwd)
+git submodule update --init
+
+cd ./sparx
+echo "pwd =" $(pwd)
+git checkout -f
+git reset HEAD
+git checkout gam_sparx_v4.2.0
+git pull
+cd ..
+echo "pwd =" $(pwd)
+
+if [ -n "$(git status --porcelain)" ]; then 
+	echo
+  echo "SyncCode: There are changes to commit ...";
+
+	SYNC_COMMIT_MSG="Sync sparx_gam(server code) from GitLab to GitHub [$(date +'%T %Y-%m-%d')]"
+	git add --all
+	git commit -m "$SYNC_COMMIT_MSG"
+	# git push
+else 
+	echo
+  echo "SyncCode: There are NO changes to commit ...";
+fi
+

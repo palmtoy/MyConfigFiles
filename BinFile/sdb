@@ -1,0 +1,25 @@
+#!/bin/bash
+
+MONGO_PROCESS_NUM=0
+MONGO_THRESHOLD=3
+TURN_NUM=0
+MAX_TURN=16
+MY_PWD=`cat ~/MyConfigFiles/.password | base64 --decode`
+
+
+cd $GAM/sparx_gam
+echo $MY_PWD | sudo -S ./scripts/restartdb.sh
+sleep 1s
+
+until ((MONGO_PROCESS_NUM>=MONGO_THRESHOLD||TURN_NUM>=MAX_TURN))
+do
+  sleep 0.2s
+  MONGO_PROCESS_NUM=`ps aux | grep -v "grep" | grep "mongo" -w | wc -l`
+  let ++TURN_NUM
+done
+
+echo ""
+sleep 1s
+ps aux | grep -v "grep" | grep "mongo" -w
+ps aux | grep -v "grep" | grep "redis" -w
+

@@ -18,10 +18,12 @@ then
 
   # launch node-inspector
   node-inspector &
+	sleep 1s
 
   MY_PWD=`cat ~/MyConfigFiles/.password | base64 --decode`
   echo $MY_PWD | sudo -S kill -usr1 $API2_PID
 
+	/usr/bin/open -a "/Applications/Google Chrome.app" 'http://127.0.0.1:8080/debug?port=5858'
 else
 
   echo "api2 svr is NOT running ..."
