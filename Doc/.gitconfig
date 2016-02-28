@@ -14,5 +14,8 @@
 	smudge = git-media-smudge %f
 [diff]
 	tool = meld
+[alias]
+	diffall = git-diffall
 [push]
 	default = simple
+
