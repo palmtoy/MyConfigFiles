@@ -33,6 +33,7 @@ let g:rehash256 = 1
 " colorscheme molokai
 set background=dark
 
+set t_Co=256
 let g:Powerline_symbols = 'fancy'
 set fillchars+=stl:\ ,stlnc:\
 
