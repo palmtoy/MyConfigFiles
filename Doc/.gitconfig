@@ -1,13 +1,13 @@
 [user]
-	name = palmtoy(will)
-	email = palmtoy@gmail.com
+	name = lzg
+	email = lzg@pwrd.com
 [color]
 	diff = auto
 	branch = auto
 	status = auto
 	ui = auto
 [core]
-	excludesfile = ~/Workspace/GitHub/gitignore/Node.gitignore
+	excludesfile = ~/Workspace/GitHub/gitignore/Java.gitignore
 	quotepath = false
 [filter "media"]
 	clean = git-media-clean %f

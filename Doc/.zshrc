@@ -49,16 +49,18 @@ DISABLE_AUTO_UPDATE="true" # for oh-my-zsh config
 source $ZSH/oh-my-zsh.sh
 unsetopt share_history # setopt no_share_history
 
-source $HOME/.nvm/nvm.sh # This loads NVM
-
 export ZOOKEEPER_BIN=~/Repository/Software/Programming/zookeeper-3.4.5/bin
 # export MONGODB_BIN=~/Repository/Software/Programming/MongoDB/mongodb-osx-x86_64-2.6.1/bin
 export MONGODB_BIN=/opt/mongo/current/bin
 
 export CASSIE_SERVER=~/Workspace/OSChina/CassieServer
 
+export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home
+
 # Customize to your needs...
 export PATH=~/Library/Bin:/usr/local/bin:/usr/local/mysql/bin:/opt/redis/current/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:$ZOOKEEPER_BIN:$MONGODB_BIN:$PATH
+export PATH=$HOME/Downloads/Software/Java/apache-maven-3.3.9/bin:$PATH
+export CLASSPATH=.:./target/classes:$JAVA_HOME/lib/dt.jar:$JAVA_HOME/lib/tools.jar:$HOME/.m2/repository/io/netty/netty-all/4.1.9.Final/netty-all-4.1.9.Final.jar
 
 . $CONF_DIR/.bash_alias
 
@@ -69,11 +71,11 @@ fpath=(/usr/local/share/zsh-completions $fpath)
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 export ZSH_HIGHLIGHT_HIGHLIGHTERS_DIR=/usr/local/share/zsh-syntax-highlighting/highlighters
 
-export JAVA_HOME=/Library/Java/Home
-
 setopt HIST_IGNORE_ALL_DUPS
 
 eval "$(grunt --completion=zsh)"
+
+source $HOME/.nvm/nvm.sh # This loads NVM
 
 # npm
 . <(npm completion)
