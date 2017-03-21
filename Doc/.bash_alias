@@ -40,7 +40,7 @@ alias ubz2tar='tar -jvxf'
 alias ttar='tar -tvf'
 alias man='man -a'
 alias vi='vim'
-alias mvi='mvim'
+alias mvi='gvim'
 
 alias gitk='/usr/local/git/bin/gitk'
 alias gk='gitk'
@@ -55,3 +55,8 @@ alias gsu='git submodule update'
 alias rc='redis-cli'
 
 alias myip='ifconfig | grep inet\ '
+
+alias j='java'
+alias m='mvn'
+alias mp='mvn package'
+
