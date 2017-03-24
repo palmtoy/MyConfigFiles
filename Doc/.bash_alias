@@ -2,7 +2,7 @@
 alias reloadzsh="exec zsh && source ~/.zshrc"
 
 alias psn="ps aux | grep node -w"
-alias psm="ps aux | grep mongo -w"
+alias psm="ps aux | grep mongod -w"
 alias psr="ps aux | grep redis -w"
 alias mtl="multitail /var/log/sparx/admin.log /var/log/sparx/api.log /var/log/sparx/push.log"
 alias psmr="psm; psr"
@@ -59,4 +59,6 @@ alias myip='ifconfig | grep inet\ '
 alias j='java'
 alias m='mvn'
 alias mp='mvn package'
+
+alias rdb='pkill mongo; sleep 3; rm -rf /data/db/mongod.lock; sleep 3; mongod --dbpath /data/db &;'
 

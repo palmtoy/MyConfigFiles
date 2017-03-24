@@ -57,11 +57,12 @@ export CASSIE_SERVER=~/Workspace/OSChina/CassieServer
 export GAME_MAJOR=$HOME/Workspace/LabOfGit/game-major
 
 export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home
+export M2_REPO=$HOME/.m2/repository
 
 # Customize to your needs...
 export PATH=~/Library/Bin:/usr/local/bin:/usr/local/mysql/bin:/opt/redis/current/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:$ZOOKEEPER_BIN:$MONGODB_BIN:$PATH
-export PATH=$HOME/Downloads/Software/Java/apache-maven-3.3.9/bin:$PATH
-export CLASSPATH=.:./target/classes:$JAVA_HOME/lib/dt.jar:$JAVA_HOME/lib/tools.jar:$HOME/.m2/repository/io/netty/netty-all/4.1.9.Final/netty-all-4.1.9.Final.jar
+export PATH=$HOME/Repository/Software/Java/apache-maven-3.3.9/bin:$PATH
+export CLASSPATH=.:./target/classes:$JAVA_HOME/lib/dt.jar:$JAVA_HOME/lib/tools.jar:$M2_REPO/org/mongodb/mongo-java-driver/3.4.2/mongo-java-driver-3.4.2.jar:$M2_REPO/io/netty/netty-all/4.1.9.Final/netty-all-4.1.9.Final.jar
 
 . $CONF_DIR/.bash_alias
 
