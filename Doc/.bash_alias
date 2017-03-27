@@ -18,6 +18,9 @@ alias cdnx="/usr/local/etc/nginx"
 
 alias sshvm="ssh will@UbuntuVM"
 
+alias sshgitlab="ssh slggitlab@10.12.7.92"
+alias sshdev="ssh slgdev@10.12.7.93"
+
 alias ....="cd ../../.."
 alias .....="cd ../../../.."
 alias cd-="cd -"
