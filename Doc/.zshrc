@@ -54,11 +54,12 @@ source $HOME/.nvm/nvm.sh # This loads NVM
 export ZOOKEEPER_BIN=~/Repository/Software/Programming/zookeeper-3.4.5/bin
 # export MONGODB_BIN=~/Repository/Software/Programming/MongoDB/mongodb-osx-x86_64-2.6.1/bin
 export MONGODB_BIN=/opt/mongo/current/bin
+export MAVEN_BIN=$HOME/Repository/Software/Java/apache-maven-3.3.9/bin
 
 export CASSIE_SERVER=~/Workspace/OSChina/CassieServer
 
 # Customize to your needs...
-export PATH=~/Library/Bin:/usr/local/bin:/usr/local/mysql/bin:/opt/redis/current/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:$ZOOKEEPER_BIN:$MONGODB_BIN:$PATH
+export PATH=~/Library/Bin:/usr/local/bin:/usr/local/mysql/bin:/opt/redis/current/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:$ZOOKEEPER_BIN:$MONGODB_BIN:$MAVEN_BIN:$PATH
 
 . $CONF_DIR/.bash_alias
 
@@ -69,7 +70,9 @@ fpath=(/usr/local/share/zsh-completions $fpath)
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 export ZSH_HIGHLIGHT_HIGHLIGHTERS_DIR=/usr/local/share/zsh-syntax-highlighting/highlighters
 
-export JAVA_HOME=/Library/Java/Home
+# export JAVA_HOME=/Library/Java/Home
+export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home
+export CLASSPATH=.:./target/classes:$JAVA_HOME/lib/dt.jar:$JAVA_HOME/lib/tools.jar
 
 setopt HIST_IGNORE_ALL_DUPS
 
