@@ -1,6 +1,7 @@
 # aliases
 alias reloadzsh="exec zsh && source ~/.zshrc"
 
+alias pss="ps aux | grep ServerLauncher"
 alias psn="ps aux | grep node -w"
 alias psm="ps aux | grep mongod -w"
 alias psr="ps aux | grep redis -w"
