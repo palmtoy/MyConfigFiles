@@ -1,21 +1,13 @@
 # aliases
-alias reloadzsh="exec zsh && source ~/.zshrc"
+alias reloadbash="source /e/GitHub/MyConfigFiles/Doc/.bashrc"
 
 alias pss="ps aux | grep ServerLauncher"
 alias psn="ps aux | grep node -w"
 alias psm="ps aux | grep mongod -w"
 alias psr="ps aux | grep redis -w"
-alias mtl="multitail /var/log/sparx/admin.log /var/log/sparx/api.log /var/log/sparx/push.log"
 alias psmr="psm; psr"
-alias tadm="tail -f /var/log/sparx/admin.log"
-alias ta="tail -f /var/log/sparx/api.log"
-alias tp="tail -f /var/log/sparx/push.log"
-alias tt="tail -f /var/log/sparx/timerd.log"
-alias resvr="curl http://localhost:12000/restart?hard=1"
 
 alias cdg="cd $GAME_MAJOR"
-alias cdl="cd /var/log/sparx"
-alias cdnx="/usr/local/etc/nginx"
 
 alias sshvm="ssh will@UbuntuVM"
 
@@ -33,7 +25,6 @@ alias lsd='ls -d *(/)'
 alias df='df -h'
 alias du='du -h -d1'
 alias cp='cp -iR'
-# alias cat='cat -n'
 
 alias mv='mv -i'
 alias rm='rm -ivr'
@@ -52,13 +43,9 @@ alias ga='git add --ignore-removal'
 alias gsu='git submodule update'
 
 
-# Example aliases
-# alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
-
 alias rc='redis-cli'
 
-alias myip='ifconfig | grep inet\ '
+alias myip='ipconfig | grep inet\ '
 
 alias j='java'
 alias m='mvn'
