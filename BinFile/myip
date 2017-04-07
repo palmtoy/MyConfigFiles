@@ -1,0 +1,1 @@
+ifconfig | grep inet\ 10. | awk '{print $2}' | tr -d '\n' | pbcopy && pbpaste
