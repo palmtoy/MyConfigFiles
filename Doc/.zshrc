@@ -48,6 +48,7 @@ plugins=(git github osx node npm nvm brew colored-man colorize command-not-found
 DISABLE_AUTO_UPDATE="true" # for oh-my-zsh config
 source $ZSH/oh-my-zsh.sh
 unsetopt share_history # setopt no_share_history
+HOMEBREW_NO_AUTO_UPDATE="true" # for homebrew
 
 export ZOOKEEPER_BIN=~/Repository/Software/Programming/zookeeper-3.4.5/bin
 # export MONGODB_BIN=~/Repository/Software/Programming/MongoDB/mongodb-osx-x86_64-2.6.1/bin
