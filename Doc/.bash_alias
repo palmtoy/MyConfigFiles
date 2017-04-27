@@ -8,6 +8,8 @@ alias psr="ps aux | grep redis -w"
 alias psmr="psm; psr"
 
 alias cdg="cd $GAME_MAJOR"
+alias cdc="cd /e/GitLab/perfect_slg_demo/client/game/SLG_Demo"
+alias cde="cd /e/GitHub/Exercise/Java"
 
 alias sshvm="ssh will@UbuntuVM"
 
