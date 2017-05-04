@@ -101,3 +101,6 @@ if ! shopt -q login_shell ; then # We're not a login shell
 fi
 # vim:ts=4:sw=4
 
+
+source $HOME/.nvm/nvm.sh # This loads NVM
+

@@ -8,8 +8,8 @@ alias psr="ps aux | grep redis -w"
 alias psmr="psm; psr"
 
 alias cdg="cd $GAME_MAJOR"
-alias cdc="cd /e/GitLab/perfect_slg_demo/client/game/SLG_Demo"
-alias cde="cd /e/GitHub/Exercise/Java"
+alias cdc="cd $HOME/GitLab/perfect_slg_demo/client/game/SLG_Demo"
+alias cde="cd $HOME/GitHub/Exercise/Java"
 
 alias sshvm="ssh will@UbuntuVM"
 
@@ -54,7 +54,7 @@ alias m='mvn'
 alias mp='mvn package'
 
 
-alias rmongo='mongod --dbpath /e/data/db > /e/data/tmp/log/mongo.log&'
-alias rredis='redis-server > /e/data/tmp/log/redis.log&'
+alias rmongo='mongod --dbpath /data/db > /data/tmp/log/mongo.log&'
+alias rredis='redis-server > /data/tmp/log/redis.log&'
 alias rdb='rmongo'
 
