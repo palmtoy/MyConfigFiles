@@ -1,6 +1,6 @@
 CONF_DIR=$HOME/GitHub/MyConfigFiles/Doc
 MY_CONF_DIR=$CONF_DIR
-GAME_MAJOR=$HOME/GitLab/game-major
+GAME_MAJOR=$HOME/LabOfGit/slg-server/game-major
 
 
 export LC_ALL=en_US.UTF-8
@@ -103,4 +103,8 @@ fi
 
 
 source $HOME/.nvm/nvm.sh # This loads NVM
+
+export M2_HOME=/usr/local/bin/maven
+export M2_REPO=$HOME/.m2/repository
+export PATH=$M2_HOME/bin:$PATH
 
