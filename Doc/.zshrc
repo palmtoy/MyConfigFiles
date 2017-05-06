@@ -57,6 +57,7 @@ export MONGODB_BIN=/opt/mongo/current/bin
 export MAVEN_BIN=$HOME/Repository/Software/Java/apache-maven-3.3.9/bin
 
 export CASSIE_SERVER=~/Workspace/OSChina/CassieServer
+export GROOVY_HOME=/usr/local/opt/groovy/libexec
 
 # Customize to your needs...
 export PATH=~/Library/Bin:/usr/local/bin:/usr/local/mysql/bin:/opt/redis/current/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:$ZOOKEEPER_BIN:$MONGODB_BIN:$MAVEN_BIN:$PATH
