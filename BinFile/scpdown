@@ -1,1 +1,2 @@
-scp -P22 will@UbuntuVM:"$1" ~/Desktop/FileFromUbuntuVM/
+scp -P20022 lzg@10.5.32.150:~/FileWithMac/"$1" ~/FileWithCentOS/
+
