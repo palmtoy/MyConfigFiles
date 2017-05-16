@@ -10,6 +10,9 @@ alias psmr="psm; psr"
 alias cdg="cd $GAME_MAJOR"
 alias cdc="cd $HOME/GitLab/perfect_slg_demo/client/game/SLG_Demo"
 alias cde="cd $HOME/GitHub/Exercise/Java"
+alias tg="tail -f /data/slg-release/game_server_1/logs/game.log"
+alias tl="tail -f /data/slg-release/login_server_1/logs/login.log"
+alias tw="tail -f /data/slg-release/world_server/logs/world.log"
 
 alias sshvm="ssh will@UbuntuVM"
 

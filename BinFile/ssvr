@@ -1,24 +1,6 @@
 #!/bin/bash
 
-NODE_PROCESS_NUM=0
-NODE_THRESHOLD=9
-TURN_NUM=0
-MAX_TURN=16
-MY_PWD=`cat ~/MyConfigFiles/.password | base64 --decode`
+cd $HOME/LabOfGit/slg-server/game-major/deploy-tools/scripts
 
-
-cd $CASSIE_SERVER
-echo $MY_PWD | sudo -S ./scripts/local.sh
-sleep 1s
-
-until ((NODE_PROCESS_NUM>=NODE_THRESHOLD||TURN_NUM>=MAX_TURN))
-do
-  sleep 0.2s
-  NODE_PROCESS_NUM=`ps aux | grep -v "grep" | grep "node" -w | wc -l`
-  let ++TURN_NUM
-done
-
-echo ""
-sleep 1s
-ps aux | grep -v "grep" | grep "node" -w
+./ssvr.sh
 
