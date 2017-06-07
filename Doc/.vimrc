@@ -26,7 +26,12 @@ set laststatus=2
 let g:solarized_termtrans = 1
 let g:solarized_visibility = "high"
 let g:solarized_contrast = "high"
-colorscheme solarized
+" colorscheme solarized
+if $_ != 'git commit'
+	colorscheme solarized
+endif
+
+
 " Molokai options 
 let g:molokai_original = 1
 let g:rehash256 = 1
