@@ -14,6 +14,7 @@ set smarttab
 
 filetype plugin on
 
+call pathogen#infect()
 filetype plugin indent on
 
 syntax on
@@ -25,6 +26,7 @@ set laststatus=2
 let g:solarized_termtrans = 1
 let g:solarized_visibility = "high"
 let g:solarized_contrast = "high"
+colorscheme solarized
 " Molokai options 
 let g:molokai_original = 1
 let g:rehash256 = 1
