@@ -49,6 +49,8 @@ DISABLE_AUTO_UPDATE="true" # for oh-my-zsh config
 source $ZSH/oh-my-zsh.sh
 unsetopt share_history # setopt no_share_history
 
+export GOPATH=/home/lzg/Exercise/Go
+
 export ZOOKEEPER_BIN=~/Repository/Software/Programming/zookeeper-3.4.5/bin
 # export MONGODB_BIN=~/Repository/Software/Programming/MongoDB/mongodb-osx-x86_64-2.6.1/bin
 export MONGODB_BIN=/opt/mongo/current/bin
