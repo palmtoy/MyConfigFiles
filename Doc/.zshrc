@@ -76,8 +76,6 @@ export ZSH_HIGHLIGHT_HIGHLIGHTERS_DIR=$HOME/.oh-my-zsh/custom/plugins/zsh-syntax
 
 setopt HIST_IGNORE_ALL_DUPS
 
-eval "$(grunt --completion=zsh)"
-
 source $HOME/.nvm/nvm.sh # This loads NVM
 
 # npm
