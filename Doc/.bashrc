@@ -3,7 +3,7 @@ MY_CONF_DIR=$CONF_DIR
 GAME_MAJOR=$HOME/LabOfGit/slg-server/game-major
 
 
-export LC_ALL=en_US.UTF-8
+# export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 
 
