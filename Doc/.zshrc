@@ -57,7 +57,7 @@ export MONGODB_BIN=/opt/mongo/current/bin
 
 export CASSIE_SERVER=~/Workspace/OSChina/CassieServer
 
-export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home
+export JAVA_HOME=/usr/java/jdk1.8.0_131
 export M2_REPO=$HOME/.m2/repository
 
 # Customize to your needs...
