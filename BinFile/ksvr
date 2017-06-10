@@ -1,6 +1,8 @@
 #!/bin/bash
 
+MY_PWD=`cat ~/MyConfigFiles/.password | base64 --decode`
+
 cd $HOME/LabOfGit/slg-server/game-major/deploy-tools/scripts
 
-./ksvr.sh
+echo $MY_PWD | sudo -S ./ksvr.sh
 
