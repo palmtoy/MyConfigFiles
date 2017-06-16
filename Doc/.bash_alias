@@ -11,6 +11,7 @@ alias cdg="cd /var/lib/jenkins/workspace/Pull-code-and-update-server/LabOfGit/sl
 alias cdc="cd $HOME/GitLab/perfect_slg_demo/client/game/SLG_Demo"
 alias cde="cd $HOME/GitHub/Exercise/Java"
 alias cdj="/var/lib/jenkins/workspace/Pull-code-and-update-server"
+alias cda="cd $HOME/LabOfGit/AWSWatcherSvr"
 alias tg="tail -f /var/lib/jenkins/workspace/Pull-code-and-update-server/DeployData/slg-release/game_server_1/logs/game.log"
 alias tl="tail -f /var/lib/jenkins/workspace/Pull-code-and-update-server/DeployData/slg-release/login_server_1/logs/login.log"
 alias tw="tail -f /var/lib/jenkins/workspace/Pull-code-and-update-server/DeployData/slg-release/world_server/logs/world.log"
