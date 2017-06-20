@@ -1,0 +1,9 @@
+#!/bin/bash
+
+MONGO='/opt/mongo/current/bin/mongo'
+
+pushd /Users/lzg/Workspace/LabOfGit/slg-server/game-major
+	$MONGO slg < dbInit.js
+	ksvr
+popd
+

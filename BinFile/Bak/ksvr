@@ -1,0 +1,25 @@
+#!/bin/bash
+
+NODE_PROCESS_NUM=0
+TURN_NUM=0
+MAX_TURN=16
+MY_PWD=`cat ~/MyConfigFiles/.password | base64 --decode`
+NGINX_PID_FILE='/var/log/nginx/nginx.pid'
+
+echo $MY_PWD | sudo -S killall node
+
+if [[ -f $NGINX_PID_FILE ]]
+then
+	NGINX_PID=`cat $NGINX_PID_FILE`
+	echo $MY_PWD | sudo -S kill $NGINX_PID
+fi #ifend
+
+until ((NODE_PROCESS_NUM==1||TURN_NUM>MAX_TURN))
+do
+  sleep 0.2s
+  NODE_PROCESS_NUM=`ps aux | grep node -w | wc -l`
+  let ++TURN_NUM
+done
+
+ps aux | grep node -w
+
