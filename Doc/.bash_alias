@@ -52,7 +52,7 @@ alias gsu='git submodule update'
 
 alias rc='redis-cli'
 
-alias myip='ipconfig | grep inet\ '
+alias myip='ifconfig | grep inet\ '
 
 alias j='java'
 alias m='mvn'
