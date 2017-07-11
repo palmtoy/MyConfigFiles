@@ -17,7 +17,8 @@ alias cdg="cd $GAME_MAJOR"
 alias cdc="cd ~/LabOfGit/perfect_slg_demo"
 alias cde="cd ~/Exercise"
 alias cdl="cd /var/log/sparx"
-alias cdnx="/usr/local/etc/nginx"
+alias cdnx="cd /usr/local/etc/nginx"
+alias cdt="cd /usr/local/Cellar/tomcat/8.5.16/libexec"
 
 alias sshvm="ssh will@UbuntuVM"
 
