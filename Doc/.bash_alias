@@ -21,6 +21,7 @@ alias cdnx="cd /usr/local/etc/nginx"
 alias cdt="cd /usr/local/Cellar/tomcat/8.5.16/libexec"
 
 alias sshvm="ssh will@UbuntuVM"
+alias sshgame="ssh root@10.3.247.137"
 
 alias sshgitlab="ssh slggitlab@10.12.7.92"
 alias sshdev="ssh slgdev@10.12.7.93"
