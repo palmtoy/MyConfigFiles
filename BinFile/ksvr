@@ -1,13 +1,24 @@
 #!/bin/bash
 
-echo
-echo 'start to stop servers ...'
-
-SERVERS_PID=$(ps aux | grep -v "grep" | grep ServerLauncher | awk '{print $2}')
-
-for tmpPid in ${SERVERS_PID};
+SERVER_PNAMES=("GameServerLauncher" "LoginServerLauncher" "WorldServerLauncher")
+ONETIME_FLAG=true
+for TMP_NAME in ${SERVER_PNAMES[@]}
 do
-	kill $tmpPid
-  echo 'stop' $tmpPid, done.;
-done;
+	SERVER_PID=$(ps aux | grep -v "grep" | grep $TMP_NAME | awk '{print $2}')
+	TMP_LEN=${#SERVER_PID}
+	if [ $TMP_LEN -gt 0 ]
+	then
+		if [ $ONETIME_FLAG = true ]
+		then
+			ONETIME_FLAG=false
+			echo 'start to stop servers ...'
+		fi
+		for TMP_PID in ${SERVER_PID[@]}
+		do
+			kill $TMP_PID
+			echo $TMP_PID 'stop' $TMP_NAME, done.
+			sleep 1
+		done
+	fi
+done
 
