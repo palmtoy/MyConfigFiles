@@ -54,9 +54,6 @@ export ZOOKEEPER_BIN=~/Repository/Software/Programming/zookeeper-3.4.5/bin
 # export MONGODB_BIN=~/Repository/Software/Programming/MongoDB/mongodb-osx-x86_64-2.6.1/bin
 export MONGODB_BIN=/opt/mongo/current/bin
 
-export CASSIE_SERVER=~/Workspace/OSChina/CassieServer
-export GAME_MAJOR=$HOME/Workspace/LabOfGit/slg-server/game-major
-
 export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home
 export M2_REPO=$HOME/.m2/repository
 
