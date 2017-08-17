@@ -7,7 +7,7 @@ alias psm="ps aux | grep mongod -w"
 alias psr="ps aux | grep redis -w"
 alias psmr="psm; psr"
 
-alias cdg="cd $GAME_MAJOR"
+alias cdg="cd /e/GitLab/slg-server-perfect"
 alias cdc="cd /e/GitLab/perfect_slg_demo/client/game/SLG_Demo"
 alias cde="cd /e/GitHub/Exercise/Java"
 

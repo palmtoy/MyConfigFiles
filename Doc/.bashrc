@@ -1,6 +1,5 @@
 CONF_DIR=/e/GitHub/MyConfigFiles/Doc
 MY_CONF_DIR=$CONF_DIR
-GAME_MAJOR=/e/GitLab/game-major
 
 
 export LC_ALL=en_US.UTF-8
