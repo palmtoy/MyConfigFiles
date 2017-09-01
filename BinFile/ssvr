@@ -1,6 +1,6 @@
 #!/bin/bash
 
-cd $HOME/LabOfGit/slg-server/game-major/deploy-tools/scripts
+cd $HOME/LabOfGit/slg-server-perfect/deploy-tools/scripts
 
 ./ssvr.sh
 
