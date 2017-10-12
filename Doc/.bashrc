@@ -102,8 +102,6 @@ fi
 # vim:ts=4:sw=4
 
 
-source $HOME/.nvm/nvm.sh # This loads NVM
-
 export M2_HOME=/usr/local/bin/maven
 export M2_REPO=$HOME/.m2/repository
 export PATH=$M2_HOME/bin:$PATH
