@@ -1,4 +1,4 @@
-PROMPT='%{$fg_no_bold[cyan]%}lzg@vm%{$fg_no_bold[magenta]%}※%{$fg_no_bold[cyan]%}%5~%{$fg_no_bold[cyan]%}(❄$(git_prompt_info)$(git_remote_status)%{$fg_no_bold[cyan]%})%{$reset_color%}» '
+PROMPT='%{$fg_no_bold[cyan]%}root@docker%{$fg_no_bold[magenta]%}◬%{$fg_no_bold[cyan]%}%5~%{$fg_no_bold[cyan]%}(◬$(git_prompt_info)$(git_remote_status)%{$fg_no_bold[cyan]%})%{$reset_color%}» '
 RPROMPT='[%*]'
 
 # git theming
