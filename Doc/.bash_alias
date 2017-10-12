@@ -45,7 +45,7 @@ alias ttar='tar -tvf'
 alias man='man -a'
 alias vi='vim'
 alias mvi='gvim'
-alias exit='echo "Hello World ..."'
+alias exit='echo "Please use (ctrl+p, ctrl+q) to detach ..."'
 
 alias gitk='/usr/local/git/bin/gitk'
 alias gk='gitk'
