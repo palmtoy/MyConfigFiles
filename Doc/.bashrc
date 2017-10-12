@@ -7,9 +7,6 @@ export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 
 
-. $CONF_DIR/.git_alias
-. $CONF_DIR/.bash_alias
-
 # System wide functions and aliases
 # Environment stuff goes in /etc/profile
 
@@ -105,4 +102,7 @@ fi
 export M2_HOME=/usr/local/bin/maven
 export M2_REPO=$HOME/.m2/repository
 export PATH=$M2_HOME/bin:$PATH
+
+. $CONF_DIR/.git_alias
+. $CONF_DIR/.bash_alias
 
