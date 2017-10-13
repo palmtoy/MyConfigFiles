@@ -2,7 +2,7 @@
 
 MY_PWD=`cat ~/MyConfigFiles/.password | base64 --decode`
 
-cd $HOME/LabOfGit/slg-server-perfect/deploy-tools/scripts
+cd $HOME/LabOfGit/slg-server/game-major/deploy-tools/scripts
 
 echo $MY_PWD | sudo -S ./ksvr.sh
 
