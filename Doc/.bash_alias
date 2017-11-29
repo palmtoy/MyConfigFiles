@@ -7,9 +7,9 @@ alias psm="ps aux | grep mongod -w"
 alias psr="ps aux | grep redis -w"
 alias psmr="psm; psr"
 
-alias cdg="cd /e/GitLab/slg-server"
-alias cdc="cd /e/GitLab/perfect_slg_demo/client/game/SLG_Alpha"
-alias cde="cd /e/GitHub/Exercise/Java"
+alias cdg="cd /c/MyDisc/Workspace/GameServerGit/server"
+alias cdc="cd /c/MyDisc/Workspace/ClientSVN/jj-client-ko/Branches/Demo"
+alias cde="cd /c/MyDisc/GitHub/Exercise/CPlusPlus"
 
 alias sshvm="ssh will@UbuntuVM"
 

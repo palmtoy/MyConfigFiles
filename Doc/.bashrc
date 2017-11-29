@@ -1,4 +1,4 @@
-CONF_DIR=/e/GitHub/MyConfigFiles/Doc
+CONF_DIR=/c/MyDisc/GitHub/MyConfigFiles/Doc
 MY_CONF_DIR=$CONF_DIR
 
 

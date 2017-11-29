@@ -1,3 +1,3 @@
 
-. /e/GitHub/MyConfigFiles/Doc/.bashrc
+. /c/MyDisc/GitHub/MyConfigFiles/Doc/.bashrc
 
