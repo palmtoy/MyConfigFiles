@@ -19,6 +19,8 @@ alias sshdev="ssh slgdev@10.12.7.93"
 alias ....="cd ../../.."
 alias .....="cd ../../../.."
 alias cd-="cd -"
+
+alias ls="ls --show-control-chars --color=auto"
 alias l="ls"
 alias la="ls -lah"
 alias ll="la"
