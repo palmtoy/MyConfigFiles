@@ -18,4 +18,9 @@
 	diffall = git-diffall
 [push]
 	default = simple
-
+[gui]
+	encoding = utf-8
+[i18n]
+	commitencoding = utf-8
+[http]
+	sslVerify = false
