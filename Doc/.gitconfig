@@ -10,6 +10,8 @@
 	excludesfile = ~/Workspace/GitHub/gitignore/Java.gitignore
 	quotepath = false
 	editor = /usr/bin/vim
+	trustctime = false
+	autocrlf = true
 [filter "media"]
 	clean = git-media-clean %f
 	smudge = git-media-smudge %f
