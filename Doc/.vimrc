@@ -1,5 +1,8 @@
 let $MY_DIR = $HOME."/Workspace/GitHub/MyConfigFiles/Doc"
 
+set fenc=utf-8 " 设定默认解码
+set fencs=utf-8,usc-bom,euc-jp,gb18030,gbk,gb2312,cp936
+
 set nocompatible
 set nu
 set tabstop=2
