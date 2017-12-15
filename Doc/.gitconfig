@@ -26,3 +26,5 @@
 [http]
 	sslVerify = false
 
+[credential]
+	helper = store
