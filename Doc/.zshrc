@@ -4,8 +4,14 @@ ZSH=$HOME/.oh-my-zsh
 CONF_DIR=~/MyConfigFiles
 MY_CONF_DIR=$CONF_DIR
 
-export LC_ALL=zh_CN.UTF-8
-export LANG=zh_CN.UTF-8
+
+# export LC_ALL=zh_CN.UTF-8
+# export LANG=zh_CN.UTF-8
+export LC_ALL=en_US.UTF-8
+export LANG=en_US.UTF-8
+# export LESSCHARSET=UTF-8
+export LESSCHARSET=latin1
+
 
 ZSH_THEME="palmtoy"
 
@@ -41,7 +47,4 @@ setopt HIST_IGNORE_ALL_DUPS
 source $HOME/.nvm/nvm.sh # This loads NVM
 
 rm -rf ~/.zcompdump*  > /dev/null; compinit;
-
-
-
 
