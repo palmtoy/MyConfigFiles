@@ -9,8 +9,8 @@ MY_CONF_DIR=$CONF_DIR
 # export LANG=zh_CN.UTF-8
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
-# export LESSCHARSET=UTF-8
-export LESSCHARSET=latin1
+export LESSCHARSET=UTF-8
+# export LESSCHARSET=latin1
 
 
 ZSH_THEME="palmtoy"
