@@ -76,3 +76,5 @@ alias rredis='cd /tmp; mkdir -p /tmp/log; sleep 1; pkill redis; sleep 2; redis-s
 # alias rdb='rmongo; sleep 2; rredis;'
 alias rdb='rmongo'
 
+alias mydb='mysql -u root -p -h 192.168.60.121 -D jjgame_lzg'
+
