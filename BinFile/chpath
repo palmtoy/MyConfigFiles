@@ -1,0 +1,5 @@
+#!/bin/bash
+
+cygpath -u "$1" | tr -d '\n' | pbcopy;
+pbpaste;
+
