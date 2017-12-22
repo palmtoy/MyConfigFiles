@@ -15,7 +15,7 @@ alias resvr="curl http://localhost:12000/restart?hard=1"
 
 alias cdg="cd /c/MyDisc/Workspace/GameServerGit/server"
 alias cdc="cd  /c/MyDisc/Workspace/ClientSVN/jj-client-ko/Branches/Demo/Client"
-alias cliup="cdc; svn cleanup; svn st -q | awk '{print \$2}' | xargs svn revert; svn st -q; cdg;"
+alias cliup="cdc; svn cleanup; svn revert -R .; svn up; svn st -q; cdg;"
 
 alias cde="cd ~/Exercise"
 alias cdl="cd /var/log/sparx"
