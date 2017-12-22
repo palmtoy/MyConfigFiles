@@ -24,6 +24,8 @@ source $ZSH/oh-my-zsh.sh
 unsetopt share_history # setopt no_share_history
 HOMEBREW_NO_AUTO_UPDATE="true" # for homebrew
 
+
+export NODEJS_BIN=/cygdrive/c/Program\ Files/nodejs
 export ZOOKEEPER_BIN=~/Repository/Software/Programming/zookeeper-3.4.5/bin
 export MONGODB_BIN=/opt/mongo/current/bin
 
@@ -32,7 +34,7 @@ export M2_REPO=$HOME/.m2/repository
 
 # Customize to your needs...
 export PATH=~/Library/Bin:/usr/local/bin:/usr/local/mysql/bin:/opt/redis/current/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:$ZOOKEEPER_BIN:$MONGODB_BIN:$PATH
-export PATH=$HOME/Repository/Software/Java/apache-maven-3.3.9/bin:$PATH
+export PATH=$HOME/Repository/Software/Java/apache-maven-3.3.9/bin:$NODEJS_BIN:$PATH
 export PATH=/usr/local/Cellar/qt5/5.8.0_1/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Applications/MacVim.app/Contents/bin:$PATH
 export CLASSPATH=.:./target/classes:$JAVA_HOME/lib/dt.jar:$JAVA_HOME/lib/tools.jar:$M2_REPO/org/mongodb/mongo-java-driver/3.4.2/mongo-java-driver-3.4.2.jar:$M2_REPO/io/netty/netty-all/4.1.9.Final/netty-all-4.1.9.Final.jar:$M2_REPO/redis/clients/jedis/2.8.2/jedis-2.8.2.jar
 
