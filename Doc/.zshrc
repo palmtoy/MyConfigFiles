@@ -25,7 +25,7 @@ unsetopt share_history # setopt no_share_history
 HOMEBREW_NO_AUTO_UPDATE="true" # for homebrew
 
 
-export NODEJS_BIN=/cygdrive/c/Program\ Files/nodejs
+export NODEJS_BIN=/cygdrive/c/Program\ Files/nodejs:/cygdrive/c/Users/lizg/AppData/Roaming/npm
 export ZOOKEEPER_BIN=~/Repository/Software/Programming/zookeeper-3.4.5/bin
 export MONGODB_BIN=/opt/mongo/current/bin
 
