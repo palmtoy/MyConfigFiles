@@ -49,4 +49,5 @@ setopt HIST_IGNORE_ALL_DUPS
 source $HOME/.nvm/nvm.sh # This loads NVM
 
 rm -rf ~/.zcompdump*  > /dev/null; compinit;
+cdg
 
