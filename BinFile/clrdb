@@ -1,9 +1,21 @@
 #!/bin/bash
 
-MONGO='/opt/mongo/current/bin/mongo'
+pushd /cygdrive/c/MyDisc/Data
 
-pushd /Users/lzg/Workspace/LabOfGit/slg-server
-	ksvr
-	$MONGO slg < dbInit.js
+	MY_PWD=`cat ~/.ssh/.pwd4mysql | base64 --decode`
+	DB_IP="192.168.60.121"
+
+
+	mysqldump -h $DB_IP -u root --password=$MY_PWD jjgame_001 --opt --skip-comments > ./jjgame_lzg.sql
+
+	# sed -i -e 's/USE/#USE/' ./jjgame_lzg.sql
+
+
+	MYDB="mysql -h $DB_IP -u root --password=$MY_PWD -D jjgame_lzg"
+
+	$MYDB < ./jjgame_lzg.sql
+
+	$MYDB < ./jjgame_lzg_del_data.sql
+
 popd
 
