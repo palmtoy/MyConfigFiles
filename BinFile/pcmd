@@ -1,3 +1,8 @@
 #!/bin/bash
 
-node pcmd-impl $1
+pushd /home/lizg/Library/Bin > /dev/null
+
+	node pcmd-impl $1
+
+popd > /dev/null
+
