@@ -17,9 +17,10 @@ alias cdg="cd /c/MyDisc/Workspace/GameServerGit/server"
 alias cdc="cd  /c/MyDisc/Workspace/ClientSVN/jj-client-ko/Branches/Demo/Client"
 alias cdf="cd /cygdrive/c/MyDisc/Workspace/ClientSVN/jj-client-ko/Branches/Demo/Run/Server/Config"
 
-alias sre="svn revert"
-alias sst="svn st"
-alias cliup="cdc; svn cleanup; sre -R .; svn up; sst -q; cdg;"
+alias s="svn"
+alias sre="s revert"
+alias sst="s st"
+alias cliup="cdc; s cleanup; sre -R .; s up; sst -q; cdg;"
 
 alias cde="cd ~/Exercise"
 alias cdl="cd /var/log/sparx"
