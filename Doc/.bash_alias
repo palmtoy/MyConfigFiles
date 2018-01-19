@@ -20,6 +20,7 @@ alias cdf="cd /cygdrive/c/MyDisc/Workspace/ClientSVN/jj-client-ko/Branches/Demo/
 alias s="svn"
 alias sre="s revert"
 alias sst="s st"
+alias sup="s up"
 alias cliup="cdc; s cleanup; sre -R .; s up; sst -q; cdg;"
 
 alias cde="cd ~/Exercise"
