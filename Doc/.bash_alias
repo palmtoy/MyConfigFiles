@@ -14,6 +14,7 @@ alias tt="tail -f /var/log/sparx/timerd.log"
 alias resvr="curl http://localhost:12000/restart?hard=1"
 
 alias cdg="cd /c/MyDisc/Workspace/GameServerGit/server"
+alias cdr="cd /c/MyDisc/Workspace/GameRootGit"
 alias cdc="cd  /c/MyDisc/Workspace/ClientSVN/jj-client-ko/Branches/Demo/Client"
 alias cdf="cd /cygdrive/c/MyDisc/Workspace/ClientSVN/jj-client-ko/Branches/Demo/Run/Server/Config"
 
