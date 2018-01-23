@@ -1,2 +1,4 @@
-scp -P20022 lzg@10.5.32.150:~/FileWithMac/"$1" ~/FileWithCentOS/
+#!/bin/bash
+
+scp -P20022 lizg@35.185.182.90:~/"$1" ./
 
