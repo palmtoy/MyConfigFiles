@@ -6,7 +6,14 @@ pushd /cygdrive/c/MyDisc/Data
 	DB_IP="192.168.60.121"
 
 
+	mysqldump -h $DB_IP -u root --password=$MY_PWD jjgame_001 --opt --skip-comments > ./jjgame_lzg.sql
+
+	# sed -i -e 's/USE/#USE/' ./jjgame_lzg.sql
+
+
 	MYDB="mysql -h $DB_IP -u root --password=$MY_PWD -D jjgame_lzg"
+
+	$MYDB < ./jjgame_lzg.sql
 
 	$MYDB < ./jjgame_lzg_del_data.sql
 
