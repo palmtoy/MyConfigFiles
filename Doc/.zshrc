@@ -74,7 +74,7 @@ export ZSH_HIGHLIGHT_HIGHLIGHTERS_DIR=/usr/local/share/zsh-syntax-highlighting/h
 
 setopt HIST_IGNORE_ALL_DUPS
 
-eval "$(grunt --completion=zsh)"
+# eval "$(grunt --completion=zsh)"
 
 source $HOME/.nvm/nvm.sh # This loads NVM
 
