@@ -1,13 +1,13 @@
 [user]
-	name = lizhigang
-	email = lizhigang@pwrd.com
+	name = ZhiGangLi
+	email = ZhiGangLi@sf-express.com
 [color]
 	diff = auto
 	branch = auto
 	status = auto
 	ui = auto
 [core]
-	excludesfile = ~/Workspace/GitHub/gitignore/Java.gitignore
+	excludesfile = ~/Workspace/GitHub/gitignore/Node.gitignore
 	quotepath = false
 	editor = /usr/bin/vim
 [filter "media"]
