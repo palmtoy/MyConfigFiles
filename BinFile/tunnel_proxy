@@ -1,12 +1,12 @@
 #!/bin/bash
 
 SF_TECH_SCREEN_NUM=`screen -ls | grep SF_Tech | wc -l`
-SF_TECH_ATTACHED_NUM=`screen -ls | grep "(Attached)" | wc -l`
 
-if [ $SF_TECH_SCREEN_NUM -eq 1 ] && [ $SF_TECH_ATTACHED_NUM -eq 1 ]
+if [ $SF_TECH_SCREEN_NUM -eq 1 ]
 then
-	ssh -i ~/.ssh/jcloud_rsa_private_key -D 1080 root@119.28.180.144 -p 5136
-else
-	screen -R SF_Tech
+	screen -ls | grep SF_Tech | awk '{print $1}' | awk -F'.' '{print $1}' | xargs kill
 fi  #ifend
+
+sleep 1
+screen -R SF_Tech   ssh -i ~/.ssh/jcloud_rsa_private_key -D 1080 root@119.28.180.144 -p 5136
 
