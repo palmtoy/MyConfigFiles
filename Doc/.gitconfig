@@ -7,7 +7,7 @@
 	status = auto
 	ui = auto
 [core]
-	excludesfile = ~/Workspace/GitHub/gitignore/Java.gitignore
+	excludesfile = ~/Workspace/GitHub/gitignore/Node.gitignore
 	quotepath = false
 	editor = /usr/bin/vim
 [filter "media"]
