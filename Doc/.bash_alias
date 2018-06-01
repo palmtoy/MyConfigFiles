@@ -7,24 +7,13 @@ alias psm="ps aux | grep mongod -w"
 alias psr="ps aux | grep redis-server -w"
 alias mtl="multitail /var/log/sparx/admin.log /var/log/sparx/api.log /var/log/sparx/push.log"
 alias psmr="psm; psr"
-alias tadm="tail -f /var/log/sparx/admin.log"
-alias ta="tail -f /var/log/sparx/api.log"
-alias tp="tail -f /var/log/sparx/push.log"
-alias tt="tail -f /var/log/sparx/timerd.log"
-alias resvr="curl http://localhost:12000/restart?hard=1"
+alias snd="NODE_ENV=localhost nodemon --inspect app.js"
 
 alias cdi="cd ~/Bitbucket/inc-bts-core"
-alias cdg="cd ~/LabOfGit/slg-server"
-alias cdc="cd ~/LabOfGit/perfect_slg_demo"
 alias cde="cd ~/Exercise"
-alias cdl="cd /var/log/sparx"
 alias cdnx="cd /usr/local/etc/nginx"
-alias cdt="cd /usr/local/Cellar/tomcat/8.5.16/libexec"
 
 alias sshvm="ssh will@UbuntuVM"
-alias sshgame="ssh root@10.3.247.137"
-
-alias sshgitlab="ssh slggitlab@10.12.7.92"
 alias sshdev="ssh slgdev@10.12.7.93"
 
 alias ....="cd ../../.."
@@ -75,4 +64,5 @@ alias rmongo='cd /tmp; mkdir -p /tmp/log; sleep 1; pkill mongo; sleep 2; rm -rf 
 alias rredis='cd /tmp; mkdir -p /tmp/log; sleep 1; pkill redis; sleep 2; redis-server > /tmp/log/redis.log&; sleep 1; cd -'
 # alias rdb='rmongo; sleep 2; rredis;'
 alias rdb='rmongo'
+alias sdb='rdb'
 
