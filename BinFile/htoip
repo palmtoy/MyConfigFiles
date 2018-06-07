@@ -1,0 +1,5 @@
+#!/bin/bash
+
+# ping -c1 -t3 "$1" | head -1 | cut -d' ' -f3 | tr -d '():' | tr -d '\n' | pbcopy && pbpaste
+
+arp "$1" | cut -d' ' -f2 | tr -d '()' | tr -d '\n' | pbcopy && pbpaste
