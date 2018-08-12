@@ -1,2 +1,2 @@
-scp -P20022 lzg@10.5.32.150:~/FileWithMac/"$1" ~/FileWithCentOS/
+scp -P20022 ZhiGangLi@35.185.182.90:~/FileWithMac/"$1" ~/FileWithCentOS/
 
