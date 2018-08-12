@@ -10,6 +10,7 @@ alias psmr="psm; psr"
 alias snd="NODE_ENV=localhost nodemon --inspect app.js"
 
 alias cdi="cd ~/Bitbucket/inc-bts-core"
+alias cdp="~/Workspace/Bitbucket/itim-zygl-bom/projects/bom/server/portal"
 alias cde="cd ~/Exercise"
 alias cdnx="cd /usr/local/etc/nginx"
 
