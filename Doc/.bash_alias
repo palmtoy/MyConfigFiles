@@ -10,6 +10,8 @@ alias psmr="psm; psr"
 alias snd="NODE_ENV=localhost nodemon --inspect app.js"
 alias ses="EGG_SERVER_ENV=local npm run dev -- --inspect-brk "
 alias nrd="npm run dev"
+alias ut="EGG_SERVER_ENV=local npm run test-local"
+alias mu="npm run migrate:up"
 
 alias cdi="cd ~/Bitbucket/inc-bts-core"
 alias cdp="cd ~/Bitbucket/itim-zygl-bom/projects/bom/server/portal"
