@@ -1,0 +1,8 @@
+#!/bin/bash
+
+docker run -it \
+    --rm \
+    --name tf \
+    -v /Users/lzg/Workspace/Bitbucket/inc-ims-core-map/floornet:/root/map/floornet \
+    ccr.ccs.tencentyun.com/sfbj/tensorflow:tf190-cpu \
+    bash
