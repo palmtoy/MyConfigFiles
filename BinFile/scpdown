@@ -1,2 +1,4 @@
-scp -P20022 ZhiGangLi@35.185.182.90:~/FileWithMac/"$1" ~/FileWithCentOS/
+#!/bin/bash
+
+scp -P5022 root@115.159.125.170:~/FileWithMac/"$1" ~/FileWithUbuntu/
 

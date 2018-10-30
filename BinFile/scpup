@@ -1,2 +1,4 @@
-scp -P20022 "$1" lzg@10.5.32.150:~/FileWithMac/
+#!/bin/bash
+
+scp -P5022 "$1" root@115.159.125.170:~/FileWithMac/
 
