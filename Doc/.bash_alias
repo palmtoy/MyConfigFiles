@@ -1,7 +1,6 @@
 # aliases
 alias reloadzsh="exec zsh && source ~/.zshrc"
 
-alias pss="ps aux | grep ServerLauncher"
 alias psn="ps aux | grep node -w"
 alias psm="ps aux | grep mongod -w"
 alias psr="ps aux | grep redis-server -w"
@@ -13,10 +12,10 @@ alias nrd="npm run dev"
 alias ut="EGG_SERVER_ENV=local npm run test-local"
 alias mu="npm run migrate:up"
 
-alias cdi="cd ~/Bitbucket/inc-bts-core"
+alias cdi="cd ~/Bitbucket/indoor-map-sf"
 alias cdp="cd ~/Bitbucket/itim-zygl-bom/projects/bom/server/portal"
-alias cdm="cd ~/Bitbucket/map-sf"
 alias cdc="cd ~/Bitbucket/cli_inc-bts-core"
+
 alias cde="cd ~/Exercise"
 alias cdnx="cd /usr/local/etc/nginx"
 
