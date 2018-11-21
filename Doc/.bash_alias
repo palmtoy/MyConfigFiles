@@ -13,6 +13,7 @@ alias ut="EGG_SERVER_ENV=local npm run test-local"
 alias mu="npm run migrate:up"
 
 alias cdi="cd ~/Bitbucket/indoor-map-sf"
+alias cdb="~/Bitbucket/ble-cage-trolley"
 alias cdp="cd ~/Bitbucket/itim-zygl-bom/projects/bom/server/portal"
 alias cdc="cd ~/Bitbucket/cli_inc-bts-core"
 
