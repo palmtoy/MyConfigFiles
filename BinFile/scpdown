@@ -1,2 +1,4 @@
-scp -P20022 lizhigang@35.185.182.90:~/FileWithMac/"$1" ~/FileWithCentOS/
+#!/bin/bash
+
+scp -P5022 work@123.206.107.69:~/public/lzg/FileWithMac/"$1" ~/FileWithUbuntu/
 

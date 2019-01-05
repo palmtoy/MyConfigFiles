@@ -1,19 +1,19 @@
 # aliases
 alias reloadzsh="exec zsh && source ~/.zshrc"
 
-alias pss="ps aux | grep ServerLauncher"
 alias psn="ps aux | grep node -w"
 alias psm="ps aux | grep mongod -w"
 alias psr="ps aux | grep redis-server -w"
 alias mtl="multitail /var/log/sparx/admin.log /var/log/sparx/api.log /var/log/sparx/push.log"
 alias psmr="psm; psr"
-alias snd="NODE_ENV=localhost nodemon --inspect app.js"
-alias ses="EGG_SERVER_ENV=local npm run dev -- --inspect-brk "
+alias ses="EGG_SERVER_ENV=test npm run dev"
 alias nrd="npm run dev"
+alias ut="EGG_SERVER_ENV=local npm run test-local"
+alias mu="npm run migrate:up"
 
-alias cdi="cd ~/Bitbucket/inc-bts-core"
+alias cdi="cd ~/Bitbucket/iot-ble-projects/services "
+
 alias cdp="~/Workspace/Bitbucket/itim-zygl-bom/projects/bom/server/portal"
-alias cdc="cd ~/Bitbucket/cli_inc-bts-core"
 alias cde="cd ~/Exercise"
 alias cdnx="cd /usr/local/etc/nginx"
 
@@ -62,6 +62,8 @@ alias j='java'
 alias m='mvn'
 alias mp='mvn package'
 alias jsh='/Library/Java/JavaVirtualMachines/jdk-9.jdk/Contents/Home/bin/jshell'
+# alias psync='cdp; fis3 release lzg -w'
+
 
 # alias rmongo='cd /tmp; mkdir -p /tmp/log; sleep 1; pkill mongo; sleep 2; rm -rf /data/db/mongod.lock; sleep 2; mongod --dbpath /data/db --rest --httpinterface > /tmp/log/mongo.log&; sleep 1; cd -'
 # alias rmongo='cd /tmp; mkdir -p /tmp/log; sleep 1; pkill mongo; sleep 2; rm -rf /data/db/mongod.lock; sleep 2; mongod --config /usr/local/etc/mongod.conf --dbpath /data/db > /tmp/log/mongo.log&; sleep 1; cd -'
