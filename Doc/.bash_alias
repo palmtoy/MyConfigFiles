@@ -12,7 +12,7 @@ alias ut="EGG_SERVER_ENV=local npm run test-local"
 alias mu="npm run migrate:up"
 alias sfe="npm run start-indoor:local"
 
-alias cdi="cd ~/Bitbucket/iot-ble-projects/services "
+alias cdi="cd ~/Bitbucket/inc-ims-core/services"
 alias cdp="cd ~/Bitbucket/my-playground"
 
 alias cde="cd ~/Exercise"
