@@ -56,7 +56,7 @@ export ZOOKEEPER_BIN=~/Repository/Software/Programming/zookeeper-3.4.5/bin
 # export MONGODB_BIN=~/Repository/Software/Programming/MongoDB/mongodb-osx-x86_64-2.6.1/bin
 export MONGODB_BIN=/opt/mongo/current/bin
 
-export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home
+export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk-10.0.1.jdk/Contents/Home
 export M2_REPO=$HOME/.m2/repository
 
 # Customize to your needs...
