@@ -1,0 +1,5 @@
+#!/bin/bash
+
+SEGMENT_TIME=$(echo "$2 * 3600 / 1" | bc)
+
+ffmpeg -i "$1" -f segment -segment_time $SEGMENT_TIME -c copy output-audio-%01d.mp3
