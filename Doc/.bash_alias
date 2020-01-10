@@ -74,4 +74,5 @@ alias rdb='rmongo'
 alias sdb='rdb'
 
 alias dk='docker'
+alias tailf='tail -f'
 
