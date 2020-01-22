@@ -1,4 +1,4 @@
-PROMPT='%{$fg_no_bold[cyan]%}pi%{$fg_no_bold[magenta]%}@raspberry%{$fg_no_bold[cyan]%}%5~%{$fg_no_bold[cyan]%}($(git_prompt_info)$(git_remote_status)%{$fg_no_bold[cyan]%})%{$reset_color%}» '
+PROMPT='%{$fg_no_bold[cyan]%}pi%{$fg_no_bold[magenta]%}@raspberry%{$fg_no_bold[cyan]%}%5~%{$fg_no_bold[cyan]%}(♫$(git_prompt_info)$(git_remote_status)%{$fg_no_bold[cyan]%})%{$reset_color%}» '
 RPROMPT='[%*]'
 
 # git theming
