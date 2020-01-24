@@ -72,7 +72,7 @@ export CLASSPATH=.:./target/classes:$JAVA_HOME/lib/dt.jar:$JAVA_HOME/lib/tools.j
 . $CONF_DIR/.bash_alias
 
 # red: 31, green: 32, yellow: 33, blue: 34, purple: 35, cyan: 36
-export GREP_OPTIONS='--color=auto' GREP_COLOR='1;31;40'
+export GREP_COLOR='1;31;40'
 
 fpath=($HOME/.oh-my-zsh/custom/plugins/zsh-completions $fpath)
 source $HOME/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
