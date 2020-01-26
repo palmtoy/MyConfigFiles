@@ -1,4 +1,0 @@
-#!/bin/bash
-
-scp -i ~/.ssh/id_rsa_sf -P5022 work@123.206.107.69:~/public/lzg/FileWithMac/"$1" ~/FileWithUbuntu/
-
