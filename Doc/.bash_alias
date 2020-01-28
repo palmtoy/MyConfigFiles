@@ -75,5 +75,5 @@ alias sdb='rdb'
 
 alias dk='docker'
 alias tailf='tail -f'
-alias sl='screen -ls'
+alias sl='screen -ls; lsof -i:1086'
 
