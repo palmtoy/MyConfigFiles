@@ -1,6 +1,6 @@
 #!/bin/bash
 
-ifconfig | grep inet\ 10. | awk '{print $2}' | tr -d '\n'
+ifconfig | grep inet\ 10. | awk '{print $2}'
 
-ifconfig | grep inet\ 192. | awk '{print $2}' | tr -d '\n'
+ifconfig | grep inet\ 192. | awk '{print $2}'
 
