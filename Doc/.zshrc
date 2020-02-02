@@ -66,6 +66,7 @@ export PATH=/usr/local/Cellar/qt5/5.8.0_1/bin:/Applications/Xcode.app/Contents/D
 export PATH=~/Workspace/GitHub/Blockchain/fabric-samples/bin:$PATH
 export PATH=$HOME/Repository/Software/Programming/MQTT/emqttd/bin:$PATH
 export PATH=$HOME/Repository/Software/Programming/Java/jad158g.mac.intel:$PATH
+export PATH=/opt/vc/bin:$PATH
 
 export CLASSPATH=.:./target/classes:$JAVA_HOME/lib/dt.jar:$JAVA_HOME/lib/tools.jar:$M2_REPO/org/mongodb/mongo-java-driver/3.4.2/mongo-java-driver-3.4.2.jar:$M2_REPO/io/netty/netty-all/4.1.9.Final/netty-all-4.1.9.Final.jar:$M2_REPO/redis/clients/jedis/2.8.2/jedis-2.8.2.jar
 
