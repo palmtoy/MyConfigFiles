@@ -1,6 +1,25 @@
 #!/bin/bash
 
-ifconfig | grep inet\ 10. | awk '{print $2}' | tr -d '\n' | pbcopy && pbpaste
+IP_10=$(ifconfig | grep inet\ 10. | awk '{print $2}')
 
-ifconfig | grep inet\ 192. | awk '{print $2}' | tr -d '\n' | pbcopy && pbpaste
+IP_192=$(ifconfig | grep inet\ 192. | awk '{print $2}')
+
+IPs=''
+
+if [[ -n "$IP_10" ]]
+then
+	IPs=${IP_10}
+fi
+
+if [ -n "$IP_192" ]
+then
+	if [ -n "$IPs" ]
+	then
+		IPs="${IPs} / ${IP_192}"
+	else
+		IPs=${IP_192}
+	fi
+fi
+
+echo $IPs | tr -d '\n' | pbcopy && pbpaste
 
