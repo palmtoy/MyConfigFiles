@@ -76,4 +76,5 @@ alias rdb='rmongo; sleep 2; rredis;'
 alias sdb='rdb'
 alias tailf='tail -f '
 alias sl='screen -ls'
+alias pl='pm2 ls'
 
