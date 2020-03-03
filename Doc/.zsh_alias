@@ -79,4 +79,5 @@ alias tailf='tail -f '
 alias sl='screen -ls'
 alias pl='pm2 ls'
 alias sr='screen -R'
+alias ad='adb devices -l'
 
