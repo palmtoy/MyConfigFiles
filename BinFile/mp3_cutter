@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# $1: filename which will be cut
+# $2: segment_time (how many HOURS will the audio be, usually set it as 2)
+
 SEGMENT_TIME=$(echo "$2 * 3600 / 1" | bc)
 
 ffmpeg -i "$1" -f segment -segment_time $SEGMENT_TIME -c copy output-audio-%01d.mp3
