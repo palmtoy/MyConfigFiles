@@ -79,3 +79,7 @@ alias sl='screen -ls'
 alias pl='pm2 ls'
 alias sr='screen -R'
 
+alias cbs='echo "connect EC:FA:5C:A8:67:61" | bluetoothctl' # connect to 'MI BT18' bluetooth speaker
+alias dbs='echo "disconnect EC:FA:5C:A8:67:61" | bluetoothctl' # disconnect with 'MI BT18' bluetooth speaker
+alias bc='bluetoothctl'
+
