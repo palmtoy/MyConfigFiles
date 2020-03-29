@@ -75,7 +75,7 @@ alias rdb='rmongo; sleep 2; rredis;'
 # alias rdb='rmongo'
 alias sdb='rdb'
 alias tailf='tail -f '
-alias sl='screen -ls'
+alias sl='screen -ls; lsof -i:1086 | grep LISTEN'
 alias pl='pm2 ls'
 alias sr='screen -R'
 
