@@ -78,6 +78,7 @@ alias sdb='rdb'
 alias tailf='tail -f '
 alias sl='screen -ls'
 alias pl='pm2 ls'
+alias p='pm2'
 alias sr='screen -R'
 alias ad='adb devices -l'
 
