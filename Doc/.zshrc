@@ -77,6 +77,8 @@ export ZSH_HIGHLIGHT_HIGHLIGHTERS_DIR=/usr/local/share/zsh-syntax-highlighting/h
 
 export PYTHONPATH=$PYTHONPATH:/usr/local/opt/python3/lib/site-packages
 
+export TK_SILENCE_DEPRECATION=1
+
 setopt HIST_IGNORE_ALL_DUPS
 
 # eval "$(grunt --completion=zsh)"
