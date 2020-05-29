@@ -77,6 +77,7 @@ export GREP_OPTIONS='--color=auto' GREP_COLOR='1;31;40'
 fpath=(/usr/local/share/zsh-completions $fpath)
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 export ZSH_HIGHLIGHT_HIGHLIGHTERS_DIR=/usr/local/share/zsh-syntax-highlighting/highlighters
+export TK_SILENCE_DEPRECATION=1
 
 setopt HIST_IGNORE_ALL_DUPS
 
