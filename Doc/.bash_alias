@@ -49,7 +49,7 @@ alias gitk='/usr/local/git/bin/gitk'
 alias gk='gitk'
 alias ga='git add --ignore-removal'
 alias gsu='git submodule update'
-alias gb='git branch | cat'
+alias gbc='git branch | cat'
 
 
 # Example aliases
