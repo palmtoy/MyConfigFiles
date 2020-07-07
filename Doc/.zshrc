@@ -43,7 +43,7 @@ DISABLE_CORRECTION="true"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git github osx node npm nvm brew colored-man colorize command-not-found copydir copyfile cp dircycle docker kubectl)
+plugins=(git github osx node npm nvm brew colorize command-not-found copydir copyfile cp dircycle docker kubectl)
 
 DISABLE_AUTO_UPDATE="true" # for oh-my-zsh config
 source $ZSH/oh-my-zsh.sh
@@ -72,8 +72,8 @@ export CLASSPATH=.:./target/classes:$JAVA_HOME/lib/dt.jar:$JAVA_HOME/lib/tools.j
 export GREP_OPTIONS='--color=auto' GREP_COLOR='1;31;40'
 
 fpath=(/usr/local/share/zsh-completions $fpath)
-source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-export ZSH_HIGHLIGHT_HIGHLIGHTERS_DIR=/usr/local/share/zsh-syntax-highlighting/highlighters
+source $HOME/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
+export ZSH_HIGHLIGHT_HIGHLIGHTERS_DIR=$HOME/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting/highlighters
 
 export PYTHONPATH=$PYTHONPATH:/usr/local/opt/python3/lib/site-packages
 
