@@ -45,7 +45,7 @@ alias man='man -a'
 alias vi='vim'
 alias mvi='gvim'
 
-alias gitk='/usr/local/git/bin/gitk'
+alias gitk='/usr/local/Cellar/git-gui/2.27.0/bin/gitk'
 alias gk='gitk'
 alias ga='git add --ignore-removal'
 alias gsu='git submodule update'
