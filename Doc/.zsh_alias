@@ -81,3 +81,5 @@ alias sr='screen -R'
 alias py='python3'
 alias k='kubectl'
 
+alias ms='mysql -uroot'
+
