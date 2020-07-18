@@ -71,7 +71,7 @@ alias jsh='/Library/Java/JavaVirtualMachines/jdk-9.jdk/Contents/Home/bin/jshell'
 alias rmongo='cd /tmp; mkdir -p /tmp/log; sleep 1; pkill mongo; sleep 2; rm -rf /data/db/mongod.lock; sleep 2; mongod --dbpath /data/db > /tmp/log/mongo.log&; sleep 1; cd -'
 alias rredis='cd /tmp; mkdir -p /tmp/log; sleep 1; pkill redis; sleep 2; redis-server > /tmp/log/redis.log&; sleep 1; cd -'
 # alias rdb='rmongo; sleep 2; rredis;'
-alias rdb='rmongo'
+alias rdb='rredis'
 alias sdb='rdb'
 
 alias dk='docker'
