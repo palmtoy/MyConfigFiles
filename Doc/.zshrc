@@ -58,7 +58,7 @@ export M2_REPO=$HOME/.m2/repository
 # Customize to your needs...
 export PATH=~/Library/Bin:/usr/local/bin:/usr/local/opt/mysql@5.6/bin:/opt/redis/current/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:$MONGODB_BIN:$PATH
 export PATH=$HOME/Repository/Software/Java/apache-maven-3.3.9/bin:$PATH
-export PATH=/usr/local/Cellar/qt5/5.8.0_1/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Applications/MacVim.app/Contents/bin:$PATH
+export PATH=$HOME/Repository/Software/Programming/QT5.13/5.13.2/clang_64/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Applications/MacVim.app/Contents/bin:$PATH
 export PATH=~/Workspace/GitHub/Blockchain/fabric-samples/bin:$PATH
 export PATH=$HOME/Repository/Software/Programming/MQTT/emqttd/bin:$PATH
 export PATH=$HOME/Repository/Software/Programming/Java/jad158g.mac.intel:$PATH
@@ -75,7 +75,7 @@ fpath=(/usr/local/share/zsh-completions $fpath)
 source $HOME/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
 export ZSH_HIGHLIGHT_HIGHLIGHTERS_DIR=$HOME/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting/highlighters
 
-export PYTHONPATH=$PYTHONPATH:/usr/local/opt/python3/lib/site-packages
+export PYTHONPATH=$PYTHONPATH:/usr/local/lib/python3.7/site-packages
 
 export TK_SILENCE_DEPRECATION=1
 
