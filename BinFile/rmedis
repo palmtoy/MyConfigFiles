@@ -1,0 +1,22 @@
+#!/bin/bash
+
+MRC='medis_redis-cli'
+
+MEDIS_PID=$(ps aux | grep 'dist/Electron.app/Contents/MacOS/Electron' | grep -v "grep" | awk '{print $2}')
+
+if [[ -n "$MEDIS_PID" ]]
+then
+	kill -9 $MEDIS_PID
+	sleep 1
+	# echo 'MEDIS_PID =' $MEDIS_PID
+fi #ifend
+
+CMD_STR="pushd ~/Workspace/GitHub/medis; npm start; popd"
+# echo $CMD_STR
+
+screen -dmS $MRC bash -c "$CMD_STR"
+
+sleep 2
+
+screen -ls | grep $MRC
+
