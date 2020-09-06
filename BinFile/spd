@@ -1,0 +1,3 @@
+#!/bin/bash
+
+speedometer -r wlan0 -t wlan0
