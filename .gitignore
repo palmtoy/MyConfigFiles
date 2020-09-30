@@ -6,3 +6,4 @@ scpdown
 scpup
 daemon-ss
 .gitconfig.mt
+.zsh_alias_shadow
