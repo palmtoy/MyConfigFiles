@@ -79,3 +79,5 @@ alias p='pm2'
 alias sr='screen -R'
 alias ad='adb devices -l'
 
+alias k='sudo kubectl'
+
