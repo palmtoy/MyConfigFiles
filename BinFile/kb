@@ -1,0 +1,17 @@
+#!/bin/bash
+
+SERVER_PID=$(lsof -i:9090 | grep node | awk '{print $2}')
+
+TMP_LEN=${#SERVER_PID}
+
+if [ $TMP_LEN -gt 0 ]
+then
+	echo 'Try to stop bService ...'
+	for TMP_PID in ${SERVER_PID[@]}
+	do
+		kill $TMP_PID
+		echo $TMP_PID 'stop bService', done.
+		sleep 0.5
+	done
+fi
+
