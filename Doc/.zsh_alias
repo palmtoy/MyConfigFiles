@@ -76,6 +76,7 @@ alias sdb='rdb'
 
 alias dk='docker'
 alias tailf='tail -f'
+alias tf='tail -f'
 alias sl='screen -ls; lsof -i:1088 | grep LISTEN'
 alias sr='screen -R'
 alias py='python3'
