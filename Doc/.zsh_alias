@@ -80,5 +80,6 @@ alias tf='tail -f'
 alias sl='screen -ls; lsof -i:1088 | grep LISTEN'
 alias sr='screen -R'
 alias py='python3'
+alias python='python3'
 alias k='kubectl'
 
