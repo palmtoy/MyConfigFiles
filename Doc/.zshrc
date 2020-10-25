@@ -78,6 +78,7 @@ export GREP_COLOR='1;31;40'
 fpath=($HOME/.oh-my-zsh/custom/plugins/zsh-completions $fpath)
 source $HOME/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 export ZSH_HIGHLIGHT_HIGHLIGHTERS_DIR=$HOME/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting/highlighters
+export KUBECONFIG=/etc/rancher/k3s/k3s.yaml
 
 setopt HIST_IGNORE_ALL_DUPS
 
