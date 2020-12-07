@@ -49,6 +49,7 @@ alias gitk='/usr/local/Cellar/git-gui/2.27.0/bin/gitk'
 alias gk='gitk'
 alias ga='git add --ignore-removal'
 alias gsu='git submodule update'
+alias gcz='git add .; git cz'
 
 
 # Example aliases
