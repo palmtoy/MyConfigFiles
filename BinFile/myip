@@ -1,14 +1,14 @@
 #!/bin/bash
 
-IP_10=$(ifconfig | grep inet\ 10. | awk '{print $2}')
+IP_172=$(ifconfig | grep inet\ 172. | awk '{print $2}')
 
 IP_192=$(ifconfig | grep inet\ 192. | awk '{print $2}')
 
 IPs=''
 
-if [[ -n "$IP_10" ]]
+if [[ -n "$IP_172" ]]
 then
-	IPs=${IP_10}
+	IPs=${IP_172}
 fi
 
 if [ -n "$IP_192" ]
