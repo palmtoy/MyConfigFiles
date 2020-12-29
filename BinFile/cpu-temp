@@ -1,10 +1,24 @@
-#!/bin/bash
+#!/usr/bin/env node
 
-while true
-do
-	temp=$(</sys/class/thermal/thermal_zone0/temp)
-	temp_f=`echo "$temp/1000" | bc -l`
-	printf "CPU Temp: %.3f°C\r\e\e[?25l" $temp_f
-	sleep 1
-done
+const exec = require('child_process').exec;
+
+const tmpCmd = 'cat /sys/class/thermal/thermal_zone0/temp';
+
+const tempFunc = () => {
+	exec(tmpCmd,
+		function(errorA, stdoutA, stderrA) {
+			if(errorA !== null) {
+				return console.log('exec errorA: ' + errorA);
+			}
+			// clear the current line
+			process.stdout.write('\r\x1b[K');
+			const temp = (parseInt(stdoutA) / 1000).toFixed(1);
+			// output chars without EOL
+			process.stdout.write(`CPU Temperature: ${temp}°C  ~  ${new Date().toLocaleString()} CST `);
+		});
+};
+
+tempFunc();
+
+setInterval(tempFunc, 1000);
 
