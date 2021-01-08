@@ -11,6 +11,8 @@ alias nrd="npm run dev"
 alias ut="EGG_SERVER_ENV=local npm run test-local"
 alias mu="npm run migrate:up"
 
+alias n="node"
+
 alias cdi="cd ~/Bitbucket/iot-ble-projects/services "
 
 alias cdp="~/Workspace/Bitbucket/itim-zygl-bom/projects/bom/server/portal"
