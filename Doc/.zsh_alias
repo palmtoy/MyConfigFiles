@@ -76,6 +76,8 @@ alias rredis='pushd /opt/redis/current/bin; ./boot-redis-cluster.sh; popd'
 alias rdb='rredis'
 alias sdb='rdb'
 
+alias rmysql='pushd /opt/mysql-8.0.22; ./boot-mysqld.sh; popd'
+
 alias dk='docker'
 alias tailf='tail -f'
 alias tf='tail -f'
