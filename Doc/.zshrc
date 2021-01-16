@@ -60,13 +60,10 @@ export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk-10.0.1.jdk/Contents/Home
 export M2_REPO=$HOME/.m2/repository
 
 # Customize to your needs...
-export PATH=~/Library/Bin:/usr/local/bin:/usr/local/mysql/bin:/opt/redis/current/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:$ZOOKEEPER_BIN:$MONGODB_BIN:$PATH
-export PATH=$HOME/Repository/Software/Java/apache-maven-3.3.9/bin:$PATH
-export PATH=/usr/local/Cellar/qt5/5.8.0_1/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Applications/MacVim.app/Contents/bin:$PATH
-export PATH=~/Workspace/GitHub/Blockchain/fabric-samples/bin:$PATH
-export PATH=$HOME/Repository/Software/Programming/MQTT/emqttd/bin:$PATH
+export PATH=~/Library/Bin:/usr/local/bin:/usr/local/mysql/bin:/opt/redis/current/bin:/usr/bin:/bin:/usr/sbin:/sbin:$MONGODB_BIN:$PATH
 export PATH=$HOME/Repository/Software/Programming/Java/jad158g.mac.intel:$PATH
 export PATH=/opt/vc/bin:$HOME/.local/bin:$PATH
+export PATH=$HOME/Workspace/Istio/istio-1.8.1/bin:$PATH
 
 export CLASSPATH=.:./target/classes:$JAVA_HOME/lib/dt.jar:$JAVA_HOME/lib/tools.jar:$M2_REPO/org/mongodb/mongo-java-driver/3.4.2/mongo-java-driver-3.4.2.jar:$M2_REPO/io/netty/netty-all/4.1.9.Final/netty-all-4.1.9.Final.jar:$M2_REPO/redis/clients/jedis/2.8.2/jedis-2.8.2.jar
 
