@@ -76,7 +76,7 @@ fpath=(/usr/local/share/zsh-completions $fpath)
 source $HOME/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
 export ZSH_HIGHLIGHT_HIGHLIGHTERS_DIR=$HOME/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting/highlighters
 
-export PYTHONPATH=$PYTHONPATH:/usr/local/lib/python3.7/site-packages
+# export PYTHONPATH=$PYTHONPATH:/usr/local/lib/python3.7/site-packages
 
 export TK_SILENCE_DEPRECATION=1
 
