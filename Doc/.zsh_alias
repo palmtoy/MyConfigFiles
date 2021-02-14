@@ -51,21 +51,12 @@ alias gk='gitk'
 alias ga='git add --ignore-removal'
 alias gsu='git submodule update'
 
-
-# Example aliases
-# alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
-
 alias rc='redis-cli'
-
-# alias myip='ifconfig | grep inet\ '
 
 alias j='java'
 alias m='mvn'
 alias mp='mvn package'
 alias jsh='/Library/Java/JavaVirtualMachines/jdk-9.jdk/Contents/Home/bin/jshell'
-# alias psync='cdp; fis3 release lzg -w'
-
 
 # alias rmongo='cd /tmp; mkdir -p /tmp/log; sleep 1; pkill mongo; sleep 2; rm -rf /data/db/mongod.lock; sleep 2; mongod --dbpath /data/db --rest --httpinterface > /tmp/log/mongo.log&; sleep 1; cd -'
 # alias rmongo='cd /tmp; mkdir -p /tmp/log; sleep 1; pkill mongo; sleep 2; rm -rf /data/db/mongod.lock; sleep 2; mongod --config /usr/local/etc/mongod.conf --dbpath /data/db > /tmp/log/mongo.log&; sleep 1; cd -'
@@ -78,9 +69,5 @@ alias tailf='tail -f '
 alias sl='screen -ls; lsof -i:1086 | grep LISTEN'
 alias pl='pm2 ls'
 alias sr='screen -R'
-
-# alias cbs='echo "connect EC:FA:5C:A8:67:61" | bluetoothctl' # connect to 'MI BT18' bluetooth speaker
-# alias dbs='echo "disconnect EC:FA:5C:A8:67:61" | bluetoothctl' # disconnect with 'MI BT18' bluetooth speaker
-# alias bc='bluetoothctl'
-alias vol='alsamixer'
+alias k='sudo kubectl'
 
