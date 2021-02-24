@@ -87,5 +87,6 @@ alias sl='screen -ls; lsof -i:1088 | grep LISTEN'
 alias sr='screen -R'
 alias py='python3'
 # alias python='python3'
+alias am='aws-mfa --force --token'
 alias k='kubectl'
 
