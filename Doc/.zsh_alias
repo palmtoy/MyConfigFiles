@@ -16,6 +16,7 @@ alias cdi="cd ~/Bitbucket/inc-ims-core/services"
 alias cdp="cd ~/Bitbucket/my-playground"
 
 alias cde="cd ~/Exercise"
+alias cdt="cd $HOME/GitHub/Exercise/TensorFlow"
 alias cdnx="cd /usr/local/etc/nginx"
 
 alias sshvm="ssh will@UbuntuVM"
@@ -32,7 +33,6 @@ alias lsd='ls -d *(/)'
 alias df='df -h'
 alias du='du -h -d1'
 alias cp='cp -iR'
-# alias cat='cat -n'
 
 alias mv='mv -i'
 alias rm='rm -ivr'
@@ -51,23 +51,34 @@ alias gk='gitk'
 alias ga='git add --ignore-removal'
 alias gsu='git submodule update'
 
+# Example aliases
+# alias zshconfig="mate ~/.zshrc"
+# alias ohmyzsh="mate ~/.oh-my-zsh"
+
 alias rc='redis-cli'
 
 alias j='java'
 alias m='mvn'
 alias mp='mvn package'
 alias jsh='/Library/Java/JavaVirtualMachines/jdk-9.jdk/Contents/Home/bin/jshell'
+# alias psync='cdp; fis3 release lzg -w'
 
+# alias rmongo='cd /tmp; mkdir -p /tmp/log; sleep 1; pkill mongo; sleep 2; rm -rf /data/db/mongod.lock; sleep 2; mongod --dbpath /data/db > /tmp/log/mongo.log&; sleep 1; cd -'
 # alias rmongo='cd /tmp; mkdir -p /tmp/log; sleep 1; pkill mongo; sleep 2; rm -rf /data/db/mongod.lock; sleep 2; mongod --dbpath /data/db --rest --httpinterface > /tmp/log/mongo.log&; sleep 1; cd -'
 # alias rmongo='cd /tmp; mkdir -p /tmp/log; sleep 1; pkill mongo; sleep 2; rm -rf /data/db/mongod.lock; sleep 2; mongod --config /usr/local/etc/mongod.conf --dbpath /data/db > /tmp/log/mongo.log&; sleep 1; cd -'
-alias rmongo='cd /tmp; mkdir -p /tmp/log; sleep 1; pkill mongo; sleep 2; rm -rf /data/db/mongod.lock; sleep 2; mongod --dbpath /data/db > /tmp/log/mongo.log&; sleep 1; cd -'
-alias rredis='cd /tmp; mkdir -p /tmp/log; sleep 1; pkill redis; sleep 2; redis-server > /tmp/log/redis.log&; sleep 1; cd -'
-alias rdb='rmongo; sleep 2; rredis;'
-# alias rdb='rmongo'
+alias rmysql='pushd $HOME/Docker/MySQL; ./up.sh; popd'
+alias rredis='pushd $HOME/Docker/Redis; ./up.sh; popd'
+alias rdb='rmysql; sleep 2; rredis;'
 alias sdb='rdb'
+alias dk='docker'
+alias dp='dk ps'
+
 alias tailf='tail -f '
-alias sl='screen -ls; lsof -i:1086 | grep LISTEN'
+alias sl='screen -ls'
 alias pl='pm2 ls'
+alias p='pm2'
 alias sr='screen -R'
+alias ad='adb devices -l'
+
 alias k='sudo kubectl'
 
