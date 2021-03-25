@@ -89,3 +89,4 @@ source $HOME/.nvm/nvm.sh # This loads NVM
 # npm
 . <(npm completion)
 
+[[ /usr/local/bin/kubectl ]] && source <(kubectl completion zsh)
