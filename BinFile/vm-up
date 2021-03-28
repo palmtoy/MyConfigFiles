@@ -1,0 +1,6 @@
+#!/bin/bash
+
+pushd $HOME/Exercise/AWSSDKTest
+	./up-ec2.sh
+popd
+
