@@ -89,4 +89,5 @@ alias py='python3'
 # alias python='python3'
 alias am='aws-mfa --force --token'
 alias k='kubectl'
+alias kex='k exec -itn'  # k web-srv-ns pod/srv-8bid -- sh
 
