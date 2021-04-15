@@ -51,7 +51,7 @@ else
   " source $MY_DIR/.vimrc_statusline_iterm2
 endif
 
-set guifont=Courier_New:h15
+set guifont=Menlo\ for\ Powerline:h13
 set gcr=a:blinkon0
 set smartindent
 set autoindent
