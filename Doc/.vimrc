@@ -49,7 +49,7 @@ let Tlist_Show_One_File=1 " taglist插件只显示当前文件的tag
 let Tlist_Exit_OnlyWindow=1 " 如果taglist窗口是最后一个窗口则退出Vim
 let Tlist_File_Fold_Auto_Close=1  " 自动折叠
 
-set guifont=Menlo\ for\ Powerline:h13
+set guifont=Menlo\ for\ Powerline:h14
 set gcr=a:blinkon0
 set smartindent
 set autoindent
