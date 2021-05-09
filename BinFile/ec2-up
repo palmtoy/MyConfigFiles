@@ -1,0 +1,8 @@
+#!/bin/bash
+
+pushd $HOME/GitHub/Exercise/Nodejs/AWSSDKTest
+
+	./up-ec2.sh
+
+popd
+
