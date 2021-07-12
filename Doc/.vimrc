@@ -22,15 +22,20 @@ syntax enable
 
 set laststatus=2
 
+if has('gui_running')
+  colorscheme solarized
+else
+  colorscheme molokai
+endif
+
 " Solarized options 
 let g:solarized_termtrans = 1
 let g:solarized_visibility = "high"
 let g:solarized_contrast = "high"
-colorscheme solarized
+
 " Molokai options 
 let g:molokai_original = 1
 let g:rehash256 = 1
-" colorscheme molokai
 set background=dark
 
 set t_Co=256
@@ -44,12 +49,6 @@ let Tlist_Enable_Fold_Column=0  " 使taglist插件不显示左边的折叠行
 let Tlist_Show_One_File=1 " taglist插件只显示当前文件的tag
 let Tlist_Exit_OnlyWindow=1 " 如果taglist窗口是最后一个窗口则退出Vim
 let Tlist_File_Fold_Auto_Close=1  " 自动折叠
-
-if has('gui_running')
-  " source $MY_DIR/.vimrc_statusline
-else
-  " source $MY_DIR/.vimrc_statusline_iterm2
-endif
 
 set guifont=Courier_New:h15
 set gcr=a:blinkon0
