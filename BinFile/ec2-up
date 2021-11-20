@@ -1,6 +1,6 @@
 #!/bin/bash
 
-pushd $HOME/GitHub/Exercise/Nodejs/AWSSDKTest
+pushd $HOME/GitHub/Exercise/Nodejs/AWSSDKTest/EC2
 
 	./up-ec2.sh
 
