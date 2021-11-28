@@ -45,7 +45,7 @@ alias ttar='tar -tvf'
 alias man='man -a'
 alias vi='vim'
 alias mvi='gvim'
-alias tf='tail -f /home/pi/.pm2/logs/report-ip-cli-out.log'
+alias tf='tail -f'
 
 alias gitk='/usr/local/git/bin/gitk'
 alias gk='gitk'
