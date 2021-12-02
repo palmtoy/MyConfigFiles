@@ -23,14 +23,14 @@ syntax enable
 set laststatus=2
 
 " Solarized options 
+" colorscheme solarized
 let g:solarized_termtrans = 1
 let g:solarized_visibility = "high"
 let g:solarized_contrast = "high"
-colorscheme solarized
 " Molokai options 
+colorscheme molokai
 let g:molokai_original = 1
 let g:rehash256 = 1
-" colorscheme molokai
 set background=dark
 
 set t_Co=256
