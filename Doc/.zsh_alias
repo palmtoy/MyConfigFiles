@@ -12,6 +12,7 @@ alias ut="EGG_SERVER_ENV=local npm run test-local"
 alias mu="npm run migrate:up"
 alias sfe="npm run start-indoor:local"
 alias n="node"
+alias py="python3"
 alias dk="docker"
 
 alias cdi="cd ~/Bitbucket/inc-ims-core/services"
