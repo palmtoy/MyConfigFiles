@@ -83,5 +83,6 @@ alias py='python3'
 alias k='kubectl'
 alias sql='mysql -uroot'
 
-alias rcp='rshell -p /dev/cu.SLAB_USBtoUART --buffer-size 4096'
+# alias rcp='rshell -p /dev/cu.SLAB_USBtoUART --buffer-size 4096'
+alias rcp='rshell -p /dev/cu.wchusbserial1410 --buffer-size 4096'
 
