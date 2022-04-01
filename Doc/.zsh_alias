@@ -91,3 +91,8 @@ alias am='aws-mfa --force --token'
 alias k='kubectl'
 alias kex='k exec -itn'  # k web-srv-ns pod/srv-8bid -- sh
 
+alias getidf='. $HOME/esp/esp-idf/export.sh'
+alias i='idf.py'
+alias ib='i build'
+alias ifm='i -p /dev/cu.wchusbserial1410 flash monitor'
+
