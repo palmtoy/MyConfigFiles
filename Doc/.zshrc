@@ -63,6 +63,7 @@ export PATH=~/Workspace/GitHub/Blockchain/fabric-samples/bin:$PATH
 export PATH=$HOME/Repository/Software/Programming/MQTT/emqttd/bin:$PATH
 export PATH=$HOME/Repository/Software/Programming/Java/jad158g.mac.intel:$PATH
 export PATH=$HOME/Repository/Software/Programming/Docker/istio-1.5.4/bin:$PATH
+export PATH=$HOME/esp/projects/micropython/tools:$PATH
 ESP_IDF=$HOME/esp/esp-idf
 export PATH=$ESP_IDF/components/esptool_py/esptool:$ESP_IDF/components/espcoredump:$ESP_IDF/components/partition_table:$ESP_IDF/components/app_update:$HOME/.espressif/tools/xtensa-esp32-elf/esp-2020r3-8.4.0/xtensa-esp32-elf/bin:$HOME/.espressif/tools/xtensa-esp32s2-elf/esp-2020r3-8.4.0/xtensa-esp32s2-elf/bin:$HOME/.espressif/tools/xtensa-esp32s3-elf/esp-2020r3-8.4.0/xtensa-esp32s3-elf/bin:$HOME/.espressif/tools/riscv32-esp-elf/1.24.0.123_64eb9ff-8.4.0/riscv32-esp-elf/bin:$HOME/.espressif/tools/esp32ulp-elf/2.28.51-esp-20191205/esp32ulp-elf-binutils/bin:$HOME/.espressif/tools/esp32s2ulp-elf/2.28.51-esp-20191205/esp32s2ulp-elf-binutils/bin:$HOME/.espressif/tools/openocd-esp32/v0.10.0-esp32-20210401/openocd-esp32/bin:$HOME/.espressif/python_env/idf4.3_py3.8_env/bin:$ESP_IDF/tools:$PATH
  
