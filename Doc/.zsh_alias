@@ -91,7 +91,7 @@ alias am='aws-mfa --force --token'
 alias k='kubectl'
 alias kex='k exec -itn'  # k web-srv-ns pod/srv-8bid -- sh
 
-alias getesp8266="export PATH=$PATH:$HOME/esp/xtensa-lx106-elf/bin"
+alias getesp8266="export PATH=$HOME/esp/xtensa-lx106-elf/bin:$PATH; export IDF_PATH=$HOME/esp/ESP8266_RTOS_SDK"
 alias getidf='. $HOME/esp/esp-idf/export.sh'
 alias i='idf.py'
 alias ib='i build'
