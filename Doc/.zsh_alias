@@ -83,11 +83,13 @@ alias py='python3'
 alias k='kubectl'
 alias sql='mysql -uroot'
 
-# alias rcp='rshell -p /dev/cu.SLAB_USBtoUART --buffer-size 4096'
-alias rcp='rshell -p /dev/cu.wchusbserial1410 --buffer-size 4096'
+# alias rcp='rshell -p /dev/cu.SLAB_USBtoUART --buffer-size 128'
+alias rcp='rshell -p /dev/cu.wchusbserial1412 --buffer-size 128'
 alias getidf='. $HOME/esp/esp-idf/export.sh'
 alias i='idf.py'
 alias ib='i build'
-alias ifm='i -p /dev/cu.wchusbserial1410 flash monitor'
-alias getesp8266="export PATH=$HOME/esp/xtensa-lx106-elf/bin:$PATH"
+alias ifm='i -p /dev/cu.wchusbserial1412 flash monitor'
+alias getesp8266="export PATH=$HOME/esp/xtensa-lx106-elf/bin:$PATH; export IDF_PATH=$HOME/esp/ESP8266_RTOS_SDK"
+alias mf='make flash'
+alias mm='make monitor'
 
