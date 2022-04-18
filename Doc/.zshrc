@@ -56,7 +56,7 @@ export JAVA_HOME=/usr/local/Cellar/openjdk/14.0.1
 export M2_REPO=$HOME/.m2/repository
 
 # Customize to your needs...
-export PATH=~/Library/Bin:/usr/local/bin:/usr/local/opt/mysql@5.6/bin:/opt/redis/current/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:$MONGODB_BIN:$PATH
+export PATH=~/Library/Bin:/usr/local/bin:/usr/local/opt/mysql@5.7/bin:/opt/redis/current/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:$MONGODB_BIN:$PATH
 export PATH=$HOME/Repository/Software/Java/apache-maven-3.3.9/bin:$PATH
 export PATH=$HOME/Repository/Software/Programming/QT5.13/5.13.2/clang_64/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Applications/MacVim.app/Contents/bin:$PATH
 export PATH=~/Workspace/GitHub/Blockchain/fabric-samples/bin:$PATH
