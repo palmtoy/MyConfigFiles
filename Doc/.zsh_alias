@@ -63,7 +63,6 @@ alias rc='redis-cli'
 # alias myip='ifconfig | grep inet\ '
 
 alias j='java'
-alias m='mvn'
 alias mp='mvn package'
 alias jsh='/Library/Java/JavaVirtualMachines/jdk-9.jdk/Contents/Home/bin/jshell'
 # alias psync='cdp; fis3 release lzg -w'
@@ -96,4 +95,5 @@ alias getidf='. $HOME/esp/esp-idf/export.sh'
 alias i='idf.py'
 alias ib='i build'
 alias ifm='i -p /dev/cu.wchusbserial1410 flash monitor'
+alias m='make'
 
