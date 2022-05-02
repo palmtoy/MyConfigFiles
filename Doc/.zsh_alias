@@ -61,7 +61,6 @@ alias rc='redis-cli'
 # alias myip='ifconfig | grep inet\ '
 
 alias j='java'
-alias m='mvn'
 alias mp='mvn package'
 alias jsh='/Library/Java/JavaVirtualMachines/jdk-9.jdk/Contents/Home/bin/jshell'
 # alias psync='cdp; fis3 release lzg -w'
@@ -90,6 +89,8 @@ alias i='idf.py'
 alias ib='i build'
 alias ifm='i -p /dev/cu.wchusbserial1412 flash monitor'
 alias getesp8266="export PATH=$HOME/esp/xtensa-lx106-elf/bin:$PATH; export IDF_PATH=$HOME/esp/ESP8266_RTOS_SDK"
+alias m='make'
 alias mf='make flash'
 alias mm='make monitor'
+alias mfm='make flash monitor'
 
