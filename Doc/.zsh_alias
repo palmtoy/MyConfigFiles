@@ -86,6 +86,7 @@ alias sql='mysql -uroot'
 alias rcp='rshell -p /dev/cu.wchusbserial1412 --buffer-size 128'
 alias getidf='. $HOME/esp/esp-idf/export.sh'
 alias i='idf.py'
+alias im='i menuconfig'
 alias ib='i build'
 alias ifm='i -p /dev/cu.wchusbserial1412 flash monitor'
 alias getesp8266="export PATH=$HOME/esp/xtensa-lx106-elf/bin:$PATH; export IDF_PATH=$HOME/esp/ESP8266_RTOS_SDK"
