@@ -90,11 +90,12 @@ alias am='aws-mfa --force --token'
 alias k='kubectl'
 alias kex='k exec -itn'  # k web-srv-ns pod/srv-8bid -- sh
 
+alias m='make'
 alias getesp8266="export PATH=$HOME/esp/xtensa-lx106-elf/bin:$PATH; export IDF_PATH=$HOME/esp/ESP8266_RTOS_SDK"
 alias getidf='. $HOME/esp/esp-idf/export.sh'
 alias i='idf.py'
 alias ib='i build'
+alias im='i menuconfig'
 alias ia='i -p /dev/cu.wchusbserial14210 build flash monitor'
 alias ifm='i -p /dev/cu.wchusbserial14210 flash monitor'
-alias m='make'
 
