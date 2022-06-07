@@ -94,6 +94,7 @@ alias getesp8266="export PATH=$HOME/esp/xtensa-lx106-elf/bin:$PATH; export IDF_P
 alias getidf='. $HOME/esp/esp-idf/export.sh'
 alias i='idf.py'
 alias ib='i build'
+alias ia='i -p /dev/cu.wchusbserial14210 build flash monitor'
 alias ifm='i -p /dev/cu.wchusbserial14210 flash monitor'
 alias m='make'
 
