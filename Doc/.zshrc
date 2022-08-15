@@ -52,7 +52,7 @@ export HOMEBREW_NO_AUTO_UPDATE=1
 
 export MONGODB_BIN=/opt/mongo/current/bin
 
-export JAVA_HOME=/usr/local/Cellar/openjdk/14.0.1
+export JAVA_HOME=/usr/local/Cellar/openjdk/18
 export M2_REPO=$HOME/.m2/repository
 
 # Customize to your needs...
