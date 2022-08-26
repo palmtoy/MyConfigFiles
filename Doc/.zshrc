@@ -70,6 +70,7 @@ export PATH=$HOME/Repository/Software/Programming/Docker/istio-1.5.4/bin:$PATH
 export RUSTUP_HOME=$HOME/.rustup
 export CARGO_HOME=$HOME/.cargo
 export PATH=$CARGO_HOME/bin:$PATH
+export PATH=/Applications/Couchbase\ Server.app/Contents/Resources/couchbase-core/bin:$PATH
 
 export CLASSPATH=.:./target/classes:$JAVA_HOME/lib/dt.jar:$JAVA_HOME/lib/tools.jar:$M2_REPO/org/mongodb/mongo-java-driver/3.4.2/mongo-java-driver-3.4.2.jar:$M2_REPO/io/netty/netty-all/4.1.9.Final/netty-all-4.1.9.Final.jar:$M2_REPO/redis/clients/jedis/2.8.2/jedis-2.8.2.jar
 
