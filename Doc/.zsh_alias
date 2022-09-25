@@ -99,6 +99,7 @@ alias im='i menuconfig'
 alias ia='i -p /dev/cu.wchusbserial14210 build flash monitor'
 alias ifm='i -p /dev/cu.wchusbserial14210 flash monitor'
 
+alias cf='cargo fmt'
 alias cck='cargo check'
 alias cb='cargo build'
 alias cbr='cargo build --release'
