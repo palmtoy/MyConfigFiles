@@ -10,6 +10,7 @@
 	excludesfile = ~/Workspace/GitHub/gitignore/Node.gitignore
 	quotepath = false
 	editor = /usr/bin/vim
+	pager = less -x1,3
 [filter "media"]
 	clean = git-media-clean %f
 	smudge = git-media-smudge %f

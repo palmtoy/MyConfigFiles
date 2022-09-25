@@ -97,3 +97,10 @@ alias mf='make flash'
 alias mm='make monitor'
 alias mfm='make flash monitor'
 
+alias cf='cargo fmt'
+alias cck='cargo check'
+alias cb='cargo build'
+alias cbr='cargo build --release'
+alias cr='cargo run'
+alias crr='cargo run --release'
+
