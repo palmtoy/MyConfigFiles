@@ -25,3 +25,10 @@ rm $CLASS_NAME.jar
 rm Manifest.txt
 echo "Done."
 
+# Use the following cmd to gen executable jar file:
+
+# ./gen.sh MyTimestamp myts
+
+# (1)  The first param: MyTimestamp is the CLASS_NAME
+# (2) The second param: myts is the executable jar file name
+
