@@ -76,6 +76,7 @@ export CLASSPATH=.:./target/classes:$JAVA_HOME/lib/dt.jar:$JAVA_HOME/lib/tools.j
 
 . $CONF_DIR/.zsh_alias
 . $CONF_DIR/.zsh_alias_shadow
+. $CONF_DIR/.zsh_function
 
 # red: 31, green: 32, yellow: 33, blue: 34, purple: 35, cyan: 36
 export GREP_OPTIONS='--color=auto' GREP_COLOR='1;31;40'

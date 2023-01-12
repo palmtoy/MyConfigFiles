@@ -1,0 +1,17 @@
+function gstash() {
+	if [[ $# -ne 1 ]]; then
+		echo "Please input the stash name ( just 1 parameter ) ..."
+	else
+		# git stash push -m "$1"
+		git stash -u -m "$1"
+	fi
+}
+
+function gstashapply() {
+	if [[ $# -ne 1 ]]; then
+		echo "Please input the stash name ( just 1 parameter ) ..."
+	else
+		git stash apply $(git stash list | grep "$1" | cut -d: -f1)
+	fi
+}
+
