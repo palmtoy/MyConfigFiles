@@ -1,0 +1,19 @@
+#!/bin/bash
+
+STF_PID=$(ps aux | grep 'backend-server-mtf' | grep -v "grep" | awk '{print $2}')
+
+TMP_LEN=${#STF_PID}
+
+if [ $TMP_LEN -gt 0 ]
+then
+	echo $'Try to stop MT-Farm process cluster  ...\n'
+	for TMP_PID in ${STF_PID[@]}
+	do
+		echo 'kill -9' $TMP_PID
+		kill -9 $TMP_PID
+		sleep 0.5
+	done
+fi
+
+printf '\nStop MT-Farm, done.\n'
+
