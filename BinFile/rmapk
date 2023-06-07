@@ -1,0 +1,12 @@
+#!/bin/bash
+
+pushd /var/folders/45/86qtmmt925x9wbsdqdgxnh7r0000gn/T
+
+	find . -maxdepth 1 -name "*.apk" -type f -exec rm -Rf  {} \;
+	find . -maxdepth 1 -name "upload_*" -type f -exec rm -Rf  {} \;
+	find . -maxdepth 1 -name "*report*" -exec rm -Rf  {} \;
+	rm -rf ./airtest
+	rm -rf ./adb.501.log
+
+popd
+
