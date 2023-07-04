@@ -79,7 +79,7 @@ alias sdb='rdb'
 
 alias rmysql='pushd /opt/mysql-8.0.22; ./boot-mysqld.sh; popd'
 
-alias f='nvm use v8.9.4; sleep 1; stf local'
+alias f='nvm use v8.9.4; sleep 0.5; stf local'
 
 alias dk='docker'
 alias tailf='tail -f'
