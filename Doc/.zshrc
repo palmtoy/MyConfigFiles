@@ -103,3 +103,5 @@ source $HOME/.nvm/nvm.sh # This loads NVM
 # TODO: fix it for AppleM3
 # [[ /usr/local/bin/kubectl ]] && source <(kubectl completion zsh)
 
+eval "$(/opt/homebrew/bin/brew shellenv)"
+
