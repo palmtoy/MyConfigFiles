@@ -49,6 +49,7 @@ DISABLE_AUTO_UPDATE="true" # for oh-my-zsh config
 source $ZSH/oh-my-zsh.sh
 unsetopt share_history # setopt no_share_history
 export HOMEBREW_NO_AUTO_UPDATE=1
+eval "$(/opt/homebrew/bin/brew shellenv)"
 
 export MONGODB_BIN=/opt/mongo/current/bin
 
@@ -103,5 +104,4 @@ source $HOME/.nvm/nvm.sh # This loads NVM
 # TODO: fix it for AppleM3
 # [[ /usr/local/bin/kubectl ]] && source <(kubectl completion zsh)
 
-eval "$(/opt/homebrew/bin/brew shellenv)"
 
