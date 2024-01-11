@@ -79,15 +79,15 @@ alias sdb='rdb'
 
 alias rmysql='pushd /opt/mysql-8.0.22; ./boot-mysqld.sh; popd'
 
-# alias f='nvm use v8.9.4; sleep 0.5; stf local'
-alias f='nvm use v8.16.1; sleep 0.5; stf local'
+# alias f='nvm use v8.16.1; sleep 0.5; stf local'
+alias f='nvm use; sleep 0.5; stf local'
 alias ft='cd /var/folders/45/86qtmmt925x9wbsdqdgxnh7r0000gn/T'
 
 alias dk='docker'
 alias dkc='docker-compose'
 alias tailf='tail -f'
 alias tf='tail -f'
-alias sl='screen -ls; lsof -i:1088 | grep LISTEN'
+alias sls='screen -ls'
 alias sr='screen -R'
 alias py='python3'
 # alias python='python3'
