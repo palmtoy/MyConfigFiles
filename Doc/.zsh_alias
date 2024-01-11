@@ -12,6 +12,7 @@ alias ut="EGG_SERVER_ENV=local npm run test-local"
 alias mu="npm run migrate:up"
 
 alias n="node"
+alias nv="node -v"
 
 alias cdi="cd ~/Bitbucket/iot-ble-projects/services "
 
