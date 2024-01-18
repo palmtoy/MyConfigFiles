@@ -16,6 +16,7 @@ alias nv="node -v"
 
 alias cdi="cd ~/Bitbucket/iot-ble-projects/services "
 
+alias cdd="cd ~/Downloads"
 alias cdp="~/Workspace/Bitbucket/itim-zygl-bom/projects/bom/server/portal"
 alias cde="cd ~/Exercise"
 alias cdt="cd $HOME/GitHub/yew/examples/todomvc"
