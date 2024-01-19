@@ -1,7 +1,7 @@
 # aliases
 alias reloadzsh="exec zsh && source ~/.zshrc"
 
-alias ds = "pmset displaysleepnow"
+alias ds="pmset displaysleepnow"
 
 alias psn="ps aux | grep node -w"
 alias psm="ps aux | grep mongod -w"
