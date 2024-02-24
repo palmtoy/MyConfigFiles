@@ -16,6 +16,7 @@ alias cdi="cd ~/Bitbucket/iot-ble-projects/services "
 
 alias cdp="~/Workspace/Bitbucket/itim-zygl-bom/projects/bom/server/portal"
 alias cde="cd ~/Exercise"
+alias cdd="cd ~/Downloads"
 alias cdt="cd $HOME/GitHub/Exercise/TensorFlow"
 alias cdnx="cd /usr/local/etc/nginx"
 
