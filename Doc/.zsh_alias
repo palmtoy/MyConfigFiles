@@ -11,6 +11,8 @@ alias nrd="npm run dev"
 alias ut="EGG_SERVER_ENV=local npm run test-local"
 alias mu="npm run migrate:up"
 alias n="node"
+alias bd="brightness -d 0x4280646 0" # set the MacBookPro built-in screen brightness to 0 ( darkest )
+alias bu="brightness -d 0x4280646 1" # set the MacBookPro built-in screen brightness to 1 ( brightest )
 
 alias cdi="cd ~/Bitbucket/iot-ble-projects/services "
 
