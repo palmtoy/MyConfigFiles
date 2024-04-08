@@ -107,3 +107,7 @@ if has('mouse')
   set mouse=a
 endif
 
+set foldmethod=syntax
+set foldlevelstart=99
+nnoremap <space> @=((foldclosed(line('.')) < 0) ? 'zc' : 'zo')<CR>
+
