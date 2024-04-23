@@ -88,7 +88,13 @@ alias f='nvm use; sleep 0.5; stf local'
 alias ft='cd /var/folders/45/86qtmmt925x9wbsdqdgxnh7r0000gn/T'
 
 alias dk='docker'
+alias dki='docker images'
+alias dkp='docker ps -a'
+alias dke='docker exec -it stf-slave bash'
 alias dkc='docker-compose'
+alias dcu='docker-compose up -d'
+alias dcd='docker-compose down'
+
 alias tailf='tail -f'
 alias tf='tail -f'
 alias sls='screen -ls'
