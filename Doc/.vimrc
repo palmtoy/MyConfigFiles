@@ -60,6 +60,8 @@ set autowriteall
 let mapleader = ","
 map <leader>nn :NERDTreeToggle<cr>
 map <leader>tt :TlistToggle<cr>
+vmap <leader>y "*y
+nmap <leader>p "*p
 map <C-s> :w<CR>
 map <CR> o<ESC>
 map <S-CR> O<ESC>
