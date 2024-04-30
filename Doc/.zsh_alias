@@ -16,7 +16,7 @@ alias mu="npm run migrate:up"
 alias n="node"
 alias nv="node -v"
 
-alias cdi="cd ~/Bitbucket/iot-ble-projects/services "
+alias cdf="cd $HOME/Workspace/LabOfGit/BGP/MTFarm/backend-server-mtf"
 
 alias cdd="cd ~/Downloads"
 alias cdm="cd /opt/mysql-8.0.35-arm64"
