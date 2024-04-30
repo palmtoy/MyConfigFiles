@@ -73,7 +73,6 @@ export CARGO_HOME=$HOME/.cargo
 export PATH=$CARGO_HOME/bin:$PATH
 export PATH=/Applications/Couchbase\ Server.app/Contents/Resources/couchbase-core/bin:$PATH
 export PATH=$(pyenv root)/shims:$PATH
-export PATH=$HOME/Library/Python/3.9/bin:$PATH
 
 export CLASSPATH=.:./target/classes:$JAVA_HOME/lib/dt.jar:$JAVA_HOME/lib/tools.jar:$M2_REPO/org/mongodb/mongo-java-driver/3.4.2/mongo-java-driver-3.4.2.jar:$M2_REPO/io/netty/netty-all/4.1.9.Final/netty-all-4.1.9.Final.jar:$M2_REPO/redis/clients/jedis/2.8.2/jedis-2.8.2.jar
 
@@ -87,8 +86,6 @@ export GREP_OPTIONS='--color=auto' GREP_COLOR='1;31;40'
 fpath=(/usr/local/share/zsh-completions $fpath)
 source $HOME/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
 export ZSH_HIGHLIGHT_HIGHLIGHTERS_DIR=$HOME/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting/highlighters
-
-# export PYTHONPATH=$PYTHONPATH:/usr/local/lib/python3.7/site-packages
 
 export TK_SILENCE_DEPRECATION=1
 
