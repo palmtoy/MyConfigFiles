@@ -22,4 +22,5 @@ then
 fi
 
 echo $IPs | tr -d '\n' | pbcopy && pbpaste
+echo; echo
 
