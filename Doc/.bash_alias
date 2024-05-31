@@ -1,24 +1,14 @@
 # aliases
 alias reloadbash="source ~/.bash_profile"
 
-alias pss="ps aux | grep ServerLauncher"
 alias psn="ps aux | grep node -w"
-alias psm="ps aux | grep mongod -w"
-alias psr="ps aux | grep redis -w"
-alias psmr="psm; psr"
 
-alias cdg="cd /c/MyDisc/Workspace/GameServerGit/server"
-alias cdc="cd /c/MyDisc/Workspace/ClientSVN/jj-client-ko/Branches/Demo"
-alias cde="cd /c/MyDisc/GitHub/Exercise/CPlusPlus"
-
-alias sshvm="ssh will@UbuntuVM"
-
-alias sshgitlab="ssh slggitlab@10.12.7.92"
-alias sshdev="ssh slgdev@10.12.7.93"
-
+alias ...="cd ../.."
 alias ....="cd ../../.."
 alias .....="cd ../../../.."
 alias cd-="cd -"
+alias cde="cd /c/MyDisc/GitHub/Exercise/Nodejs"
+alias cdd="cd $HOME/Downloads"
 
 alias ls="ls --show-control-chars --color=auto"
 alias l="ls"
@@ -47,16 +37,5 @@ alias ga='git add --ignore-removal'
 alias gsu='git submodule update'
 
 
-alias rc='redis-cli'
-
 alias myip='ipconfig | grep inet\ '
-
-alias j='java'
-alias m='mvn'
-alias mp='mvn package'
-
-
-alias rmongo='mongod --dbpath /e/data/db > /e/data/tmp/log/mongo.log&'
-alias rredis='redis-server > /e/data/tmp/log/redis.log&'
-alias rdb='rmongo'
 
