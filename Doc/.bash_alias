@@ -31,7 +31,7 @@ alias man='man -a'
 alias vi='vim'
 alias mvi='gvim'
 
-alias gitk='/usr/local/git/bin/gitk'
+alias gitk='gitk.exe'
 alias gk='gitk'
 alias ga='git add --ignore-removal'
 alias gsu='git submodule update'
