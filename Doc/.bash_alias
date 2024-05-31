@@ -3,6 +3,7 @@ alias reloadbash="source ~/.bash_profile"
 
 alias psn="ps aux | grep node -w"
 
+alias ..="cd .."
 alias ...="cd ../.."
 alias ....="cd ../../.."
 alias .....="cd ../../../.."
