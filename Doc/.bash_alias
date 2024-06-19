@@ -12,6 +12,7 @@ alias cde="cd /c/MyDisc/GitHub/Exercise/Nodejs"
 alias cdd="cd $HOME/Downloads"
 
 alias n="node"
+alias c="clear"
 
 alias ls="ls --show-control-chars --color=auto"
 alias l="ls"
