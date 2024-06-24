@@ -4,14 +4,9 @@ alias reloadzsh="exec zsh && source ~/.zshrc"
 alias ds="pmset displaysleepnow"
 
 alias psn="ps aux | grep node -w"
-alias psm="ps aux | grep mongod -w"
 alias psr="ps aux | grep redis-server -w"
 alias mtl="multitail ~/.ssh/srv-log/error.log ~/.ssh/srv-log/running.log.*"
-alias psmr="psm; psr"
-alias ses="EGG_SERVER_ENV=test npm run dev"
-alias nrd="npm run dev"
-alias ut="EGG_SERVER_ENV=local npm run test-local"
-alias mu="npm run migrate:up"
+alias et="empty_trash.scpt"
 
 alias n="node"
 alias nv="node -v"
@@ -23,9 +18,6 @@ alias cdm="cd /opt/mysql-8.0.35-arm64"
 alias cde="cd ~/Exercise"
 alias cdt="cd $HOME/GitHub/yew/examples/todomvc"
 alias cdnx="cd /usr/local/etc/nginx"
-
-alias sshvm="ssh will@UbuntuVM"
-alias sshdev="ssh slgdev@10.12.7.93"
 
 alias ....="cd ../../.."
 alias .....="cd ../../../.."
@@ -57,31 +49,22 @@ alias ga='git add --ignore-removal'
 alias gsu='git submodule update'
 alias gcz='git add .; git cz'
 
-
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 alias rc='redis-cli'
 
-# alias myip='ifconfig | grep inet\ '
-
 alias j='java'
 alias mp='mvn package'
 alias jsh='/Library/Java/JavaVirtualMachines/jdk-9.jdk/Contents/Home/bin/jshell'
-# alias psync='cdp; fis3 release lzg -w'
 
-
-# alias rmongo='cd /tmp; mkdir -p /tmp/log; sleep 1; pkill mongo; sleep 2; rm -rf /data/db/mongod.lock; sleep 2; mongod --dbpath /data/db --rest --httpinterface > /tmp/log/mongo.log&; sleep 1; cd -'
-# alias rmongo='cd /tmp; mkdir -p /tmp/log; sleep 1; pkill mongo; sleep 2; rm -rf /data/db/mongod.lock; sleep 2; mongod --config /usr/local/etc/mongod.conf --dbpath /data/db > /tmp/log/mongo.log&; sleep 1; cd -'
 alias rmongo='cd /tmp; mkdir -p /tmp/log; sleep 1; pkill mongo; sleep 2; rm -rf /data/db/mongod.lock; sleep 2; mongod --dbpath /data/db > /tmp/log/mongo.log&; sleep 1; cd -'
-# alias rredis='cd /tmp; mkdir -p /tmp/log; sleep 1; pkill redis; sleep 2; redis-server > /tmp/log/redis.log&; sleep 1; cd -'
 alias rredis='pushd /opt/redis/current/bin; ./boot-redis-cluster.sh; popd'
-# alias rdb='rmongo; sleep 2; rredis;'
 alias rdb='rredis'
 alias sdb='rdb'
 
-alias rmysql='pushd /opt/mysql-8.0.22; ./boot-mysqld.sh; popd'
+alias rmysql='pushd /opt/mysql-8.0.35-arm64; ./boot-mysqld.sh; popd'
 
 # alias f='nvm use v8.16.1; sleep 0.5; stf local'
 alias f='source $HOME/.conda_init; sleep 0.5; conda activate python39; nvm use; sleep 0.5; stf local'
@@ -100,7 +83,6 @@ alias tf='tail -f'
 alias sls='screen -ls'
 alias sr='screen -R'
 alias py='python3'
-# alias python='python3'
 alias am='aws-mfa --force --token'
 alias k='kubectl'
 alias kex='k exec -itn'  # k web-srv-ns pod/srv-8bid -- sh
@@ -113,11 +95,4 @@ alias ib='i build'
 alias im='i menuconfig'
 alias ia='i -p /dev/cu.wchusbserial14210 build flash monitor'
 alias ifm='i -p /dev/cu.wchusbserial14210 flash monitor'
-
-alias cf='cargo fmt'
-alias cck='cargo check'
-alias cb='cargo build'
-alias cbr='cargo build --release'
-alias cr='cargo run'
-alias crr='cargo run --release'
 
