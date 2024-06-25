@@ -7,6 +7,7 @@ alias psn="ps aux | grep node -w"
 alias psr="ps aux | grep redis-server -w"
 alias mtl="multitail ~/.ssh/srv-log/error.log ~/.ssh/srv-log/running.log.*"
 alias et="empty_trash.scpt"
+alias 7z="7zz"
 
 alias n="node"
 alias nv="node -v"
