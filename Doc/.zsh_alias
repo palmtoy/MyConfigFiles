@@ -94,6 +94,6 @@ alias getidf='. $HOME/esp/esp-idf/export.sh'
 alias i='idf.py'
 alias ib='i build'
 alias im='i menuconfig'
-alias ia='i -p /dev/cu.wchusbserial14210 build flash monitor'
-alias ifm='i -p /dev/cu.wchusbserial14210 flash monitor'
+alias ia='i build flash monitor'
+alias ifm='i flash monitor'
 
