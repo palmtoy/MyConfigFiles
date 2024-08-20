@@ -23,6 +23,7 @@ alias lsd='ls -d *(/)'
 alias df='df -h'
 alias du='du -h -d1'
 alias cp='cp -iR'
+alias tf='tail -f'
 
 alias mv='mv -i'
 alias rm='rm -ivr'
