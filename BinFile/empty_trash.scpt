@@ -4,9 +4,9 @@ on funcEmptyTrash()
 	tell application "Finder"
 		try
 			empty trash
-			return "Clear OK"
+			return "clear done"
 		on error
-			return "Clear OK ~"
+			return "clear done ~"
 		end try
 	end tell
 end funcEmptyTrash
