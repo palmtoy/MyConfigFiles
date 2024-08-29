@@ -10,6 +10,7 @@ alias .....="cd ../../../.."
 alias cd-="cd -"
 alias cde="cd /c/MyDisc/GitHub/Exercise/Nodejs"
 alias cdd="cd $HOME/Downloads"
+alias cdm="cd $HOME/LabOfGit/muses-desktop"
 
 alias n="node"
 alias c="clear"
