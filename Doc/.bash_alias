@@ -11,6 +11,8 @@ alias cd-="cd -"
 alias cde="cd /c/MyDisc/GitHub/Exercise/Nodejs"
 alias cdd="cd $HOME/Downloads"
 alias cdm="cd $HOME/LabOfGit/muses-desktop"
+alias cdc="cd $HOME/AppData/Roaming/MusesDesktop"
+alias cdl="cd $HOME/AppData/Roaming/MusesDesktop/logs"
 
 alias n="node"
 alias c="clear"
