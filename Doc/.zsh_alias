@@ -1,7 +1,7 @@
 # aliases
 alias reloadzsh="exec zsh && source ~/.zshrc"
 
-alias s="sleep 0.3; pmset displaysleepnow; sleep 1; pmset sleepnow"
+alias slp="sleep 0.3; pmset displaysleepnow; sleep 1; pmset sleepnow"
 
 alias psn="ps aux | grep node -w"
 alias psr="ps aux | grep redis-server -w"
