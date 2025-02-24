@@ -6,13 +6,13 @@ on funcClearScreen()
 		delay 0.2
 		try
 			tell application "System Events"
-				-- 第一次触发快捷键 ⌘⇧i ( i 键的 key-code 是 34 )
+				-- 触发快捷键 ⌘⇧i ( i 键的 key-code 是 34 )
 				key code 34 using {command down, shift down}
 			end tell
 			delay 0.5
-			-- 执行 clear 命令
-			tell current session of current window
-				write text "clear"
+			tell application "System Events"
+				-- 触发快捷键 '⌘k' 命令
+				keystroke "k" using command down
 			end tell
 			delay 0.5
 			-- 再次触发快捷键 ⌘⇧i ( i 键的 key-code 是 34 )
