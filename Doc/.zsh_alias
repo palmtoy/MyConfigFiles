@@ -16,7 +16,7 @@ alias nv="node -v"
 alias cdf="cd $HOME/Workspace/LabOfGit/BGP/MTFarm/backend-server-mtf"
 
 alias cdd="cd ~/Downloads"
-alias cdm="cd /opt/mysql-8.0.35-arm64"
+alias cdm="cd ~/Library/Application\ Support/MusesDesktop"
 alias cde="cd ~/Exercise"
 alias cdt="cd $HOME/GitHub/yew/examples/todomvc"
 alias cdnx="cd /usr/local/etc/nginx"
@@ -68,6 +68,7 @@ alias rredis='pushd /opt/redis/current/bin; ./boot-redis-cluster.sh; popd'
 alias rdb='rredis'
 alias sdb='rdb'
 
+alias cdmysql="cd /opt/mysql-8.0.35-arm64"
 alias rmysql='pushd /opt/mysql-8.0.35-arm64; ./boot-mysqld.sh; popd'
 
 # alias f='nvm use v8.16.1; sleep 0.5; stf local'
