@@ -6,6 +6,11 @@ on funcClearScreen()
 		delay 0.2
 		try
 			tell application "System Events"
+				-- 触发快捷键 '⌘⌥f' 命令
+				keystroke "f" using {command down, option down}
+			end tell
+			delay 0.5
+			tell application "System Events"
 				-- 触发快捷键 ⌘⇧i ( i 键的 key-code 是 34 )
 				key code 34 using {command down, shift down}
 			end tell
