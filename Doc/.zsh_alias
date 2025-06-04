@@ -78,7 +78,7 @@ alias sdb='rdb'
 
 alias cdmysql="cd /opt/mysql-8.0.35-arm64"
 alias rmysql='pushd /opt/mysql-8.0.35-arm64; ./boot-mysqld.sh; popd'
-alias dkmysql="docker run --platform linux/amd64 --name mysqld-5.7.40 -e MYSQL_ROOT_PASSWORD=**** -v ~/Workspace/Data/mysql-5.7.40-x64/data:/var/lib/mysql -p 33306:3306 -d mysql:5.7.40"
+alias dkmysql="docker run --platform linux/amd64 --name mysqld-5.7.40 -e MYSQL_ROOT_PASSWORD=******* -v ~/Workspace/Data/mysql-5.7.40-x64/data:/var/lib/mysql -p 33306:3306 -d mysql:5.7.40"
 
 # alias f='nvm use v8.16.1; sleep 0.5; stf local'
 alias condainit='source $HOME/.conda_init; sleep 0.5; conda activate python39; sleep 0.5'
