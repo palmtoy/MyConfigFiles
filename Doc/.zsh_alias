@@ -57,6 +57,14 @@ alias gs='git status'
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+alias dk='docker'
+alias dki='docker images'
+alias dkp='docker ps -a'
+alias dke='docker exec -it stf-slave bash'
+alias dkc='docker-compose'
+alias dcu='docker-compose up -d'
+alias dcd='docker-compose down'
+
 alias rc='redis-cli'
 
 alias j='java'
@@ -70,19 +78,12 @@ alias sdb='rdb'
 
 alias cdmysql="cd /opt/mysql-8.0.35-arm64"
 alias rmysql='pushd /opt/mysql-8.0.35-arm64; ./boot-mysqld.sh; popd'
+alias dkmysql="docker run --platform linux/amd64 --name mysqld-5.7.40 -e MYSQL_ROOT_PASSWORD=****** -p 33306:3306 -d mysql:5.7.40"
 
 # alias f='nvm use v8.16.1; sleep 0.5; stf local'
 alias condainit='source $HOME/.conda_init; sleep 0.5; conda activate python39; sleep 0.5'
 alias f='condainit; nvm use; sleep 0.5; stf local'
 alias ft='cd /var/folders/45/86qtmmt925x9wbsdqdgxnh7r0000gn/T'
-
-alias dk='docker'
-alias dki='docker images'
-alias dkp='docker ps -a'
-alias dke='docker exec -it stf-slave bash'
-alias dkc='docker-compose'
-alias dcu='docker-compose up -d'
-alias dcd='docker-compose down'
 
 alias tailf='tail -f'
 alias tf='tail -f'
