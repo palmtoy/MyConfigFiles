@@ -91,7 +91,7 @@ alias tf='tail -f'
 alias sls='screen -ls'
 alias sr='screen -R'
 alias py='python3'
-alias am='aws-mfa --force --token'
+alias am='aws-mfa'
 alias k='kubectl'
 alias kex='k exec -itn'  # k web-srv-ns pod/srv-8bid -- sh
 
