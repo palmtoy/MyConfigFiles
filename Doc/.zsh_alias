@@ -93,7 +93,7 @@ alias sr='screen -R'
 alias py='python3'
 alias am='aws-mfa'
 alias k='kubectl'
-alias kex='k exec -itn'  # k web-srv-ns pod/srv-8bid -- sh
+alias kex='k exec -itn'  # kex bgp-qa turbo-server-865***fdf-v***f -- sh
 
 alias m='make'
 alias getesp8266="export PATH=$HOME/esp/xtensa-lx106-elf/bin:$PATH; export IDF_PATH=$HOME/esp/ESP8266_RTOS_SDK"
