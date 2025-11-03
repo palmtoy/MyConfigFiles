@@ -27,6 +27,7 @@ alias cd-="cd -"
 alias l="ls"
 alias la="ls -lah"
 alias ll="la"
+alias llt="ll -t"
 alias lm='ll | more'
 alias lsd='ls -d *(/)'
 alias df='df -h'
