@@ -83,6 +83,8 @@ alias rmysql='pushd /opt/mysql-8.0.35-arm64; ./boot-mysqld.sh; popd'
 alias dkmysql="docker run --platform linux/amd64 --name mysqld-5.7.40 -v ~/Workspace/Data/mysql-5.7.40-x64/data:/var/lib/mysql -p 33306:3306 -d mysql:5.7.40"
 alias dkes='docker run -d --name elasticsearch -p 39200:9200 -e "discovery.type=single-node" -v ~/Workspace/Data/es/data:/usr/share/elasticsearch/data -v ~/Workspace/Data/es/plugins:/usr/share/elasticsearch/plugins docker.elastic.co/elasticsearch/elasticsearch:7.12.1'
 
+alias aispd="curl -s \"${ANTHROPIC_BASE_URL}key/info\" -H \"Authorization: Bearer $ANTHROPIC_AUTH_TOKEN\" | jq '.info | {key_alias, spend, budget_reset_at}'"
+
 # alias f='nvm use v8.16.1; sleep 0.5; stf local'
 alias condainit='source $HOME/.conda_init; sleep 0.5; conda activate python39; sleep 0.5'
 alias f='condainit; nvm use; sleep 0.5; stf local'

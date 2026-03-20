@@ -79,8 +79,8 @@ export PATH="$HOME/.local/bin:$PATH"
 export CLASSPATH=.:./target/classes:$JAVA_HOME/lib/dt.jar:$JAVA_HOME/lib/tools.jar:$M2_REPO/org/mongodb/mongo-java-driver/3.4.2/mongo-java-driver-3.4.2.jar:$M2_REPO/io/netty/netty-all/4.1.9.Final/netty-all-4.1.9.Final.jar:$M2_REPO/redis/clients/jedis/2.8.2/jedis-2.8.2.jar
 
 . $CONF_DIR/.zsh_alias
-. $CONF_DIR/.zsh_alias_shadow
 . $CONF_DIR/.zsh_function
+. $CONF_DIR/.zshrc_shadow
 
 # red: 31, green: 32, yellow: 33, blue: 34, purple: 35, cyan: 36
 export GREP_OPTIONS='--color=auto' GREP_COLOR='1;31;40'
