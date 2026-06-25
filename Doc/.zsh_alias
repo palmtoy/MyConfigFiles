@@ -86,11 +86,11 @@ alias dkes='docker run -d --name elasticsearch -p 39200:9200 -e "discovery.type=
 alias aispd="curl -s \"${ANTHROPIC_BASE_URL}key/info\" -H \"Authorization: Bearer $ANTHROPIC_AUTH_TOKEN\" | jq '.info | {key_alias, spend, budget_reset_at}'"
 
 # alias f='nvm use v8.16.1; sleep 0.5; stf local'
-alias condainit='source $HOME/.conda_init; sleep 0.5; conda activate python39; sleep 0.5'
+alias cainit='source $HOME/.conda_init; sleep 0.5; conda activate python39; sleep 0.5'
 alias f='condainit; nvm use; sleep 0.5; stf local'
 alias ft='cd /var/folders/45/86qtmmt925x9wbsdqdgxnh7r0000gn/T'
 
-alias condalv='source $HOME/.conda_init; sleep 0.5; conda activate lv-similarity; sleep 0.5'
+alias calv='source $HOME/.conda_init; sleep 0.5; conda activate lv-similarity; sleep 0.5'
 
 alias tailf='tail -f'
 alias tf='tail -f'
