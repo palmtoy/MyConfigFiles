@@ -53,7 +53,8 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 
 export MONGODB_BIN=/opt/mongo/current/bin
 
-export JAVA_HOME=/usr/local/Cellar/openjdk/18/libexec/openjdk.jdk/Contents/Home
+# export JAVA_HOME=/usr/local/Cellar/openjdk/18/libexec/openjdk.jdk/Contents/Home
+export JAVA_HOME=/opt/homebrew/opt/openjdk@21
 export M2_REPO=$HOME/.m2/repository
 
 # Customize to your needs...

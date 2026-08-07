@@ -2,14 +2,16 @@
 unalias g 2>/dev/null
 
 function g() {
-  case "$1 $2" in
-    "stash list")
-      git stash list | cat
-      ;;
-    *)
-      git "$@"
-      ;;
-  esac
+  if [ "$1" = "stash" ] && [ "$2" = "list" ]; then
+    git stash list | cat
+  elif [ "$1" = "stash" ] && [ "$2" = "-u" ]; then
+    shift 2
+    git stash -u "$@" | cat
+  elif [ "$1" = "stash" ] && [ "$2" = "pop" ] && printf '%s' "$3" | grep -Eq '^[0-9]+$'; then
+    git stash pop "$3" | cat
+  else
+    git "$@"
+  fi
 }
 
 function gstash() {
