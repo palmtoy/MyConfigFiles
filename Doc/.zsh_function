@@ -9,6 +9,8 @@ function g() {
     git stash -u "$@" | cat
   elif [ "$1" = "stash" ] && [ "$2" = "pop" ] && printf '%s' "$3" | grep -Eq '^[0-9]+$'; then
     git stash pop "$3" | cat
+  elif [ "$1" = "stash" ] && [ "$2" = "apply" ] && printf '%s' "$3" | grep -Eq '^[0-9]+$'; then
+    git stash apply "$3" | cat
   else
     git "$@"
   fi
