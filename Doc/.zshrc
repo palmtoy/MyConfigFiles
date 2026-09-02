@@ -73,7 +73,6 @@ export RUSTUP_HOME=$HOME/.rustup
 export CARGO_HOME=$HOME/.cargo
 export PATH=$CARGO_HOME/bin:$PATH
 export PATH=/Applications/Couchbase\ Server.app/Contents/Resources/couchbase-core/bin:$PATH
-export PATH=$(pyenv root)/shims:$PATH
 export PATH=/usr/local/Caskroom/android-platform-tools/34.0.1/platform-tools:$PATH
 export PATH="$HOME/.local/bin:/usr/local/go/bin:$HOME/go/bin:$PATH"
 
@@ -103,8 +102,4 @@ source $HOME/.nvm/nvm.sh # This loads NVM
 
 # TODO: fix it for AppleM3
 # [[ /usr/local/bin/kubectl ]] && source <(kubectl completion zsh)
-
-export PYENV_ROOT="$HOME/.pyenv"
-[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
-eval "$(pyenv init - zsh)"
 
